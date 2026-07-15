@@ -217,7 +217,7 @@ const opportunities=[
     "pivotUrl": "https://pivot.proquest.com/funding_opps/eab18edd-bc1f-4f00-b3ad-f2f1552f7976"
   }
 ];
-const today=new Date('2026-07-15T00:00:00');
+const today=new Date();today.setHours(0,0,0,0);
 const grid=document.getElementById('grid'),search=document.getElementById('search'),status=document.getElementById('status'),type=document.getElementById('type'),career=document.getElementById('career'),count=document.getElementById('count');
 const detail=document.getElementById('detail');
 const statusOf=o=>!o.deadline?'open':new Date(o.deadline+'T23:59:59')>=today?'future':'expired';
