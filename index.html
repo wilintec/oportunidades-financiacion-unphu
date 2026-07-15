@@ -215,9 +215,44 @@ const opportunities=[
     "internalObservation": "Presentar la solución como mejora medible del aprendizaje y de la empleabilidad digital.",
     "url": "https://impactchallenge.withgoogle.com/genaiaccelerator",
     "pivotUrl": "https://pivot.proquest.com/funding_opps/eab18edd-bc1f-4f00-b3ad-f2f1552f7976"
+  },
+  {
+    "id": 6,
+    "code": "IA-2026-006",
+    "title": "UNU-WIDER: IA y mercado laboral",
+    "funder": "UNU-WIDER / Naciones Unidas",
+    "funderType": "Organización internacional",
+    "country": "Internacional",
+    "deadline": "2026-04-01",
+    "deadlineLabel": "1 de abril de 2026",
+    "deliveryType": "Solicitud",
+    "manualStatus": "Cerrada",
+    "calculatedStatus": "Cerrada",
+    "amount": "USD 10.000 – 200.000",
+    "duration": "24 meses",
+    "type": "Subvención de investigación",
+    "career": [
+      "Científicos sociales cuantitativos de carrera temprana"
+    ],
+    "applicantType": "Institución de investigación",
+    "area": "IA, habilidades y mercado laboral",
+    "keywords": [
+      "IA",
+      "programación",
+      "empleabilidad",
+      "productividad",
+      "desigualdad",
+      "experimento de campo"
+    ],
+    "summary": "Financia estudios rigurosos sobre efectos de herramientas de IA en empresas, trabajadores, productividad, empleo e inequidad.",
+    "eligibility": "Favorece investigadores de carrera temprana y del Sur Global. Solicitante: Institución de investigación. Ubicación elegible: Internacional, con énfasis en países de ingresos bajos y medios. Ciudadanía: Sin restriccion.",
+    "notes": "Requiere relacionar la formación adaptativa con productividad, empleo o resultados laborales.",
+    "internalObservation": "Encaje indirecto, pero viable como experimento sobre formación y empleabilidad.",
+    "url": "https://www.wider.unu.edu/opportunity/effects-artificial-intelligence-firm-and-labour-market-outcomes",
+    "pivotUrl": "https://pivot.proquest.com/funding_opps/7c1ebfe4-9115-40a7-af84-f2f1552f7976"
   }
 ];
-const today=new Date();today.setHours(0,0,0,0);
+const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);
 const grid=document.getElementById('grid'),search=document.getElementById('search'),status=document.getElementById('status'),type=document.getElementById('type'),career=document.getElementById('career'),count=document.getElementById('count');
 const detail=document.getElementById('detail');
 const statusOf=o=>!o.deadline?'open':new Date(o.deadline+'T23:59:59')>=today?'future':'expired';
