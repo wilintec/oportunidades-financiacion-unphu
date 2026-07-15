@@ -21,7 +21,7 @@ dialog{border:0;border-radius:8px;padding:0;max-width:760px;width:calc(100% - 30
 <body>
 <div class="topline"></div>
 <header><nav class="nav"><a class="brand" href="#"><div class="seal">U</div><div><strong>UNPHU</strong><span>Universidad Nacional Pedro Henríquez Ureña</span></div></a><div class="navlinks"><a href="#oportunidades">Oportunidades</a><a href="#metodologia">Cómo utilizar</a><a href="https://unphu.edu.do/investigacion/" target="_blank" rel="noopener">Investigación UNPHU</a></div></nav></header>
-<section class="hero"><div class="hero-inner"><div><div class="eyebrow">Portal de investigación · Prueba de concepto</div><h1>Oportunidades de financiamiento para investigar, innovar y transformar</h1><p>Explora convocatorias internacionales, premios, becas y fondos para proyectos científicos. Filtra por fecha, perfil y tipo de financiamiento.</p><div class="hero-actions"><a href="#oportunidades" class="btn btn-gold">Explorar oportunidades ↓</a><a href="#metodologia" class="btn btn-outline">Conocer el proceso</a></div></div><aside class="hero-panel"><h3>Resumen del prototipo</h3><div class="hero-stat"><span>Oportunidades incluidas</span><strong id="heroTotal">0</strong></div><div class="hero-stat"><span>Convocatorias futuras</span><strong id="heroFuture">0</strong></div><div class="hero-stat"><span>Áreas principales</span><strong>IA + Ciencia</strong></div></aside></div></section>
+<section class="hero"><div class="hero-inner"><div><div class="eyebrow">Portal de investigación · Prueba de concepto</div><h1>Oportunidades de financiamiento para investigar, innovar y transformar</h1><p>Explora convocatorias internacionales, premios, becas y fondos para proyectos científicos. Filtra por fecha, perfil y tipo de financiamiento.</p><div class="hero-actions"><a href="#oportunidades" class="btn btn-gold">Explorar oportunidades ↓</a><a href="#metodologia" class="btn btn-outline">Conocer el proceso</a></div></div><aside class="hero-panel"><h3>Resumen del prototipo</h3><div class="hero-stat"><span>Oportunidades incluidas</span><strong id="heroTotal">0</strong></div><div class="hero-stat"><span>Convocatorias futuras</span><strong id="heroFuture">0</strong></div><div class="hero-stat"><span>Áreas principales</span><strong id="heroAreas">—</strong></div></aside></div></section>
 <div class="notice"><div><strong>Demostración no oficial:</strong> este portal fue actualizado a partir del Excel maestro suministrado. Las fechas y condiciones deben verificarse siempre en el sitio oficial del financiador.</div></div>
 <main class="main" id="oportunidades"><div class="section-title"><div><h2>Convocatorias disponibles</h2><p>Información publicada desde el Excel maestro de oportunidades de financiamiento.</p></div></div>
 <section class="filters" aria-label="Filtros"><div class="field"><label for="search">Buscar</label><input id="search" type="search" placeholder="Título, financiador, palabra clave..."></div><div class="field"><label for="status">Estado</label><select id="status"><option value="all">Todos</option><option value="future">Futuras</option><option value="open">Abiertas / continuas</option><option value="expired">Vencidas</option></select></div><div class="field"><label for="type">Tipo</label><select id="type"><option value="all">Todos</option></select></div><div class="field"><label for="career">Perfil</label><select id="career"><option value="all">Todos</option></select></div></section>
@@ -34,7 +34,7 @@ dialog{border:0;border-radius:8px;padding:0;max-width:760px;width:calc(100% - 30
 const opportunities=[
   {
     "id": 1,
-    "code": "2026-001",
+    "code": "IA-2026-001",
     "title": "Vision Grants",
     "funder": "Spencer Foundation",
     "funderType": "Fundación privada",
@@ -67,7 +67,7 @@ const opportunities=[
   },
   {
     "id": 2,
-    "code": "2026-002",
+    "code": "IA-2026-002",
     "title": "AWS Cloud Credit for Research",
     "funder": "Amazon Web Services",
     "funderType": "Fundación privada",
@@ -99,7 +99,7 @@ const opportunities=[
   },
   {
     "id": 3,
-    "code": "2026-003",
+    "code": "IA-2026-003",
     "title": "OpenAI Researcher Access Program",
     "funder": "OpenAI",
     "funderType": "Fundación privada",
@@ -131,7 +131,7 @@ const opportunities=[
   },
   {
     "id": 4,
-    "code": "2026-004",
+    "code": "IA-2026-004",
     "title": "FONDOCYT",
     "funder": "MESCyT",
     "funderType": "Gobierno nacional",
@@ -183,7 +183,7 @@ const opportunities=[
   },
   {
     "id": 5,
-    "code": "2026-005",
+    "code": "IA-2026-005",
     "title": "Google.org Generative AI Accelerator",
     "funder": "Google",
     "funderType": "Empresa privada / filantropía corporativa",
@@ -200,7 +200,7 @@ const opportunities=[
       "Equipos de universidades, organizaciones sociales y empresas sociales"
     ],
     "applicantType": "Universidad, entidad cívica, ONG o empresa social",
-    "area": "IA generativa para aprendizaje",
+    "area": "IA generativa para aprendizaje y habilidades",
     "keywords": [
       "GenAI",
       "aprendizaje",
@@ -215,76 +215,9 @@ const opportunities=[
     "internalObservation": "Presentar la solución como mejora medible del aprendizaje y de la empleabilidad digital.",
     "url": "https://impactchallenge.withgoogle.com/genaiaccelerator",
     "pivotUrl": "https://pivot.proquest.com/funding_opps/eab18edd-bc1f-4f00-b3ad-f2f1552f7976"
-  },
-  {
-    "id": 6,
-    "code": "2026-006",
-    "title": "UNU-WIDER: IA y mercado laboral",
-    "funder": "UNU-WIDER / Naciones Unidas",
-    "funderType": "Organización internacional",
-    "country": "Internacional",
-    "deadline": "2026-04-01",
-    "deadlineLabel": "1 de abril de 2026",
-    "deliveryType": "Solicitud",
-    "manualStatus": "Cerrada",
-    "calculatedStatus": "Cerrada",
-    "amount": "USD 10.000 – 200.000",
-    "duration": "24 meses",
-    "type": "Subvención de investigación",
-    "career": [
-      "Científicos sociales cuantitativos de carrera temprana"
-    ],
-    "applicantType": "Institución de investigación",
-    "area": "IA; habilidades y mercado laboral",
-    "keywords": [
-      "IA",
-      "programación",
-      "empleabilidad",
-      "productividad",
-      "desigualdad",
-      "experimento de campo"
-    ],
-    "summary": "Financia estudios rigurosos sobre efectos de herramientas de IA en empresas, trabajadores, productividad, empleo e inequidad.",
-    "eligibility": "Favorece investigadores de carrera temprana y del Sur Global. Solicitante: Institución de investigación. Ubicación elegible: Internacional, con énfasis en países de ingresos bajos y medios. Ciudadanía: Sin restriccion.",
-    "notes": "Requiere relacionar la formación adaptativa con productividad, empleo o resultados laborales.",
-    "internalObservation": "Encaje indirecto, pero viable como experimento sobre formación y empleabilidad.",
-    "url": "https://www.wider.unu.edu/opportunity/effects-artificial-intelligence-firm-and-labour-market-outcomes",
-    "pivotUrl": "https://pivot.proquest.com/funding_opps/7c1ebfe4-9115-40a7-af84-f2f1552f7976"
-  },
-  {
-    "id": 7,
-    "code": "2026-007",
-    "title": "ARIA Mathematics for Safe AI",
-    "funder": "Advanced Research + Invention Agency",
-    "funderType": "Gobierno internacional",
-    "country": "Reino Unido",
-    "deadline": "2026-07-31",
-    "deadlineLabel": "31 de julio de 2026",
-    "deliveryType": "Carta de intención",
-    "manualStatus": "Abierta",
-    "calculatedStatus": "Próxima a vencer",
-    "amount": "GBP 10.000 – 500.000",
-    "duration": "24 meses",
-    "type": "Proyecto de investigación",
-    "career": [
-      "Investigadores, equipos, estudiantes, empresas y entidades públicas"
-    ],
-    "applicantType": "Individuo, universidad, empresa u organización",
-    "area": "Tecnologia; Medio Ambiente; Matematicas",
-    "keywords": [
-      "IA",
-      "Cambio Climatico",
-      "Ciberseguridad"
-    ],
-    "summary": "Financia ideas audaces basadas en matemáticas y métodos formales para asegurar que los sistemas de IA actúen como se espera.",
-    "eligibility": "Se consideran solicitantes internacionales cuando el proyecto beneficia significativamente al Reino Unido. Solicitante: Individuo, universidad, empresa u organización. Ubicación elegible: Prioridad a UK. Ciudadanía: Prioridad a UK.",
-    "notes": "Van abriendo convocatorias durante año",
-    "internalObservation": "Solo recomendable con socio británico.",
-    "url": "https://aria.org.uk/funding-opportunities",
-    "pivotUrl": "https://pivot.proquest.com/funding_opps/83ca791d-b275-4b81-9778-f2f1552f7976"
   }
 ];
-const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);
+const today=new Date();today.setHours(0,0,0,0);
 const grid=document.getElementById('grid'),search=document.getElementById('search'),status=document.getElementById('status'),type=document.getElementById('type'),career=document.getElementById('career'),count=document.getElementById('count');
 const detail=document.getElementById('detail');
 const statusOf=o=>!o.deadline?'open':new Date(o.deadline+'T23:59:59')>=today?'future':'expired';
@@ -292,6 +225,33 @@ const statusText=s=>s==='future'?'Fecha futura':s==='expired'?'Vencida':'Continu
 [...new Set(opportunities.map(o=>o.type))].sort().forEach(v=>type.insertAdjacentHTML('beforeend',`<option>${v}</option>`));
 [...new Set(opportunities.flatMap(o=>o.career))].sort().forEach(v=>career.insertAdjacentHTML('beforeend',`<option>${v}</option>`));
 document.getElementById('heroTotal').textContent=opportunities.length;document.getElementById('heroFuture').textContent=opportunities.filter(o=>statusOf(o)==='future').length;
+function topOpenKeyWords() {
+  const counts = new Map();
+
+  opportunities
+    .filter(o => o.calculatedStatus === "Abierta")
+    .flatMap(o => Array.isArray(o.keywords) ? o.keywords : [])
+    .map(keyword => String(keyword).trim())
+    .filter(Boolean)
+    .forEach(keyword => {
+      const key = keyword.toLocaleLowerCase("es");
+      const current = counts.get(key) || { label: keyword, count: 0 };
+      current.count += 1;
+      counts.set(key, current);
+    });
+
+  return [...counts.values()]
+    .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, "es"))
+    .slice(0, 2)
+    .map(item => item.label);
+}
+
+const mainAreas = topOpenKeyWords();
+document.getElementById('heroAreas').textContent =
+  mainAreas.length === 2 ? `${mainAreas[0]} y ${mainAreas[1]}` :
+  mainAreas.length === 1 ? mainAreas[0] :
+  'Sin datos';
+
 function render(){const q=search.value.toLowerCase().trim();const list=opportunities.filter(o=>{const blob=[o.title,o.funder,o.country,o.summary,...o.keywords].join(' ').toLowerCase();return(!q||blob.includes(q))&&(status.value==='all'||statusOf(o)===status.value)&&(type.value==='all'||o.type===type.value)&&(career.value==='all'||o.career.includes(career.value))});count.textContent=list.length;if(!list.length){grid.innerHTML='<div class="empty">No se encontraron oportunidades con los filtros seleccionados.</div>';return}grid.innerHTML=list.map(o=>{const s=statusOf(o);return`<article class="card"><div class="card-head"><div class="badges"><span class="badge ${s}">${statusText(s)}</span><span class="badge">${o.type}</span></div><h3>${o.title}</h3><div class="funder">${o.funder} · ${o.country}</div></div><div class="meta"><div class="meta-item"><small>Fecha límite</small><strong>${o.deadlineLabel}</strong></div><div class="meta-item"><small>Financiamiento</small><strong>${o.amount}</strong></div></div><p class="abstract">${o.summary}</p><div class="card-actions"><button class="secondary" onclick="openDetail(${o.id})">Ver detalles</button><a class="primary" href="${o.url}" target="_blank" rel="noopener">Sitio oficial ↗</a></div></article>`}).join('')}
 function openDetail(id){const o=opportunities.find(x=>x.id===id);document.getElementById('modalTitle').textContent=o.title;document.getElementById('modalBody').innerHTML=`<div class="badges"><span class="badge ${statusOf(o)}">${statusText(statusOf(o))}</span><span class="badge">${o.type}</span></div><h4>Financiador</h4><p>${o.funder} · ${o.country}<br><small>${o.funderType}</small></p><h4>Fecha, monto y duración</h4><p><strong>${o.deadlineLabel}</strong><br>${o.amount}<br>Duración: ${o.duration}</p><h4>Tipo de entrega</h4><p>${o.deliveryType || 'No especificado'}</p><h4>Área temática</h4><p>${o.area}</p><h4>Descripción</h4><p>${o.summary}</p><h4>Elegibilidad</h4><p>${o.eligibility}</p>${o.notes?`<h4>Notas de la convocatoria</h4><p>${o.notes}</p>`:''}${o.internalObservation?`<h4>Observación para UNPHU</h4><p>${o.internalObservation}</p>`:''}<h4>Perfiles</h4><p>${o.career.join(' · ')}</p><h4>Palabras clave</h4><p>${o.keywords.join(' · ')}</p><div class="modal-links"><a class="btn primary" href="${o.url}" target="_blank" rel="noopener">Consultar convocatoria oficial ↗</a>${o.pivotUrl?`<a class="btn secondary" href="${o.pivotUrl}" target="_blank" rel="noopener">Ver en Pivot-RP ↗</a>`:''}</div>`;detail.showModal()}
 detail.querySelector('.close').onclick=()=>detail.close();detail.addEventListener('click',e=>{if(e.target===detail)detail.close()});[search,status,type,career].forEach(el=>el.addEventListener('input',render));render();
