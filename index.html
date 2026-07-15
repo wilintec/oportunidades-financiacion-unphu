@@ -34,7 +34,7 @@ dialog{border:0;border-radius:8px;padding:0;max-width:760px;width:calc(100% - 30
 const opportunities=[
   {
     "id": 1,
-    "code": "IA-2026-001",
+    "code": "2026-001",
     "title": "Vision Grants",
     "funder": "Spencer Foundation",
     "funderType": "Fundación privada",
@@ -67,7 +67,7 @@ const opportunities=[
   },
   {
     "id": 2,
-    "code": "IA-2026-002",
+    "code": "2026-002",
     "title": "AWS Cloud Credit for Research",
     "funder": "Amazon Web Services",
     "funderType": "Fundación privada",
@@ -99,7 +99,7 @@ const opportunities=[
   },
   {
     "id": 3,
-    "code": "IA-2026-003",
+    "code": "2026-003",
     "title": "OpenAI Researcher Access Program",
     "funder": "OpenAI",
     "funderType": "Fundación privada",
@@ -131,7 +131,7 @@ const opportunities=[
   },
   {
     "id": 4,
-    "code": "IA-2026-004",
+    "code": "2026-004",
     "title": "FONDOCYT",
     "funder": "MESCyT",
     "funderType": "Gobierno nacional",
@@ -183,7 +183,7 @@ const opportunities=[
   },
   {
     "id": 5,
-    "code": "IA-2026-005",
+    "code": "2026-005",
     "title": "Google.org Generative AI Accelerator",
     "funder": "Google",
     "funderType": "Empresa privada / filantropía corporativa",
@@ -200,7 +200,7 @@ const opportunities=[
       "Equipos de universidades, organizaciones sociales y empresas sociales"
     ],
     "applicantType": "Universidad, entidad cívica, ONG o empresa social",
-    "area": "IA generativa para aprendizaje y habilidades",
+    "area": "IA generativa para aprendizaje",
     "keywords": [
       "GenAI",
       "aprendizaje",
@@ -215,9 +215,76 @@ const opportunities=[
     "internalObservation": "Presentar la solución como mejora medible del aprendizaje y de la empleabilidad digital.",
     "url": "https://impactchallenge.withgoogle.com/genaiaccelerator",
     "pivotUrl": "https://pivot.proquest.com/funding_opps/eab18edd-bc1f-4f00-b3ad-f2f1552f7976"
+  },
+  {
+    "id": 6,
+    "code": "2026-006",
+    "title": "UNU-WIDER: IA y mercado laboral",
+    "funder": "UNU-WIDER / Naciones Unidas",
+    "funderType": "Organización internacional",
+    "country": "Internacional",
+    "deadline": "2026-04-01",
+    "deadlineLabel": "1 de abril de 2026",
+    "deliveryType": "Solicitud",
+    "manualStatus": "Cerrada",
+    "calculatedStatus": "Cerrada",
+    "amount": "USD 10.000 – 200.000",
+    "duration": "24 meses",
+    "type": "Subvención de investigación",
+    "career": [
+      "Científicos sociales cuantitativos de carrera temprana"
+    ],
+    "applicantType": "Institución de investigación",
+    "area": "IA; habilidades y mercado laboral",
+    "keywords": [
+      "IA",
+      "programación",
+      "empleabilidad",
+      "productividad",
+      "desigualdad",
+      "experimento de campo"
+    ],
+    "summary": "Financia estudios rigurosos sobre efectos de herramientas de IA en empresas, trabajadores, productividad, empleo e inequidad.",
+    "eligibility": "Favorece investigadores de carrera temprana y del Sur Global. Solicitante: Institución de investigación. Ubicación elegible: Internacional, con énfasis en países de ingresos bajos y medios. Ciudadanía: Sin restriccion.",
+    "notes": "Requiere relacionar la formación adaptativa con productividad, empleo o resultados laborales.",
+    "internalObservation": "Encaje indirecto, pero viable como experimento sobre formación y empleabilidad.",
+    "url": "https://www.wider.unu.edu/opportunity/effects-artificial-intelligence-firm-and-labour-market-outcomes",
+    "pivotUrl": "https://pivot.proquest.com/funding_opps/7c1ebfe4-9115-40a7-af84-f2f1552f7976"
+  },
+  {
+    "id": 7,
+    "code": "2026-007",
+    "title": "ARIA Mathematics for Safe AI",
+    "funder": "Advanced Research y Invention Agency",
+    "funderType": "Gobierno internacional",
+    "country": "Reino Unido",
+    "deadline": "2026-07-31",
+    "deadlineLabel": "31 de julio de 2026",
+    "deliveryType": "Carta de intención",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Próxima a vencer",
+    "amount": "GBP 10.000 – 500.000",
+    "duration": "24 meses",
+    "type": "Proyecto de investigación",
+    "career": [
+      "Investigadores, equipos, estudiantes, empresas y entidades públicas"
+    ],
+    "applicantType": "Individuo, universidad, empresa u organización",
+    "area": "Tecnologia; Medio Ambiente; Matematicas",
+    "keywords": [
+      "IA",
+      "Cambio Climatico",
+      "Ciberseguridad"
+    ],
+    "summary": "Financia ideas audaces basadas en matemáticas y métodos formales para asegurar que los sistemas de IA actúen como se espera.",
+    "eligibility": "Se consideran solicitantes internacionales cuando el proyecto beneficia significativamente al Reino Unido. Solicitante: Individuo, universidad, empresa u organización. Ubicación elegible: Prioridad a UK. Ciudadanía: Prioridad a UK.",
+    "notes": "Van abriendo convocatorias durante año",
+    "internalObservation": "Solo recomendable con socio británico.",
+    "url": "https://aria.org.uk/funding-opportunities",
+    "pivotUrl": "https://pivot.proquest.com/funding_opps/83ca791d-b275-4b81-9778-f2f1552f7976"
   }
 ];
-const today=new Date();today.setHours(0,0,0,0);
+const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);
 const grid=document.getElementById('grid'),search=document.getElementById('search'),status=document.getElementById('status'),type=document.getElementById('type'),career=document.getElementById('career'),count=document.getElementById('count');
 const detail=document.getElementById('detail');
 const statusOf=o=>!o.deadline?'open':new Date(o.deadline+'T23:59:59')>=today?'future':'expired';
