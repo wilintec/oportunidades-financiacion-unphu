@@ -22,28 +22,200 @@ dialog{border:0;border-radius:8px;padding:0;max-width:760px;width:calc(100% - 30
 <div class="topline"></div>
 <header><nav class="nav"><a class="brand" href="#"><div class="seal">U</div><div><strong>UNPHU</strong><span>Universidad Nacional Pedro Henríquez Ureña</span></div></a><div class="navlinks"><a href="#oportunidades">Oportunidades</a><a href="#metodologia">Cómo utilizar</a><a href="https://unphu.edu.do/investigacion/" target="_blank" rel="noopener">Investigación UNPHU</a></div></nav></header>
 <section class="hero"><div class="hero-inner"><div><div class="eyebrow">Portal de investigación · Prueba de concepto</div><h1>Oportunidades de financiamiento para investigar, innovar y transformar</h1><p>Explora convocatorias internacionales, premios, becas y fondos para proyectos científicos. Filtra por fecha, perfil y tipo de financiamiento.</p><div class="hero-actions"><a href="#oportunidades" class="btn btn-gold">Explorar oportunidades ↓</a><a href="#metodologia" class="btn btn-outline">Conocer el proceso</a></div></div><aside class="hero-panel"><h3>Resumen del prototipo</h3><div class="hero-stat"><span>Oportunidades incluidas</span><strong id="heroTotal">0</strong></div><div class="hero-stat"><span>Convocatorias futuras</span><strong id="heroFuture">0</strong></div><div class="hero-stat"><span>Áreas principales</span><strong>IA + Ciencia</strong></div></aside></div></section>
-<div class="notice"><div><strong>Demostración no oficial:</strong> este prototipo fue construido a partir del documento suministrado. Las fechas y condiciones deben verificarse siempre en el sitio oficial del financiador.</div></div>
-<main class="main" id="oportunidades"><div class="section-title"><div><h2>Convocatorias disponibles</h2><p>Información organizada para facilitar la identificación de oportunidades relevantes.</p></div></div>
-<section class="filters" aria-label="Filtros"><div class="field"><label for="search">Buscar</label><input id="search" type="search" placeholder="Título, financiador, palabra clave..."></div><div class="field"><label for="status">Estado</label><select id="status"><option value="all">Todos</option><option value="future">Futuras</option><option value="open">Abiertas / continuas</option><option value="expired">Vencidas</option></select></div><div class="field"><label for="type">Tipo</label><select id="type"><option value="all">Todos</option></select></div><div class="field"><label for="career">Perfil</label><select id="career"><option value="all">Todos</option><option>Investigador emergente</option><option>Estudiante doctoral</option><option>Investigador establecido</option><option>Institución</option></select></div></section>
-<div class="summarybar"><span>Mostrando <strong id="count">0</strong> resultados</span><span>Actualizado para la demostración: 15 de julio de 2026</span></div><section class="grid" id="grid"></section>
+<div class="notice"><div><strong>Demostración no oficial:</strong> este portal fue actualizado a partir del Excel maestro suministrado. Las fechas y condiciones deben verificarse siempre en el sitio oficial del financiador.</div></div>
+<main class="main" id="oportunidades"><div class="section-title"><div><h2>Convocatorias disponibles</h2><p>Información publicada desde el Excel maestro de oportunidades de financiamiento.</p></div></div>
+<section class="filters" aria-label="Filtros"><div class="field"><label for="search">Buscar</label><input id="search" type="search" placeholder="Título, financiador, palabra clave..."></div><div class="field"><label for="status">Estado</label><select id="status"><option value="all">Todos</option><option value="future">Futuras</option><option value="open">Abiertas / continuas</option><option value="expired">Vencidas</option></select></div><div class="field"><label for="type">Tipo</label><select id="type"><option value="all">Todos</option></select></div><div class="field"><label for="career">Perfil</label><select id="career"><option value="all">Todos</option></select></div></section>
+<div class="summarybar"><span>Mostrando <strong id="count">0</strong> resultados</span><span>Actualizado desde el Excel maestro: 15 de julio de 2026</span></div><section class="grid" id="grid"></section>
 <section id="metodologia" style="margin-top:55px;background:white;border-left:5px solid var(--gold);padding:28px;box-shadow:0 8px 25px rgba(0,55,42,.06)"><div class="section-title"><div><h2>Cómo funcionaría la versión definitiva</h2><p>Excel como fuente maestra → validación de datos → portal web actualizado.</p></div></div><p>La unidad responsable actualizaría una hoja estructurada con fechas, montos, elegibilidad y enlaces. Al publicar una nueva versión, la página se regeneraría conservando su diseño, buscador y filtros. Las oportunidades vencidas podrían ocultarse automáticamente o conservarse en un archivo histórico.</p></section>
 </main>
 <footer><div class="footer-inner"><div><h4>UNPHU · Investigación</h4><p>Prototipo conceptual de un portal institucional para difundir oportunidades de financiamiento científico y académico.</p></div><div><h4>Enlaces</h4><p><a href="https://unphu.edu.do/" target="_blank" rel="noopener">Sitio web UNPHU</a></p><p><a href="https://unphu.edu.do/investigacion/" target="_blank" rel="noopener">Portal de Investigación</a></p></div><div><h4>Nota</h4><p>Los nombres y marcas pertenecen a sus respectivos titulares. Esta demostración no constituye una publicación oficial.</p></div></div><div class="copyright">Prueba de concepto · Portal de oportunidades de financiamiento · 2026</div></footer>
 <dialog id="detail"><div class="modal-head"><h3 id="modalTitle"></h3><button class="close" aria-label="Cerrar">×</button></div><div class="modal-body" id="modalBody"></div></dialog>
 <script>
 const opportunities=[
-{id:1,title:'Improving Capability Evaluations',funder:'Open Philanthropy',country:'Estados Unidos',deadline:'2026-04-01',deadlineLabel:'1 abril 2026',amount:'USD 200,000 – 5,000,000',type:'Proyectos de investigación',career:['Investigador emergente','Investigador establecido','Institución'],keywords:['inteligencia artificial','evaluación','riesgo catastrófico'],summary:'Apoya benchmarks relevantes, ciencia de evaluaciones y mejoras en la infraestructura de acceso para evaluar capacidades avanzadas de IA.',eligibility:'Abierta a instituciones académicas, organizaciones sin fines de lucro, empresas y equipos que procuren fundar nuevas organizaciones.',url:'https://www.openphilanthropy.org/request-for-proposals-improving-capability-evaluations/'},
-{id:2,title:'Opportunity Seed: Mathematics for Safe AI',funder:'Advanced Research + Invention Agency (ARIA)',country:'Reino Unido',deadline:'2026-02-11',deadlineLabel:'11 febrero 2026',amount:'GBP 10,000 – 500,000',type:'Proyectos de investigación',career:['Investigador emergente','Estudiante doctoral','Investigador establecido','Institución'],keywords:['matemáticas aplicadas','IA segura','pruebas formales'],summary:'Busca ideas audaces que utilicen matemáticas, modelos científicos y pruebas para lograr que sistemas avanzados de IA interactúen de manera segura.',eligibility:'Personas, universidades, centros de investigación, empresas, organizaciones benéficas y entidades públicas. Se prioriza impacto para el Reino Unido.',url:'https://www.aria.org.uk/opportunity-spaces/mathematics-for-safe-ai/mathematics-for-safe-ai'},
-{id:3,title:'IBM Ph.D. Fellowship Awards Program',funder:'IBM',country:'Estados Unidos',deadline:'2026-08-30',deadlineLabel:'30 agosto 2026',amount:'USD 6,000 – 65,000',type:'Becas y fellowships',career:['Estudiante doctoral','Institución'],keywords:['doctorado','computación cuántica','IA','ciberseguridad'],summary:'Fellowship para estudiantes doctorales cuya investigación se alinee con áreas estratégicas de IBM, incluyendo IA, nube híbrida, seguridad y computación responsable.',eligibility:'La nominación debe ser realizada por un miembro de la facultad doctoral. Existen límites de nominaciones por departamento y universidad.',url:'https://research.ibm.com/university/awards/fellowships.html'},
-{id:4,title:'Exfoliation Syndrome and Glaucoma Research Grants',funder:'The Glaucoma Foundation',country:'Estados Unidos',deadline:'2026-03-17',deadlineLabel:'17 marzo 2026',amount:'Hasta USD 75,000',type:'Proyectos de investigación',career:['Investigador emergente','Investigador establecido'],keywords:['glaucoma','oftalmología','IA clínica'],summary:'Financia investigación innovadora en glaucoma, incluyendo genética, modelado de enfermedades, inteligencia artificial e investigación clínica.',eligibility:'El investigador principal debe ocupar una posición de tiempo completo y demostrar experiencia en glaucoma o colaboración formal con un especialista.',url:'https://glaucomafoundation.org/research-center/grant-application-and-information/'},
-{id:5,title:'Generative AI Accelerator',funder:'Google.org',country:'Estados Unidos',deadline:'2026-02-10',deadlineLabel:'10 febrero 2026',amount:'Participación en fondo global de USD 30 millones',type:'Aceleradores e innovación',career:['Institución'],keywords:['IA generativa','educación','ciencia','comunidades resilientes'],summary:'Programa global para organizaciones que utilicen IA generativa en conocimiento, aprendizaje, avance científico y resiliencia comunitaria.',eligibility:'Organizaciones sin fines de lucro, entidades cívicas, instituciones académicas y empresas sociales de todo el mundo.',url:'https://impactchallenge.withgoogle.com/genaiaccelerator/'},
-{id:6,title:'Effects of AI on Firm and Labour Market Outcomes',funder:'UNU-WIDER',country:'Organización internacional',deadline:'2026-04-01',deadlineLabel:'1 abril 2026',amount:'Hasta USD 200,000',type:'Proyectos de investigación',career:['Investigador emergente','Estudiante doctoral','Institución'],keywords:['economía laboral','desigualdad','IA','países en desarrollo'],summary:'Solicita estudios cuantitativos rigurosos sobre los efectos de nuevas herramientas de IA en empresas, empleo, productividad, ingresos y desigualdad en países de ingresos bajos y medios.',eligibility:'Dirigida principalmente a científicos sociales cuantitativos en etapas iniciales. Se incentiva especialmente la participación del Sur Global.',url:'https://www.wider.unu.edu/opportunity/effects-artificial-intelligence-firm-and-labour-market-outcomes'},
-{id:7,title:'Notice of Special Interest: AI/ML in Pre-Clinical Drug Development',funder:'National Institutes of Health (NIH)',country:'Estados Unidos',deadline:'2029-01-08',deadlineLabel:'8 enero 2029',amount:'Según convocatoria asociada',type:'Proyectos de investigación',career:['Institución','Investigador emergente','Investigador establecido'],keywords:['descubrimiento de fármacos','salud mental','machine learning'],summary:'Promueve el uso de IA y aprendizaje automático para acelerar identificación de objetivos, compuestos líderes y optimización preclínica en trastornos psiquiátricos.',eligibility:'Se presenta mediante convocatorias NIH asociadas. Se promueven equipos interdisciplinarios de ciencias computacionales, biología y experiencia clínica.',url:'https://grants.nih.gov/grants/guide/notice-files/NOT-MH-25-050.html'},
-{id:8,title:'Small Business Solutions for Genomics-Enabled Learning Health Systems',funder:'National Institutes of Health (NIH)',country:'Estados Unidos',deadline:'2027-09-06',deadlineLabel:'6 septiembre 2027',amount:'Según SBIR/STTR asociado',type:'Innovación empresarial',career:['Institución'],keywords:['genómica','historias clínicas','IA','pequeñas empresas'],summary:'Busca productos y servicios comercializables para sistemas de salud habilitados por genómica, incluyendo armonización de datos e identificación automatizada de información.',eligibility:'Dirigida a pequeñas empresas elegibles bajo mecanismos SBIR y STTR.',url:'https://grants.nih.gov/grants/guide/notice-files/NOT-HG-24-040.html'},
-{id:9,title:'Small Business Solutions for Regional Genomic Medicine eConsult',funder:'National Institutes of Health (NIH)',country:'Estados Unidos',deadline:'2027-09-06',deadlineLabel:'6 septiembre 2027',amount:'Según SBIR/STTR asociado',type:'Innovación empresarial',career:['Institución'],keywords:['telemedicina','genómica','IA','eConsult'],summary:'Financia soluciones que faciliten servicios regionales de consulta clínica genómica, incluyendo triaje con IA, interoperabilidad y administración.',eligibility:'Dirigida a pequeñas empresas que presenten mediante los mecanismos NIH indicados.',url:'https://grants.nih.gov/grants/guide/notice-files/NOT-HG-24-041.html'},
-{id:10,title:'AI Reporting Grants',funder:'Pulitzer Center',country:'Estados Unidos',deadline:null,deadlineLabel:'Convocatoria continua / verificar',amount:'Costos directos del proyecto periodístico',type:'Publicación y divulgación',career:['Investigador emergente','Investigador establecido'],keywords:['periodismo','gobernanza de IA','desinformación'],summary:'Apoya proyectos periodísticos profundos sobre diseño, venta e impacto social de sistemas automatizados, con interés especial en propuestas del Sur Global.',eligibility:'Abierta a periodistas de todo el mundo y equipos colaborativos. No financia proyectos de datos destinados exclusivamente a investigación académica.',url:'https://pulitzercenter.org/grants-fellowships/opportunities-journalists/ai-reporting-grants'},
-{id:11,title:'ACM/AAAI Allen Newell Award',funder:'ACM y AAAI',country:'Estados Unidos',deadline:'2025-12-15',deadlineLabel:'15 diciembre 2025',amount:'USD 10,000 + viaje',type:'Premios',career:['Investigador establecido'],keywords:['ciencias de la computación','IA','trayectoria'],summary:'Reconoce contribuciones profesionales de gran amplitud dentro de la informática o que conecten la informática con otras disciplinas.',eligibility:'Se otorga a una persona por contribuciones de carrera. Requiere nominación.',url:'https://awards.acm.org/newell/nominations'},
-{id:12,title:'Misha Mahowald Prize',funder:'iniLabs',country:'Suiza',deadline:'2025-10-31',deadlineLabel:'31 octubre 2025',amount:'USD 10,000',type:'Premios',career:['Investigador emergente','Estudiante doctoral','Investigador establecido'],keywords:['ingeniería neuromórfica','neurociencia computacional','machine learning'],summary:'Premio internacional para individuos o grupos de investigación con contribuciones en ingeniería neuromórfica.',eligibility:'Puede postular cualquier persona o grupo de investigación en cualquier país.',url:'https://www.mahowaldprize.org/submission'}
+  {
+    "id": 1,
+    "code": "IA-2026-001",
+    "title": "Vision Grants",
+    "funder": "Spencer Foundation",
+    "funderType": "Fundación privada",
+    "country": "Estados Unidos",
+    "deadline": "2026-08-12",
+    "deadlineLabel": "12 de agosto de 2026",
+    "deliveryType": "Carta de intención",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Próxima a vencer",
+    "amount": "USD 75.000",
+    "duration": "12-18 meses",
+    "type": "Planificacion de investigación",
+    "career": [
+      "Investigador emergente",
+      "Investigador establecido"
+    ],
+    "applicantType": "Institución académica; ONG",
+    "area": "Multidisciplinar",
+    "keywords": [
+      "IA",
+      "aprendizaje automático",
+      "innovación"
+    ],
+    "summary": "Financia la planificación de estudios o programas de investigación de gran escala orientados a transformar sistemas educativos mediante colaboración entre investigadores, docentes, comunidades y responsables de políticas.",
+    "eligibility": "La propuesta debe ser administrada por una organización sin fines de lucro. UNPHU podría presentar institucionalmente. Solicitante: Institución académica; ONG. Ubicación elegible: Sin restricción. Ciudadanía: Sin restricción.",
+    "notes": "Formulario de intención: 12/08/2026. Propuesta completa: 16/09/2026.",
+    "internalObservation": "Excelente para diseñar y validar un sistema de gamificación adaptativa para enseñanza de programación.",
+    "url": "https://www.spencer.org/grant_types/vision-grants",
+    "pivotUrl": ""
+  },
+  {
+    "id": 2,
+    "code": "IA-2026-002",
+    "title": "AWS Cloud Credit for Research",
+    "funder": "Amazon Web Services",
+    "funderType": "Fundación privada",
+    "country": "Estados Unidos",
+    "deadline": null,
+    "deadlineLabel": "Convocatoria continua",
+    "deliveryType": "Solicitud",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Abierta",
+    "amount": "Desde USD 5.000, sin límite",
+    "duration": "12 meses",
+    "type": "Otro",
+    "career": [
+      "Docentes, investigadores y estudiantes de posgrado o doctorado"
+    ],
+    "applicantType": "Investigador afiliado a institución acreditada",
+    "area": "Multidisciplinar",
+    "keywords": [
+      "IA",
+      "Cloud",
+      "AWS"
+    ],
+    "summary": "Proporciona infraestructura en la nube para pruebas de concepto, procesamiento de datos, modelos de IA y herramientas científicas.",
+    "eligibility": "Docentes e investigadores de tiempo completo y estudiantes de posgrado de instituciones acreditadas. Solicitante: Investigador afiliado a institución acreditada. Ubicación elegible: Sin restricción. Ciudadanía: Sin restricción.",
+    "notes": "Evaluación continua. La revisión puede tardar entre 90 y 120 días. No entrega efectivo",
+    "internalObservation": "Puede financiar entrenamiento, despliegue, almacenamiento y experimentación del sistema adaptativo.",
+    "url": "https://aws.amazon.com/es/government-education/research-and-technical-computing/cloud-credit-for-research/?",
+    "pivotUrl": ""
+  },
+  {
+    "id": 3,
+    "code": "IA-2026-003",
+    "title": "OpenAI Researcher Access Program",
+    "funder": "OpenAI",
+    "funderType": "Fundación privada",
+    "country": "Estados Unidos",
+    "deadline": null,
+    "deadlineLabel": "Convocatoria continua",
+    "deliveryType": "Solicitud",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Abierta",
+    "amount": "USD 1.000",
+    "duration": "12 meses",
+    "type": "Créditos de API",
+    "career": [
+      "Investigadores, especialmente en etapas iniciales o con recursos limitados"
+    ],
+    "applicantType": "Investigador individual o afiliado a institución acreditada",
+    "area": "Multidisciplinar",
+    "keywords": [
+      "IA",
+      "OpenIA",
+      "LLM"
+    ],
+    "summary": "Apoya investigaciones sobre despliegue responsable, riesgos, representación e impacto social de sistemas de inteligencia artificial.",
+    "eligibility": "El investigador debe estar ubicado en un país admitido y explicar la pregunta de investigación y el uso de los modelos. Solicitante: Investigador individual o afiliado a institución acreditada. Ubicación elegible: Paises selectos. Ciudadanía: Sin restricción.",
+    "notes": "Las solicitudes se revisan en marzo, junio, septiembre y diciembre.",
+    "internalObservation": "",
+    "url": "https://openai.com/form/researcher-access-program/",
+    "pivotUrl": ""
+  },
+  {
+    "id": 4,
+    "code": "IA-2026-004",
+    "title": "FONDOCYT",
+    "funder": "MESCyT",
+    "funderType": "Gobierno nacional",
+    "country": "República Dominicana",
+    "deadline": "2026-03-31",
+    "deadlineLabel": "31 de marzo de 2026",
+    "deliveryType": "Propuesta completa",
+    "manualStatus": "Cerrada",
+    "calculatedStatus": "Cerrada",
+    "amount": "Hasta DOP 4.000.000",
+    "duration": "No especificada",
+    "type": "Investigación, I+D+i; transferencia tecnológica",
+    "career": [
+      "Investigador principal y coinvestigadores inscritos y activos en la carrera nacional de investigadores"
+    ],
+    "applicantType": "Institucion de Educacion Superior dominicana o centro de investigación reconocido",
+    "area": "Multidisciplinar",
+    "keywords": [
+      "Ciencias básicas",
+      "Medio ambiente",
+      "recursos naturales",
+      "cambio climático",
+      "economía azul",
+      "Salud",
+      "biomedicina",
+      "epidemiología",
+      "insumos biomédicos y ciencias farmacéuticas",
+      "5. Ingeniería, energía",
+      "materiales avanzados",
+      "mecatrónica",
+      "economía circular de residuos",
+      "Tecnologías de la información, software e inteligencia artificial",
+      "Ciencias sociales, humanísticas",
+      "educaciónsuperior",
+      "cultura",
+      "ciencia abierta y ciencia ciudadana",
+      "Políticas públicas",
+      "modernización del Estado",
+      "ciudades,territorio",
+      "logística",
+      "servicios públicos y seguridad nacional"
+    ],
+    "summary": "Financia investigación básica, aplicada, I+D+i y transferencia tecnológica. Reconoce la IA y la ciencia de datos como tecnologías estratégicas.",
+    "eligibility": "UNPHU es elegible. El IP y los coinvestigadores deben pertenecer a la Carrera Nacional de Investigadores. Solicitante: Institucion de Educacion Superior dominicana o centro de investigación reconocido. Ubicación elegible: República Dominicana. Ciudadanía: Sin restricción.",
+    "notes": "Para I+D+i y transferencia puede requerirse empresa asociada y aporte mínimo del 20 %",
+    "internalObservation": "Preparar desde ahora la propuesta para el próximo ciclo.",
+    "url": "https://mescyt.gob.do/wp-content/uploads/2026/03/Llamado-Convocatoria-FONDOCYT-2025-2026-2.pdf",
+    "pivotUrl": ""
+  },
+  {
+    "id": 5,
+    "code": "IA-2026-005",
+    "title": "Google.org Generative AI Accelerator",
+    "funder": "Google",
+    "funderType": "Empresa privada / filantropía corporativa",
+    "country": "Estados Unidos",
+    "deadline": "2026-02-10",
+    "deadlineLabel": "10 de febrero de 2026",
+    "deliveryType": "Solicitud",
+    "manualStatus": "Cerrada",
+    "calculatedStatus": "Cerrada",
+    "amount": "Monto no especificado",
+    "duration": "6 meses",
+    "type": "Subvención, asistencia técnica y créditos Google Cloud",
+    "career": [
+      "Equipos de universidades, organizaciones sociales y empresas sociales"
+    ],
+    "applicantType": "Universidad, entidad cívica, ONG o empresa social",
+    "area": "IA generativa para aprendizaje y habilidades",
+    "keywords": [
+      "GenAI",
+      "aprendizaje",
+      "habilidades",
+      "programación",
+      "Google Cloud",
+      "impacto social"
+    ],
+    "summary": "Programa global para desarrollar soluciones de IA generativa con impacto social en conocimiento, aprendizaje y habilidades.",
+    "eligibility": "UNPHU puede postular como institución académica. Se valoran alianzas con organizaciones de aplicación práctica. Solicitante: Universidad, entidad cívica, ONG o empresa social. Ubicación elegible: Sin restriccion. Ciudadanía: Sin restriccion.",
+    "notes": "Vigilar una nueva edición.",
+    "internalObservation": "Presentar la solución como mejora medible del aprendizaje y de la empleabilidad digital.",
+    "url": "https://impactchallenge.withgoogle.com/genaiaccelerator",
+    "pivotUrl": "https://pivot.proquest.com/funding_opps/eab18edd-bc1f-4f00-b3ad-f2f1552f7976"
+  }
 ];
 const today=new Date('2026-07-15T00:00:00');
 const grid=document.getElementById('grid'),search=document.getElementById('search'),status=document.getElementById('status'),type=document.getElementById('type'),career=document.getElementById('career'),count=document.getElementById('count');
@@ -51,9 +223,10 @@ const detail=document.getElementById('detail');
 const statusOf=o=>!o.deadline?'open':new Date(o.deadline+'T23:59:59')>=today?'future':'expired';
 const statusText=s=>s==='future'?'Fecha futura':s==='expired'?'Vencida':'Continua';
 [...new Set(opportunities.map(o=>o.type))].sort().forEach(v=>type.insertAdjacentHTML('beforeend',`<option>${v}</option>`));
+[...new Set(opportunities.flatMap(o=>o.career))].sort().forEach(v=>career.insertAdjacentHTML('beforeend',`<option>${v}</option>`));
 document.getElementById('heroTotal').textContent=opportunities.length;document.getElementById('heroFuture').textContent=opportunities.filter(o=>statusOf(o)==='future').length;
 function render(){const q=search.value.toLowerCase().trim();const list=opportunities.filter(o=>{const blob=[o.title,o.funder,o.country,o.summary,...o.keywords].join(' ').toLowerCase();return(!q||blob.includes(q))&&(status.value==='all'||statusOf(o)===status.value)&&(type.value==='all'||o.type===type.value)&&(career.value==='all'||o.career.includes(career.value))});count.textContent=list.length;if(!list.length){grid.innerHTML='<div class="empty">No se encontraron oportunidades con los filtros seleccionados.</div>';return}grid.innerHTML=list.map(o=>{const s=statusOf(o);return`<article class="card"><div class="card-head"><div class="badges"><span class="badge ${s}">${statusText(s)}</span><span class="badge">${o.type}</span></div><h3>${o.title}</h3><div class="funder">${o.funder} · ${o.country}</div></div><div class="meta"><div class="meta-item"><small>Fecha límite</small><strong>${o.deadlineLabel}</strong></div><div class="meta-item"><small>Financiamiento</small><strong>${o.amount}</strong></div></div><p class="abstract">${o.summary}</p><div class="card-actions"><button class="secondary" onclick="openDetail(${o.id})">Ver detalles</button><a class="primary" href="${o.url}" target="_blank" rel="noopener">Sitio oficial ↗</a></div></article>`}).join('')}
-function openDetail(id){const o=opportunities.find(x=>x.id===id);document.getElementById('modalTitle').textContent=o.title;document.getElementById('modalBody').innerHTML=`<div class="badges"><span class="badge ${statusOf(o)}">${statusText(statusOf(o))}</span><span class="badge">${o.type}</span></div><h4>Financiador</h4><p>${o.funder} · ${o.country}</p><h4>Fecha y monto</h4><p><strong>${o.deadlineLabel}</strong><br>${o.amount}</p><h4>Descripción</h4><p>${o.summary}</p><h4>Elegibilidad</h4><p>${o.eligibility}</p><h4>Perfiles</h4><p>${o.career.join(' · ')}</p><h4>Palabras clave</h4><p>${o.keywords.join(' · ')}</p><div class="modal-links"><a class="btn primary" href="${o.url}" target="_blank" rel="noopener">Consultar convocatoria oficial ↗</a></div>`;detail.showModal()}
+function openDetail(id){const o=opportunities.find(x=>x.id===id);document.getElementById('modalTitle').textContent=o.title;document.getElementById('modalBody').innerHTML=`<div class="badges"><span class="badge ${statusOf(o)}">${statusText(statusOf(o))}</span><span class="badge">${o.type}</span></div><h4>Financiador</h4><p>${o.funder} · ${o.country}<br><small>${o.funderType}</small></p><h4>Fecha, monto y duración</h4><p><strong>${o.deadlineLabel}</strong><br>${o.amount}<br>Duración: ${o.duration}</p><h4>Tipo de entrega</h4><p>${o.deliveryType || 'No especificado'}</p><h4>Área temática</h4><p>${o.area}</p><h4>Descripción</h4><p>${o.summary}</p><h4>Elegibilidad</h4><p>${o.eligibility}</p>${o.notes?`<h4>Notas de la convocatoria</h4><p>${o.notes}</p>`:''}${o.internalObservation?`<h4>Observación para UNPHU</h4><p>${o.internalObservation}</p>`:''}<h4>Perfiles</h4><p>${o.career.join(' · ')}</p><h4>Palabras clave</h4><p>${o.keywords.join(' · ')}</p><div class="modal-links"><a class="btn primary" href="${o.url}" target="_blank" rel="noopener">Consultar convocatoria oficial ↗</a>${o.pivotUrl?`<a class="btn secondary" href="${o.pivotUrl}" target="_blank" rel="noopener">Ver en Pivot-RP ↗</a>`:''}</div>`;detail.showModal()}
 detail.querySelector('.close').onclick=()=>detail.close();detail.addEventListener('click',e=>{if(e.target===detail)detail.close()});[search,status,type,career].forEach(el=>el.addEventListener('input',render));render();
 </script>
 </body></html>
