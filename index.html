@@ -255,7 +255,7 @@ const opportunities=[
     "id": 7,
     "code": "2026-007",
     "title": "ARIA Mathematics for Safe AI",
-    "funder": "Advanced Research y Invention Agency",
+    "funder": "Advanced Research + Invention Agency",
     "funderType": "Gobierno internacional",
     "country": "Reino Unido",
     "deadline": "2026-07-31",
@@ -282,9 +282,111 @@ const opportunities=[
     "internalObservation": "Solo recomendable con socio británico.",
     "url": "https://aria.org.uk/funding-opportunities",
     "pivotUrl": "https://pivot.proquest.com/funding_opps/83ca791d-b275-4b81-9778-f2f1552f7976"
+  },
+  {
+    "id": 8,
+    "code": "2026-008",
+    "title": "Google PhD Fellowship",
+    "funder": "Google",
+    "funderType": "Empresa privada",
+    "country": "Estados Unidos",
+    "deadline": "2026-04-30",
+    "deadlineLabel": "30 de abril de 2026",
+    "deliveryType": "Nominación",
+    "manualStatus": "Cerrada",
+    "calculatedStatus": "Cerrada",
+    "amount": "Hasta USD 15.000",
+    "duration": "24 meses",
+    "type": "Fellowship / posdoctorado",
+    "career": [
+      "Estudiantes de doctorado de computaciones o ciencias similares"
+    ],
+    "applicantType": "Estudiantes de doctorado de computaciones o ciencias similares",
+    "area": "Ciencias de la computacion y ciencias de la salud",
+    "keywords": [
+      "Computación",
+      "Salud",
+      "Algoritmos y Optimizacion",
+      "IA",
+      "Redes",
+      "Cloud"
+    ],
+    "summary": "Apoya estudiantes doctorales destacados en áreas de investigación informática, y ciencias de la salud.",
+    "eligibility": "La universidad debe nominar al estudiante Solicitante: Estudiantes de doctorado de computaciones o ciencias similares. Ubicación elegible: Internacional. Ciudadanía: Sin restriccion.",
+    "notes": "No financia directamente el proyecto institucional.",
+    "internalObservation": "Abre cada año. estar atento",
+    "url": "https://research.google/programs-and-events/phd-fellowship/",
+    "pivotUrl": ""
+  },
+  {
+    "id": 9,
+    "code": "2026-009",
+    "title": "Improving Capability Evaluations",
+    "funder": "Open Philanthropy",
+    "funderType": "Fundación privada",
+    "country": "Estados Unidos",
+    "deadline": "2026-08-21",
+    "deadlineLabel": "21 de agosto de 2026",
+    "deliveryType": "Propuesta completa",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Abierta",
+    "amount": "USD 200.000 – 5.000.000",
+    "duration": "24 meses",
+    "type": "Subvención de investigación",
+    "career": [
+      "Investigadores de carrera temprana o consolidada"
+    ],
+    "applicantType": "Universidad, ONG, empresa o nueva organización",
+    "area": "Medio Ambiente; Ciencias de Salud; Computacion",
+    "keywords": [
+      "IA",
+      "Calidad del Aire",
+      "Salud y Bienestar"
+    ],
+    "summary": "No funciona como una agencia tradicional con un calendario anual uniforme: la mayoría de sus subvenciones se identifica mediante investigación propia y contacto directo con posibles beneficiarios",
+    "eligibility": "No existe una única regla de elegibilidad para todos los fondos. Depende de cada convocatoria, pero el espectro de beneficiarios es amplio. Solicitante: Universidad, ONG, empresa o nueva organización. Ubicación elegible: Internacional. Ciudadanía: Amplia elegibilidad internacional..",
+    "notes": "",
+    "internalObservation": "No existe un calendario, estar atento",
+    "url": "https://coefficientgiving.org/funds/",
+    "pivotUrl": "https://pivot.proquest.com/funding_opps/f6991b86-5e72-4139-9013-f2f1552f7976"
+  },
+  {
+    "id": 10,
+    "code": "2026-010",
+    "title": "IA-2026-012 — IBM Ph.D. Fellowship",
+    "funder": "IBM",
+    "funderType": "Empresa privada",
+    "country": "Estados Unidos",
+    "deadline": "2026-08-30",
+    "deadlineLabel": "30 de agosto de 2026",
+    "deliveryType": "Nominación",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Abierta",
+    "amount": "USD 6.000 – 25.000",
+    "duration": "24 meses",
+    "type": "Beca",
+    "career": [
+      "Estudiantes de doctorado de computaciones o ciencias similares"
+    ],
+    "applicantType": "Estudiantes de doctorado de computaciones o ciencias similares",
+    "area": "IA y computación responsable",
+    "keywords": [
+      "Doctorado",
+      "IA",
+      "programación",
+      "nube híbrida",
+      "computación responsable",
+      "educación"
+    ],
+    "summary": "Beca doctoral alineada con áreas estratégicas de IBM, incluyendo IA y computación responsable.",
+    "eligibility": "El estudiante debe ser nominado por un docente. Existen límites institucionales de nominaciones. Solicitante: Estudiantes de doctorado de computaciones o ciencias similares. Ubicación elegible: Internacional. Ciudadanía: Sin restriccion.",
+    "notes": "",
+    "internalObservation": "",
+    "url": "https://research.ibm.com/labs/yorktown-heights/ibm-academic-awards-program",
+    "pivotUrl": "https://pivot.proquest.com/funding_opps/95edca90-0c52-429e-8e63-d1d75de8f0f3"
   }
 ];
-const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);
+const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);
 const grid=document.getElementById('grid'),search=document.getElementById('search'),status=document.getElementById('status'),type=document.getElementById('type'),career=document.getElementById('career'),count=document.getElementById('count');
 const detail=document.getElementById('detail');
 const statusOf=o=>!o.deadline?'open':new Date(o.deadline+'T23:59:59')>=today?'future':'expired';
