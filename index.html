@@ -25,7 +25,7 @@ dialog{border:0;border-radius:8px;padding:0;max-width:760px;width:calc(100% - 30
 <div class="notice"><div><strong>Demostración no oficial:</strong> este portal fue actualizado a partir del Excel maestro suministrado. Las fechas y condiciones deben verificarse siempre en el sitio oficial del financiador.</div></div>
 <main class="main" id="oportunidades"><div class="section-title"><div><h2>Convocatorias disponibles</h2><p>Información publicada desde el Excel maestro de oportunidades de financiamiento.</p></div></div>
 <section class="filters" aria-label="Filtros"><div class="field"><label for="search">Buscar</label><input id="search" type="search" placeholder="Título, financiador, palabra clave..."></div><div class="field"><label for="status">Estado</label><select id="status"><option value="all">Todos</option><option value="future">Futuras</option><option value="open">Abiertas / continuas</option><option value="expired">Vencidas</option></select></div><div class="field"><label for="type">Tipo</label><select id="type"><option value="all">Todos</option></select></div><div class="field"><label for="career">Perfil</label><select id="career"><option value="all">Todos</option></select></div></section>
-<div class="summarybar"><span>Mostrando <strong id="count">0</strong> resultados</span><span>Actualizado desde el Excel maestro: 16 de julio de 2026</span></div><section class="grid" id="grid"></section>
+<div class="summarybar"><span>Mostrando <strong id="count">0</strong> resultados</span><span>Actualizado desde el Excel maestro: 17 de julio de 2026</span></div><section class="grid" id="grid"></section>
 <section id="metodologia" style="margin-top:55px;background:white;border-left:5px solid var(--gold);padding:28px;box-shadow:0 8px 25px rgba(0,55,42,.06)"><div class="section-title"><div><h2>Cómo funcionaría la versión definitiva</h2><p>Excel como fuente maestra → validación de datos → portal web actualizado.</p></div></div><p>La unidad responsable actualizaría una hoja estructurada con fechas, montos, elegibilidad y enlaces. Al publicar una nueva versión, la página se regeneraría conservando su diseño, buscador y filtros. Las oportunidades vencidas podrían ocultarse automáticamente o conservarse en un archivo histórico.</p></section>
 </main>
 <footer><div class="footer-inner"><div><h4>UNPHU · Investigación</h4><p>Prototipo conceptual de un portal institucional para difundir oportunidades de financiamiento científico y académico.</p></div><div><h4>Enlaces</h4><p><a href="https://unphu.edu.do/" target="_blank" rel="noopener">Sitio web UNPHU</a></p><p><a href="https://unphu.edu.do/investigacion/" target="_blank" rel="noopener">Portal de Investigación</a></p></div><div><h4>Nota</h4><p>Los nombres y marcas pertenecen a sus respectivos titulares. Esta demostración no constituye una publicación oficial.</p></div></div><div class="copyright">Prueba de concepto · Portal de oportunidades de financiamiento · 2026</div></footer>
@@ -353,7 +353,7 @@ const opportunities=[
   {
     "id": 10,
     "code": "2026-010",
-    "title": "IA-2026-012 — IBM Ph.D. Fellowship",
+    "title": "IBM Ph.D. Fellowship",
     "funder": "IBM",
     "funderType": "Empresa privada",
     "country": "Estados Unidos",
@@ -384,9 +384,312 @@ const opportunities=[
     "internalObservation": "",
     "url": "https://research.ibm.com/labs/yorktown-heights/ibm-academic-awards-program",
     "pivotUrl": "https://pivot.proquest.com/funding_opps/95edca90-0c52-429e-8e63-d1d75de8f0f3"
+  },
+  {
+    "id": 11,
+    "code": "2026-012",
+    "title": "Erasmus+ Capacity Building in Higher Education 2026 — Region 11 Caribbean",
+    "funder": "Comisión Europea / European Education and Culture Executive Agency",
+    "funderType": "Organización internacional",
+    "country": "Union Europea",
+    "deadline": "2026-02-10",
+    "deadlineLabel": "10 de febrero de 2026",
+    "deliveryType": "Propuesta completa",
+    "manualStatus": "Cerrada",
+    "calculatedStatus": "Cerrada",
+    "amount": "EUR 200.000 – 1.000.000",
+    "duration": "48 meses",
+    "type": "Proyecto de investigación",
+    "career": [
+      "Docentes universitarios, investigadores educativos, especialistas en IA, programación, arquitectura digital, diseño curricular y aseguramiento de la calidad"
+    ],
+    "applicantType": "Instituciones de educación superior y otras entidades educativas, públicas, sociales o del mercado laboral",
+    "area": "Modernización universitaria, innovación curricular y transformación digital",
+    "keywords": [
+      "IA educativa",
+      "aprendizaje adaptativo",
+      "gamificación",
+      "programación",
+      "formación docente",
+      "transformación curricular"
+    ],
+    "summary": "Apoya la modernización de la educación superior mediante nuevos programas, innovación pedagógica, capacidades digitales, formación docente, gobernanza universitaria y cooperación internacional.",
+    "eligibility": "UNPHU puede participar como institución de educación superior caribeña dentro de un consorcio que cumpla la composición mínima aplicable al strand seleccionado. Solicitante: Instituciones de educación superior y otras entidades educativas, públicas, sociales o del mercado laboral. Ubicación elegible: República Dominicana está incluida en la Región 11 — Caribe. Ciudadanía: Sin restriccion.",
+    "notes": "Es la oportunidad con mejor correspondencia directa con “Inteligencia Artificial y Gamificación Personalizada-Adaptativa para la Formación en Programación”. Para integrarla con arquitectura, podría proponerse programación aplicada al diseño paramétrico, BIM, análisis urbano, SIG y gemelos digitales.",
+    "internalObservation": "",
+    "url": "https://erasmus-plus.ec.europa.eu/funding-opportunities/capacity-building-in-higher-education-caribbean",
+    "pivotUrl": ""
+  },
+  {
+    "id": 12,
+    "code": "2026-013",
+    "title": "AIA Upjohn Research Initiative",
+    "funder": "American Institute of Architects — AIA",
+    "funderType": "Organización internacional",
+    "country": "Estados Unidos",
+    "deadline": null,
+    "deadlineLabel": "Sin fecha confirmada",
+    "deliveryType": "Solicitud",
+    "manualStatus": "En revisión",
+    "calculatedStatus": "Sin fecha",
+    "amount": "USD 15.000 – 30.000",
+    "duration": "18 meses",
+    "type": "Subvención de investigación",
+    "career": [
+      "Investigadores en arquitectura, tecnología del diseño, sostenibilidad, materiales, salud, resiliencia e innovación profesional"
+    ],
+    "applicantType": "Instituciones académicas y equipos de investigación; se admiten postulaciones internacionales",
+    "area": "Investigación aplicada a la arquitectura y a la práctica profesional",
+    "keywords": [
+      "arquitectura",
+      "IA",
+      "diseño computacional",
+      "automatización",
+      "BIM",
+      "cero carbono",
+      "resiliencia",
+      "comunidades equitativas",
+      "innovación profesional"
+    ],
+    "summary": "Financia hasta seis investigaciones anuales destinadas a generar conocimiento directamente útil para arquitectos y para la práctica del diseño. Sus prioridades incluyen cero carbono, resiliencia, salud, comunidades equitativas e innovación de la práctica.",
+    "eligibility": "La documentación de referencia señala que las solicitudes internacionales son elegibles y que los fondos se desembolsan en dólares estadounidenses. Solicitante: Instituciones académicas y equipos de investigación; se admiten postulaciones internacionales. Ubicación elegible: Internacional. Ciudadanía: Sin restricción general de ciudadanía; presentación y evaluación en inglés.",
+    "notes": "Es una de las oportunidades más claras para investigar IA generativa en diseño, automatización de procesos, evaluación del desempeño de edificaciones, diseño basado en evidencia o herramientas de aprendizaje para arquitectura.",
+    "internalObservation": "Pendiente abrir en Octubre",
+    "url": "https://www.aia.org/advocacy/research/grants-fellowships/upjohn-research-initiative?utm_source=chatgpt.com",
+    "pivotUrl": ""
+  },
+  {
+    "id": 13,
+    "code": "2026-014",
+    "title": "LAF Fellowship for Innovation and Leadership",
+    "funder": "Landscape Architecture Foundation — LAF",
+    "funderType": "Fundación privada",
+    "country": "Estados Unidos",
+    "deadline": "2026-09-15",
+    "deadlineLabel": "15 de septiembre de 2026",
+    "deliveryType": "Solicitud",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Abierta",
+    "amount": "USD 25.000",
+    "duration": "12 meses",
+    "type": "Innovación",
+    "career": [
+      "Arquitectos paisajistas y profesionales afines con trayectoria media o sénior"
+    ],
+    "applicantType": "",
+    "area": "Arquitectura del paisaje, innovación, liderazgo y transformación del entorno",
+    "keywords": [
+      "paisaje",
+      "urbanismo",
+      "resiliencia",
+      "infraestructura verde",
+      "IA geoespacial",
+      "análisis urbano",
+      "justicia ambiental",
+      "liderazgo"
+    ],
+    "summary": "Fellowship para que profesionales desarrollen y prueben ideas innovadoras que impulsen una sociedad más saludable, equitativa y sostenible mediante la arquitectura del paisaje.",
+    "eligibility": "Se requiere grado en arquitectura del paisaje o, en países donde la disciplina no esté formalmente reconocida, formación relacionada y ejercicio profesional como arquitecto paisajista; mínimo seis años de experiencia, dominio avanzado de inglés y disponibilidad institucional. Ubicación elegible: Internacional. Ciudadanía: Sin restriccion.",
+    "notes": "Puede sustentar proyectos sobre IA para planificación de infraestructura verde, análisis adaptativo del paisaje, resiliencia climática, confort térmico urbano o participación comunitaria gamificada.",
+    "internalObservation": "especialmente para un profesor con experiencia profesional demostrable en paisaje o planificación urbana. No es una subvención institucional convencional",
+    "url": "https://www.lafoundation.org/what-we-do/leadership/laf-fellowship?",
+    "pivotUrl": "https://pivot.proquest.com/funding_opps/3dae87f6-c1a1-4ce2-9d84-d1d75de8f0f3"
+  },
+  {
+    "id": 14,
+    "code": "2026-015",
+    "title": "Graham Foundation — Grants to Individuals",
+    "funder": "Graham Foundation for Advanced Studies in the Fine Arts",
+    "funderType": "Empresa privada",
+    "country": "Estados Unidos",
+    "deadline": "2026-09-15",
+    "deadlineLabel": "15 de septiembre de 2026",
+    "deliveryType": "Otro",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Abierta",
+    "amount": "USD 10.000 – 20.000",
+    "duration": "No especificada",
+    "type": "Proyecto de investigación",
+    "career": [
+      "Arquitectos, urbanistas, historiadores, diseñadores, investigadores, curadores, escritores y productores culturales"
+    ],
+    "applicantType": "Personas físicas",
+    "area": "Arquitectura y entorno diseñado",
+    "keywords": [
+      "arquitectura",
+      "ciudad",
+      "urbanismo",
+      "investigación crítica",
+      "publicación",
+      "exposición",
+      "medios digitales",
+      "IA",
+      "diseño experimental"
+    ],
+    "summary": "Apoya ideas originales que amplíen el discurso sobre arquitectura y el entorno diseñado, ya sea mediante investigación, publicaciones, exposiciones, películas, medios digitales u otros formatos públicos.",
+    "eligibility": "Individuos con capacidad demostrada para ejecutar el proyecto. Las solicitudes deben conectar claramente con la misión de la Fundación y evidenciar originalidad, impacto y viabilidad. Solicitante: Personas físicas. Ubicación elegible: Internacional. Ciudadanía: Sin restriccion.",
+    "notes": "Puede financiar la fase conceptual o la divulgación de una investigación sobre IA y arquitectura, atlas urbanos interactivos, exposiciones digitales, plataformas educativas o documentación crítica de nuevas tecnologías de diseño.",
+    "internalObservation": "El Inquiry Form está disponible desde el 15/07/2026. Conviene plantear un producto público concreto, no solamente una investigación académica convencional.",
+    "url": "https://www.grahamfoundation.org/grant_programs/?mode=individual",
+    "pivotUrl": ""
+  },
+  {
+    "id": 15,
+    "code": "OP-0016",
+    "title": "Getty Conservation Guest Scholars Program 2027–2028",
+    "funder": "Getty Conservation Institute",
+    "funderType": "Fundación privada",
+    "country": "Estados Unidos",
+    "deadline": null,
+    "deadlineLabel": "Sin fecha confirmada",
+    "deliveryType": "Solicitud",
+    "manualStatus": "En revisión",
+    "calculatedStatus": "Sin fecha",
+    "amount": "USD 21.500",
+    "duration": "3 meses",
+    "type": "Fellowship / posdoctorado",
+    "career": [
+      "Investigador establecido"
+    ],
+    "applicantType": "Persona individual",
+    "area": "Conservación del patrimonio cultural y del entorno construido",
+    "keywords": [
+      "conservación",
+      "patrimonio arquitectónico",
+      "preservación histórica",
+      "ciencia del patrimonio",
+      "documentación digital",
+      "HBIM",
+      "IA",
+      "visión computacional"
+    ],
+    "summary": "Programa de residencia para que profesionales e investigadores consolidados desarrollen un proyecto independiente que aporte nuevos conocimientos y perspectivas a la conservación del patrimonio cultural.",
+    "eligibility": "Se admiten investigadores y profesionales de cualquier nacionalidad en conservación, preservación histórica, ciencias del patrimonio y campos relacionados. Se requieren al menos siete años de experiencia profesional y una trayectoria establecida de publicaciones u otras contribuciones. No admite investigación posdoctoral ni trabajos conducentes a un grado académico. Solicitante: Persona individual. Ubicación elegible: Internacional; residencia presencial de tres meses en el Getty Conservation Institute, Los Ángeles. Ciudadanía: Sin restricción.",
+    "notes": "La convocatoria 2026–2027 ya cerró. El ciclo para residencias 2027–2028 abrirá en agosto de 2026; la fecha límite aún no ha sido publicada. La ayuda incluye US$21,500, alojamiento, estación de trabajo, asistencia de investigación, estipendio de viaje y opción de cobertura médica.",
+    "internalObservation": "Oportunidad individual para investigadores sénior de UNPHU. Recomendable para proyectos de conservación arquitectónica, documentación patrimonial, HBIM o IA aplicada a la detección de daños. Vigilar la apertura en agosto de 2026.",
+    "url": "https://www.getty.edu/projects/conservation-guest-scholars/",
+    "pivotUrl": ""
+  },
+  {
+    "id": 16,
+    "code": "OP-0017",
+    "title": "CCA–WRI Research Fellowship Program 2027 — Vacancy",
+    "funder": "Canadian Centre for Architecture (CCA) / Window Research Institute (WRI)",
+    "funderType": "Organización internacional",
+    "country": "Internacional",
+    "deadline": "2026-09-01",
+    "deadlineLabel": "1 de septiembre de 2026",
+    "deliveryType": "Solicitud",
+    "manualStatus": "En revisión",
+    "calculatedStatus": "Pendiente Apertura",
+    "amount": "CAD 5.000 – 15.000",
+    "duration": "1-3 meses",
+    "type": "Fellowship / posdoctorado",
+    "career": [
+      "Investigador establecido",
+      "Profesor"
+    ],
+    "applicantType": "Persona individual",
+    "area": "Arquitectura, urbanismo, paisaje y terrenos desocupados",
+    "keywords": [
+      "edificios desocupados",
+      "suelo vacante",
+      "reutilización adaptativa",
+      "urbanismo",
+      "paisaje",
+      "vivienda",
+      "IA",
+      "visión computacional",
+      "teledetección"
+    ],
+    "summary": "Fellowship de investigación sobre la vacancia como condición social, cultural, política y espacial en contextos urbanos y rurales. Busca modelos teóricos y resultados capaces de informar la práctica del diseño.",
+    "eligibility": "Abierta a profesionales con experiencia sustancial —arquitectos, paisajistas, urbanistas, responsables urbanos, artistas y productores culturales— y a investigadores con doctorado en áreas pertinentes. No se financia investigación con fines comerciales. El beneficiario debe residir en Montreal de uno a tres meses y participar en actividades públicas y académicas. Solicitante: Persona individual. Ubicación elegible: Internacional; residencia presencial en el CCA, Montreal, entre agosto y octubre. Ciudadanía: Sin restricción.",
+    "notes": "La convocatoria 2026 está cerrada. La siguiente convocatoria se lanzará a comienzos de septiembre de 2026. Ofrece CAD$5,000 mensuales por un máximo de tres meses, más apoyo adicional para viaje y visado, oficina y acceso a las colecciones del CCA.",
+    "internalObservation": "Muy pertinente para investigar vacancia, reutilización adaptativa y regeneración urbana en Santo Domingo. Puede incorporar IA para detectar inmuebles vacíos, analizar imágenes urbanas o modelar escenarios de reocupación.",
+    "url": "https://www.cca.qc.ca/en/101525/cca-wri-research-fellowship-program",
+    "pivotUrl": ""
+  },
+  {
+    "id": 17,
+    "code": "OP-0018",
+    "title": "Urban Studies Foundation International Fellowships 2026",
+    "funder": "Urban Studies Foundation",
+    "funderType": "Fundación privada",
+    "country": "Reino Unido",
+    "deadline": "2026-07-06",
+    "deadlineLabel": "6 de julio de 2026",
+    "deliveryType": "Solicitud",
+    "manualStatus": "Cerrada",
+    "calculatedStatus": "Cerrada",
+    "amount": "Monto no especificado",
+    "duration": "3-9 meses",
+    "type": "Fellowship / posdoctorado",
+    "career": [
+      "Investigador emergente",
+      "Investigador establecido"
+    ],
+    "applicantType": "Persona individual",
+    "area": "Estudios urbanos",
+    "keywords": [
+      "urbanismo",
+      "ciudades del Sur Global",
+      "vivienda",
+      "movilidad",
+      "planificación",
+      "sostenibilidad",
+      "tecnología urbana",
+      "desigualdad espacial",
+      "gobernanza",
+      "IA urbana"
+    ],
+    "summary": "Financia una estancia sabática de escritura en una universidad anfitriona para transformar resultados de investigación urbana ya existentes en artículos, capítulos de libro o libros publicables, bajo la mentoría de un académico sénior.",
+    "eligibility": "Dirigida a investigadores urbanos de carrera temprana o intermedia con doctorado obtenido dentro de los diez años anteriores al cierre, nacionalidad de un país OECD-DAC y afiliación formal a una organización de investigación ubicada en uno de esos países. La recopilación y el análisis primario de datos deben estar completados; no financia nueva recolección ni nuevos análisis primarios. Solicitante: Persona individual. Ubicación elegible: Investigadores afiliados a organizaciones de investigación ubicadas en países de la lista OECD-DAC; universidad anfitriona en cualquier país. Ciudadanía: Nacionales de países incluidos en la lista OECD-DAC de receptores de AOD; República Dominicana es elegible.",
+    "notes": "Cerró el 6 de julio de 2026 a las 23:59 UTC+1. El presupuesto se determina según costes justificados de alojamiento, manutención, viaje de retorno y algunos gastos de investigación; no se publica un monto mínimo o máximo único. La estancia debe comenzar entre cuatro y catorce meses después del cierre.",
+    "internalObservation": "UNPHU es elegible por ubicación en República Dominicana. Preparar para una futura edición con resultados urbanos ya analizados, publicaciones previstas, mentor internacional y universidad anfitriona.",
+    "url": "https://www.urbanstudiesfoundation.org/funding/international-fellowships/",
+    "pivotUrl": ""
+  },
+  {
+    "id": 18,
+    "code": "OP-0019",
+    "title": "CYTED — Convocatoria 2026 de Redes Temáticas",
+    "funder": "Programa Iberoamericano de Ciencia y Tecnología para el Desarrollo (CYTED)",
+    "funderType": "Organización internacional",
+    "country": "Internacional",
+    "deadline": "2026-05-15",
+    "deadlineLabel": "15 de mayo de 2026",
+    "deliveryType": "Propuesta completa",
+    "manualStatus": "Cerrada",
+    "calculatedStatus": "Cerrada",
+    "amount": "Hasta EUR 20.000",
+    "duration": "Hasta 48 meses",
+    "type": "Subvención de investigación",
+    "career": [
+      "Investigador emergente",
+      "Investigador establecido"
+    ],
+    "applicantType": "Consorcio",
+    "area": "Multidisciplinar: desarrollo sostenible, TIC, ciencia y sociedad, energía e innovación",
+    "keywords": [
+      "red temática",
+      "cooperación iberoamericana",
+      "I+D+i",
+      "ciudades resilientes",
+      "urbanismo sostenible",
+      "IA de código abierto",
+      "formación",
+      "transferencia",
+      "movilidad"
+    ],
+    "summary": "Financia redes de grupos de investigación y empresas de Iberoamérica que cooperan para resolver problemas comunes y generar nuevas actividades de I+D+i, transferencia, formación, movilidad, publicaciones y coordinación.",
+    "eligibility": "El coordinador debe pertenecer a una universidad, centro público o privado de I+D o empresa con capacidad demostrada, con sede en un país signatario. La red debe incluir grupos de al menos seis países iberoamericanos diferentes; cada grupo debe estar formado por más de una persona y acreditar actividad en I+D+i. Solicitante: Consorcio. Ubicación elegible: Países signatarios del Programa CYTED, incluida República Dominicana. Ciudadanía: No se basa en ciudadanía; el coordinador y los responsables deben pertenecer a entidades elegibles con sede en países signatarios.",
+    "notes": "El plazo fue del 6 de abril al 15 de mayo de 2026 a las 17:00, hora de Madrid. El máximo solicitado para el primer año es €20,000; los presupuestos posteriores se solicitan anualmente. Cubre coordinación, movilidad, reuniones, publicaciones y formación; no es una subvención convencional para financiar todos los costes de investigación.",
+    "internalObservation": "Oportunidad estratégica para internacionalización. UNPHU podría integrar o coordinar una red sobre comunidades resilientes, urbanismo sostenible, restauración urbana, IA de código abierto o formación tecnológica. Preparar consorcio para la próxima edición.",
+    "url": "https://www.cyted.org/assets/img/cyted/Convocatoria%202026/Castellano/01_Convocatoria_oficial_bases_y_lineas_2026_SP.pdf",
+    "pivotUrl": ""
   }
 ];
-const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);
+const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);
 const grid=document.getElementById('grid'),search=document.getElementById('search'),status=document.getElementById('status'),type=document.getElementById('type'),career=document.getElementById('career'),count=document.getElementById('count');
 const detail=document.getElementById('detail');
 const statusOf=o=>!o.deadline?'open':new Date(o.deadline+'T23:59:59')>=today?'future':'expired';
