@@ -25,7 +25,7 @@ dialog{border:0;border-radius:8px;padding:0;max-width:760px;width:calc(100% - 30
 <div class="notice"><div><strong>Demostración no oficial:</strong> este portal fue actualizado a partir del Excel maestro suministrado. Las fechas y condiciones deben verificarse siempre en el sitio oficial del financiador.</div></div>
 <main class="main" id="oportunidades"><div class="section-title"><div><h2>Convocatorias disponibles</h2><p>Información publicada desde el Excel maestro de oportunidades de financiamiento.</p></div></div>
 <section class="filters" aria-label="Filtros"><div class="field"><label for="search">Buscar</label><input id="search" type="search" placeholder="Título, financiador, palabra clave..."></div><div class="field"><label for="status">Estado</label><select id="status"><option value="all">Todos</option><option value="future">Futuras</option><option value="open">Abiertas / continuas</option><option value="expired">Vencidas</option></select></div><div class="field"><label for="type">Tipo</label><select id="type"><option value="all">Todos</option></select></div><div class="field"><label for="career">Perfil</label><select id="career"><option value="all">Todos</option></select></div></section>
-<div class="summarybar"><span>Mostrando <strong id="count">0</strong> resultados</span><span>Actualizado desde el Excel maestro: 19 de julio de 2026</span></div><section class="grid" id="grid"></section>
+<div class="summarybar"><span>Mostrando <strong id="count">0</strong> resultados</span><span>Actualizado desde el Excel maestro: 20 de julio de 2026</span></div><section class="grid" id="grid"></section>
 <section id="metodologia" style="margin-top:55px;background:white;border-left:5px solid var(--gold);padding:28px;box-shadow:0 8px 25px rgba(0,55,42,.06)"><div class="section-title"><div><h2>Cómo funcionaría la versión definitiva</h2><p>Excel como fuente maestra → validación de datos → portal web actualizado.</p></div></div><p>La unidad responsable actualizaría una hoja estructurada con fechas, montos, elegibilidad y enlaces. Al publicar una nueva versión, la página se regeneraría conservando su diseño, buscador y filtros. Las oportunidades vencidas podrían ocultarse automáticamente o conservarse en un archivo histórico.</p></section>
 </main>
 <footer><div class="footer-inner"><div><h4>UNPHU · Investigación</h4><p>Prototipo conceptual de un portal institucional para difundir oportunidades de financiamiento científico y académico.</p></div><div><h4>Enlaces</h4><p><a href="https://unphu.edu.do/" target="_blank" rel="noopener">Sitio web UNPHU</a></p><p><a href="https://unphu.edu.do/investigacion/" target="_blank" rel="noopener">Portal de Investigación</a></p></div><div><h4>Nota</h4><p>Los nombres y marcas pertenecen a sus respectivos titulares. Esta demostración no constituye una publicación oficial.</p></div></div><div class="copyright">Prueba de concepto · Portal de oportunidades de financiamiento · 2026</div></footer>
@@ -1333,9 +1333,187 @@ const opportunities=[
     "internalObservation": "monitorear el ciclo anual de enero a marzo de 2027.",
     "url": "https://www.agu.org/honors/horton-grant",
     "pivotUrl": ""
+  },
+  {
+    "id": 37,
+    "code": "2026-038",
+    "title": "Beca José Juan Vilar Martínez — Excelencia en Investigación en Periodoncia 2026",
+    "funder": "Sociedad Española de Periodoncia y Oseointegración (SEPA)",
+    "funderType": "Asociación profesional",
+    "country": "España",
+    "deadline": "2026-04-30",
+    "deadlineLabel": "30 de abril de 2026",
+    "deliveryType": "Solicitud",
+    "manualStatus": "Cerrada",
+    "calculatedStatus": "Cerrada",
+    "amount": "EUR 15.000",
+    "duration": "24 meses",
+    "type": "Beca",
+    "career": [
+      "Investigador emergente"
+    ],
+    "applicantType": "Persona individual",
+    "area": "Periodoncia, implantes dentales y biomateriales",
+    "keywords": [
+      "periodontitis",
+      "implantes",
+      "biomateriales",
+      "regeneración",
+      "movilidad",
+      "investigación clínica"
+    ],
+    "summary": "Financia una estancia de al menos tres meses y un proyecto vinculado en periodoncia, implantes dentales o biomateriales.",
+    "eligibility": "Miembro de SEPA con proyecto clínico o preclínico, protocolo y aprobación ética. Las revisiones sistemáticas están excluidas. Solicitante: Persona individual. Ubicación elegible: Internacional; estancia en un centro distinto al de origen. Ciudadanía: Sin restricción; exige membresía SEPA, incluida la categoría internacional.",
+    "notes": "Hasta EUR 10.000 para viaje, alojamiento y manutención y al menos EUR 5.000 para investigación. Exige publicación Q1 antes del 30/11/2027, salvo prórroga excepcional.",
+    "internalObservation": "Convocatoria 2026 cerrada. Para una edición futura, formalizar membresía internacional de SEPA y asegurar centro anfitrión y estrategia de publicación Q1.",
+    "url": "https://sepa.es/web/_public/downloads/becas/Beca-Jos%C3%A9%20Juan%20Vilar%20Mart%C3%ADnez%202026%20ES.pdf?20260426114110=",
+    "pivotUrl": ""
+  },
+  {
+    "id": 38,
+    "code": "2026-039",
+    "title": "David Steflik Memorial Student Research Grant 2026",
+    "funder": "American Academy of Implant Dentistry Foundation",
+    "funderType": "Asociación profesional",
+    "country": "Estados Unidos",
+    "deadline": "2026-07-01",
+    "deadlineLabel": "1 de julio de 2026",
+    "deliveryType": "Solicitud",
+    "manualStatus": "Cerrada",
+    "calculatedStatus": "Cerrada",
+    "amount": "Hasta USD 7.000",
+    "duration": "Máximo 2 años",
+    "type": "Subvención de investigación",
+    "career": [
+      "Estudiante de posgrado"
+    ],
+    "applicantType": "Persona individual",
+    "area": "Implantología, biomateriales y respuesta tisular",
+    "keywords": [
+      "implantes",
+      "estudiantes",
+      "biomateriales",
+      "oseointegración",
+      "tejidos",
+      "investigación piloto"
+    ],
+    "summary": "Apoya proyectos estudiantiles en implantología, biomateriales y respuesta de los tejidos a los implantes.",
+    "eligibility": "Estudiantes de odontología y participantes en programas de posgrado o residencia, con tutor y respaldo institucional. Solicitante: Persona individual. Ubicación elegible: Internacional. Ciudadanía: Sin restricción; los estudiantes internacionales son bienvenidos.",
+    "notes": "Financiamiento directo máximo de USD 7.000. Puede incluir hasta USD 1.500 adicionales para presentar resultados en la reunión anual de AAID.",
+    "internalObservation": "Convocatoria 2026 cerrada. Monitorear el próximo ciclo para tesis o proyectos piloto de residentes y estudiantes de posgrado de UNPHU.",
+    "url": "https://www.aaid.com/aaidf-grants",
+    "pivotUrl": ""
+  },
+  {
+    "id": 39,
+    "code": "2026-040",
+    "title": "AAID Foundation Large Research Grant 2026",
+    "funder": "American Academy of Implant Dentistry Foundation",
+    "funderType": "Asociación profesional",
+    "country": "Estados Unidos",
+    "deadline": "2026-07-01",
+    "deadlineLabel": "1 de julio de 2026",
+    "deliveryType": "Solicitud",
+    "manualStatus": "Cerrada",
+    "calculatedStatus": "Cerrada",
+    "amount": "Hasta USD 32.500",
+    "duration": "Máximo 2 años",
+    "type": "Subvención de investigación",
+    "career": [
+      "Investigador establecido"
+    ],
+    "applicantType": "Institución académica",
+    "area": "Implantología oral",
+    "keywords": [
+      "implantes",
+      "factibilidad",
+      "nuevas técnicas",
+      "modelos animales",
+      "datos clínicos",
+      "biomateriales",
+      "respuesta tisular"
+    ],
+    "summary": "Apoya estudios de factibilidad, nuevas técnicas o procedimientos, pequeños estudios clínicos o animales y análisis de datos existentes relacionados con implantología.",
+    "eligibility": "Dirigida a investigadores en implantología. Deben cumplirse las condiciones institucionales y éticas de las bases de cada ciclo. Solicitante: Institución académica. Ubicación elegible: Internacional; confirmar la elegibilidad geográfica en el próximo ciclo. Ciudadanía: No especificada en la página pública.",
+    "notes": "Permite suministros, equipos pequeños y salarios de apoyo técnico. No permite salario del PI, consultores, grandes equipos ni costos indirectos.",
+    "internalObservation": "Convocatoria 2026 cerrada. Confirmar la elegibilidad internacional antes de preparar una propuesta del siguiente ciclo.",
+    "url": "https://www.aaid.com/aaidf-grants",
+    "pivotUrl": ""
+  },
+  {
+    "id": 40,
+    "code": "2026-041",
+    "title": "ITI Research Mentoring Program 2026",
+    "funder": "International Team for Implantology (ITI Foundation)",
+    "funderType": "Fundación privada",
+    "country": "Internacional",
+    "deadline": "2026-11-15",
+    "deadlineLabel": "15 de noviembre de 2026",
+    "deliveryType": "Solicitud",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Abierta",
+    "amount": "USD 1.500 – 20.000",
+    "duration": "De 1 a 12 meses",
+    "type": "Beca",
+    "career": [
+      "Investigador emergente"
+    ],
+    "applicantType": "Persona individual",
+    "area": "Formación investigadora en implantología",
+    "keywords": [
+      "mentoría",
+      "movilidad",
+      "implantología",
+      "periimplantitis",
+      "regeneración",
+      "capacitación",
+      "colaboración internacional"
+    ],
+    "summary": "Apoya estancias en una institución mentora para adquirir métodos, desarrollar colaboraciones y fortalecer la carrera científica en implantología.",
+    "eligibility": "Investigador emergente; solicitud en inglés, CV, plan de estancia y referencias. Debe poder desplazarse al centro anfitrión. Solicitante: Persona individual. Ubicación elegible: Internacional. Ciudadanía: Sin restricción publicada.",
+    "notes": "Apertura prevista el 01/08/2026. Tramos de USD 1.500–7.500, USD 7.500–10.000 y USD 10.000–20.000; compensación adicional al centro anfitrión de hasta USD 5.000.",
+    "internalObservation": "Próxima a abrir al verificarla. Recomendable para formar investigadores jóvenes de UNPHU en microbiología periimplantaria, regeneración o investigación clínica.",
+    "url": "https://www.iti.org/science/research-mentoring-program/",
+    "pivotUrl": ""
+  },
+  {
+    "id": 41,
+    "code": "2026-042",
+    "title": "ITI Targeted Call 2026 — Long-Term Outcomes of Single Implants versus 3-Unit Tooth-Borne Bridges",
+    "funder": "International Team for Implantology (ITI Foundation)",
+    "funderType": "Fundación privada",
+    "country": "Internacional",
+    "deadline": "2026-08-31",
+    "deadlineLabel": "31 de agosto de 2026",
+    "deliveryType": "Propuesta completa",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Abierta",
+    "amount": "Hasta USD 200.000",
+    "duration": "Según proyecto; resultados con seguimiento mínimo de 5 años",
+    "type": "Subvención de investigación",
+    "career": [
+      "Investigador establecido"
+    ],
+    "applicantType": "Institución académica",
+    "area": "Resultados clínicos de implantes unitarios",
+    "keywords": [
+      "implante unitario",
+      "puente dentosoportado",
+      "supervivencia",
+      "PROMs",
+      "costo-efectividad",
+      "complicaciones",
+      "seguimiento longitudinal"
+    ],
+    "summary": "Compara resultados a largo plazo de implantes unitarios y puentes dentosoportados de tres unidades, incluida supervivencia, complicaciones, experiencia del paciente y economía de la salud.",
+    "eligibility": "El primer solicitante debe estar afiliado a una institución académica acreditada. Se aceptan estudios retrospectivos y multicéntricos con datos de al menos cinco años. Solicitante: Institución académica. Ubicación elegible: Internacional. Ciudadanía: Sin restricción publicada.",
+    "notes": "Modalidad pequeña hasta USD 50.000 y grande hasta USD 200.000. La notificación está prevista para noviembre de 2026.",
+    "internalObservation": "ID de referencia de la búsqueda: OD-2026-002. UNPHU necesitaría expedientes longitudinales o integrarse en una red multicéntrica.",
+    "url": "https://www.iti.org/science/research-grants/",
+    "pivotUrl": ""
   }
 ];
-const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);
+const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);
 const grid=document.getElementById('grid'),search=document.getElementById('search'),status=document.getElementById('status'),type=document.getElementById('type'),career=document.getElementById('career'),count=document.getElementById('count');
 const detail=document.getElementById('detail');
 const statusOf=o=>!o.deadline?'open':new Date(o.deadline+'T23:59:59')>=today?'future':'expired';
