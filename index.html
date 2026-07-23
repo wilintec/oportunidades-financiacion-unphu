@@ -25,7 +25,7 @@ dialog{border:0;border-radius:8px;padding:0;max-width:760px;width:calc(100% - 30
 <div class="notice"><div><strong>Demostración no oficial:</strong> este portal fue actualizado a partir del Excel maestro suministrado. Las fechas y condiciones deben verificarse siempre en el sitio oficial del financiador.</div></div>
 <main class="main" id="oportunidades"><div class="section-title"><div><h2>Convocatorias disponibles</h2><p>Información publicada desde el Excel maestro de oportunidades de financiamiento.</p></div></div>
 <section class="filters" aria-label="Filtros"><div class="field"><label for="search">Buscar</label><input id="search" type="search" placeholder="Título, financiador, palabra clave..."></div><div class="field"><label for="status">Estado</label><select id="status"><option value="all">Todos</option><option value="future">Futuras</option><option value="open">Abiertas / continuas</option><option value="expired">Vencidas</option></select></div><div class="field"><label for="type">Tipo</label><select id="type"><option value="all">Todos</option></select></div><div class="field"><label for="career">Perfil</label><select id="career"><option value="all">Todos</option></select></div></section>
-<div class="summarybar"><span>Mostrando <strong id="count">0</strong> resultados</span><span>Actualizado desde el Excel maestro: 22 de julio de 2026</span></div><section class="grid" id="grid"></section>
+<div class="summarybar"><span>Mostrando <strong id="count">0</strong> resultados</span><span>Actualizado desde el Excel maestro: 23 de julio de 2026</span></div><section class="grid" id="grid"></section>
 <section id="metodologia" style="margin-top:55px;background:white;border-left:5px solid var(--gold);padding:28px;box-shadow:0 8px 25px rgba(0,55,42,.06)"><div class="section-title"><div><h2>Cómo funcionaría la versión definitiva</h2><p>Excel como fuente maestra → validación de datos → portal web actualizado.</p></div></div><p>La unidad responsable actualizaría una hoja estructurada con fechas, montos, elegibilidad y enlaces. Al publicar una nueva versión, la página se regeneraría conservando su diseño, buscador y filtros. Las oportunidades vencidas podrían ocultarse automáticamente o conservarse en un archivo histórico.</p></section>
 </main>
 <footer><div class="footer-inner"><div><h4>Investigación</h4><p>Prototipo conceptual de un portal institucional para difundir oportunidades de financiamiento científico y académico.</p></div><div><p>Los nombres y marcas pertenecen a sus respectivos titulares. Esta demostración no constituye una publicación oficial.</p></div></div><div class="copyright">Prueba de concepto · Portal de oportunidades de financiamiento · 2026</div></footer>
@@ -2812,9 +2812,284 @@ const opportunities=[
     "internalObservation": "Compatible con candidatos individuales de UNPHU; no es subvención para un proyecto institucional.",
     "url": "https://www.aps.org/funding-recognition/award/nicholas-metropolis",
     "pivotUrl": "https://pivot.proquest.com/funding_opps/9834f3a0-f8b7-4dc6-a486-d1d75de8f0f3"
+  },
+  {
+    "id": 78,
+    "code": "2026-079",
+    "title": "Gilead Sciences: Giving in Latin America & the Caribbean",
+    "funder": "Gilead Sciences",
+    "funderType": "Empresa privada",
+    "country": "Estados Unidos",
+    "deadline": null,
+    "deadlineLabel": "Convocatoria continua",
+    "deliveryType": "Solicitud",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Sin fecha",
+    "amount": "Monto no especificado",
+    "duration": "Hasta 12 meses",
+    "type": "Otro",
+    "career": [
+      "Profesionales sanitarios",
+      "investigadores clínicos",
+      "docentes",
+      "especialistas en salud pública",
+      "responsables de programas comunitarios"
+    ],
+    "applicantType": "Institución académica",
+    "area": "Salud",
+    "keywords": [
+      "VIH/SIDA",
+      "hepatitis B",
+      "hepatitis C",
+      "enfermedades hepáticas",
+      "diagnóstico",
+      "prevención",
+      "acceso a atención",
+      "educación sanitaria",
+      "equidad en salud"
+    ],
+    "summary": "Financia proyectos de alto impacto que mejoren el acceso a servicios sanitarios, reduzcan desigualdades, eduquen a pacientes y profesionales y fortalezcan comunidades. En América Latina y el Caribe se priorizan VIH y enfermedades hepáticas.",
+    "eligibility": "La UNPHU puede solicitar como universidad sin fines de lucro, siempre que presente evidencia de su registro legal y proponga un proyecto ejecutado en República Dominicana dentro de las prioridades de Gilead. Solicitante: Institución académica. Ubicación elegible: República Dominicana y otros países de América Latina y el Caribe. Ciudadanía: Sin restricción publicada; prevalecen la ubicación del proyecto y la condición jurídica de la organización.",
+    "notes": "No se financian actividades ya realizadas. La solicitud debe presentarse antes de comenzar el proyecto y al menos seis semanas antes del inicio de la actividad. Es más adecuada para educación, detección, prevención, vinculación con servicios y fortalecimiento sanitario que para investigación básica independiente.",
+    "internalObservation": "LeapSpace indicaba que la elegibilidad dominicana no estaba confirmada. La información oficial incluye expresamente a República Dominicana y reconoce a universidades entre las organizaciones financiadas. Debe verificarse que el proyecto no se presente como investigación biomédica básica pura.",
+    "url": "https://www.gilead.com/responsibility/giving-at-gilead/corporate-giving/how-to-apply-for-funding/giving-in-latin-america-and-the-caribbean",
+    "pivotUrl": ""
+  },
+  {
+    "id": 79,
+    "code": "2026-080",
+    "title": "Environmental Research & Education Foundation Research Grant",
+    "funder": "Environmental Research & Education Foundation — EREF",
+    "funderType": "Fundación privada",
+    "country": "Estados Unidos",
+    "deadline": "2026-12-01",
+    "deadlineLabel": "1 de diciembre de 2026",
+    "deliveryType": "Prepropuesta",
+    "manualStatus": "En revisión",
+    "calculatedStatus": "Pendiente Apertura",
+    "amount": "Monto no especificado",
+    "duration": "Aproximadamente 24 meses; propuestas superiores a 36 meses requieren justificación especial",
+    "type": "Subvención de investigación",
+    "career": [
+      "Profesor",
+      "Postdoctorado",
+      "Investigador establecido"
+    ],
+    "applicantType": "Institución académica",
+    "area": "Ciencias ambientales y gestión sostenible de residuos",
+    "keywords": [
+      "residuos sólidos",
+      "gestión sostenible de materiales",
+      "reciclaje",
+      "economía circular",
+      "valorización de residuos",
+      "sostenibilidad",
+      "ingeniería ambiental"
+    ],
+    "summary": "Financia investigaciones relacionadas con prácticas sostenibles de gestión de residuos sólidos. El proceso comienza con una prepropuesta de dos páginas; las propuestas seleccionadas son invitadas a presentar una solicitud completa.",
+    "eligibility": "La UNPHU es elegible directamente porque EREF admite instituciones estadounidenses y no estadounidenses sin restricciones geográficas. El investigador principal debe estar cualificado y ser experto en el tema propuesto. Solicitante: Institución académica. Ubicación elegible: Internacional; sin restricciones geográficas. Ciudadanía: Sin restricción publicada.",
+    "notes": "Las solicitudes solamente se reciben durante los 15 días anteriores a cada fecha límite. La prepropuesta debe presentarse en inglés y utilizar la plantilla oficial. Los estudiantes de posgrado no pueden actuar como investigadores principales. Los costes indirectos no pueden superar el 25 % de los costes directos.",
+    "internalObservation": "LeapSpace la clasificó como una oportunidad sin fecha límite. La próxima fecha es el 1 de diciembre de 2026 y la ventana prevista de recepción comienza aproximadamente el 16 de noviembre. Las cuantías históricas no constituyen mínimos ni máximos oficiales de la ronda.",
+    "url": "https://erefdn.org/research-grants/",
+    "pivotUrl": ""
+  },
+  {
+    "id": 80,
+    "code": "2026-081",
+    "title": "IBRO/Dana Brain Awareness Week Grants 2027",
+    "funder": "International Brain Research Organization — IBRO / Dana Foundation",
+    "funderType": "Organización internacional",
+    "country": "Bélgica / Estados Unidos",
+    "deadline": "2026-10-15",
+    "deadlineLabel": "15 de octubre de 2026",
+    "deliveryType": "Solicitud",
+    "manualStatus": "En revisión",
+    "calculatedStatus": "Pendiente Apertura",
+    "amount": "Hasta USD 1.250",
+    "duration": "Actividad o evento de divulgación durante 2027",
+    "type": "Publicación / difusión",
+    "career": [
+      "Neurocientíficos",
+      "docentes",
+      "comunicadores científicos",
+      "organizadores de actividades de divulgación sobre el cerebro"
+    ],
+    "applicantType": "Persona individual",
+    "area": "Neurociencias y divulgación científica",
+    "keywords": [
+      "neurociencia",
+      "cerebro",
+      "Brain Awareness Week",
+      "educación científica",
+      "comunicación pública",
+      "divulgación",
+      "participación comunitaria"
+    ],
+    "summary": "Apoya actividades destinadas a aumentar el conocimiento público sobre el cerebro y la investigación en neurociencias, dentro de la campaña internacional Brain Awareness Week.",
+    "eligibility": "Un investigador, docente o equipo de la UNPHU puede presentar una actividad que se realice en República Dominicana. Debe identificarse claramente al organizador responsable y la vinculación institucional con la universidad. Solicitante: Persona individual. Ubicación elegible: República Dominicana; América Latina, África, Asia-Pacífico y Estados Unidos/Canadá; eventos fuera de Europa. Ciudadanía: No especificada; el criterio principal es la ubicación de la actividad.",
+    "notes": "La próxima ventana será del 15 de septiembre al 15 de octubre de 2026 para eventos de 2027. No constituye financiación para ejecutar investigación científica, sino para actividades de divulgación y concienciación.",
+    "internalObservation": "LeapSpace la clasificó como activa y sin fecha límite. Actualmente está cerrada, pero tiene una próxima apertura confirmada para septiembre de 2026. Conviene confirmar en el formulario de la nueva ronda la figura jurídica que recibirá el pago.",
+    "url": "https://ibro.org/grant/brain-awareness-week-grants/",
+    "pivotUrl": ""
+  },
+  {
+    "id": 81,
+    "code": "2026-082",
+    "title": "RNID Translational Research Grant 2026",
+    "funder": "Royal National Institute for Deaf People — RNID",
+    "funderType": "Gobierno internacional",
+    "country": "Reino Unido",
+    "deadline": null,
+    "deadlineLabel": "Convocatoria continua",
+    "deliveryType": "Solicitud",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Abierta",
+    "amount": "Hasta GBP 300.000",
+    "duration": "36",
+    "type": "Otro",
+    "career": [
+      "Investigadores en audiología, otología, neurociencia auditiva, farmacología, toxicología, biología molecular, medicina traslacional y desarrollo de fármacos"
+    ],
+    "applicantType": "Universidades, institutos de investigación y pequeñas o medianas empresas",
+    "area": "Tratamientos traslacionales para pérdida auditiva y tinnitus",
+    "keywords": [
+      "pérdida auditiva",
+      "tinnitus",
+      "terapias",
+      "fármacos",
+      "PK/PD",
+      "toxicología",
+      "reposicionamiento",
+      "dianas terapéuticas",
+      "investigación preclínica"
+    ],
+    "summary": "Apoya la transformación de descubrimientos científicos en tratamientos potenciales capaces de prevenir o restaurar la pérdida auditiva o reducir el tinnitus.",
+    "eligibility": "Pueden aplicar instituciones académicas, institutos de investigación y pymes de cualquier país, salvo China continental. La solicitud debe ser aprobada por un representante autorizado de la institución antes de enviarse. Solicitante: Universidades, institutos de investigación y pequeñas o medianas empresas. Ubicación elegible: Cualquier país, excepto China continental. Ciudadanía: Sin restricción publicada.",
+    "notes": "Requiere una terapia novedosa claramente definida, datos preliminares o prueba de concepto y un plan experimental viable. Puede financiar optimización de candidatos, estudios PK/PD, seguridad y toxicología, reposicionamiento de medicamentos y validación de dianas terapéuticas. No admite investigación básica sin una terapia específica, dispositivos médicos, software, optimización de protocolos clínicos ni estudios de servicios de salud. Decisión final prevista para junio de 2027.",
+    "internalObservation": "Compatible con la UNPHU a nivel institucional. Publicar únicamente si existe o puede conformarse un equipo con experiencia biomédica en audición o tinnitus, acceso a infraestructura experimental y datos preliminares. La convocatoria no resulta adecuada para proyectos sobre inclusión educativa, empleo de personas sordas, dispositivos auditivos, aplicaciones informáticas o prestación de servicios de audiología. Se recomienda validar anticipadamente con RNID el grado de madurez tecnológica del proyecto.",
+    "url": "https://rnid.org.uk/what-we-do/biomedical-research/apply-for-funding/translational-grant/?",
+    "pivotUrl": ""
+  },
+  {
+    "id": 82,
+    "code": "2026-083",
+    "title": "Fund for Innovation in Development — Open Call for Proposals",
+    "funder": "Fund for Innovation in Development — FID",
+    "funderType": "Gobierno internacional",
+    "country": "Francia",
+    "deadline": null,
+    "deadlineLabel": "Convocatoria continua",
+    "deliveryType": "Solicitud",
+    "manualStatus": "En revisión",
+    "calculatedStatus": "Pendiente Apertura",
+    "amount": "Hasta EUR 4.000.000",
+    "duration": "Según la etapa, madurez y plan de ejecución del proyecto",
+    "type": "Subvención de investigación; evaluación de impacto; escalamiento",
+    "career": [
+      "Investigadores en educación, evaluación de impacto, economía de la educación, discapacidad, diseño universal, tecnologías educativas, traducción accesible, interpretación, lingüística aplicada y políticas públicas"
+    ],
+    "applicantType": "Universidad; centro de investigación; ONG; empresa; institución pública",
+    "area": "Innovación educativa inclusiva",
+    "keywords": [
+      "innovación educativa",
+      "educación inclusiva",
+      "evaluación de impacto",
+      "accesibilidad",
+      "discapacidad",
+      "aprendizaje",
+      "permanencia estudiantil",
+      "traducción accesible",
+      "lengua de señas",
+      "tecnologías de apoyo"
+    ],
+    "summary": "Financia el pilotaje, la evaluación rigurosa y el escalamiento de soluciones innovadoras que reduzcan desigualdades. Una propuesta de la UNPHU debe demostrar cómo la intervención mejora resultados educativos o sociales y cómo puede ampliarse de forma costo-efectiva.",
+    "eligibility": "Puede aplicar cualquier organización legalmente constituida, incluidas universidades y centros de investigación. El proyecto debe ejecutarse en un país elegible para ayuda oficial al desarrollo; la República Dominicana es elegible. Solicitante: Universidad; centro de investigación; ONG; empresa; institución pública. Ubicación elegible: Países de ingresos bajos y medios elegibles para ayuda oficial al desarrollo. Ciudadanía: Sin restricción; depende de la organización y del país de ejecución.",
+    "notes": "Etapa piloto: hasta EUR 200,000. Evaluación de impacto: hasta EUR 1.5 millones. Escalamiento: hasta EUR 4 millones. Las etapas de política pública están reservadas a entidades públicas; la UNPHU puede participar como socio técnico o de investigación.",
+    "internalObservation": "Compatible para solicitud directa de la UNPHU. Requiere una intervención concreta, teoría de cambio, indicadores de impacto, costo-efectividad y potencial de escalamiento.",
+    "url": "https://fundinnovation.dev/en/launch-project",
+    "pivotUrl": ""
+  },
+  {
+    "id": 83,
+    "code": "2026-084",
+    "title": "Evaluación de las Políticas Públicas de Inclusión Educativa",
+    "funder": "Instituto Dominicano de Evaluación e Investigación de la Calidad Educativa — IDEICE / MINERD",
+    "funderType": "Gobierno nacional",
+    "country": "República Dominicana",
+    "deadline": "2026-05-29",
+    "deadlineLabel": "29 de mayo de 2026",
+    "deliveryType": "Propuesta completa",
+    "manualStatus": "Cerrada",
+    "calculatedStatus": "Cerrada",
+    "amount": "Hasta DOP 2.500.000",
+    "duration": "8 meses",
+    "type": "Contrato para evaluación e investigación aplicada",
+    "career": [
+      "Investigadores en educación inclusiva, educación especial, evaluación de políticas públicas, estadística, metodología cualitativa y cuantitativa, discapacidad y gestión educativa"
+    ],
+    "applicantType": "Universidad; centro de investigación; ONG; empresa; consorcio; persona física",
+    "area": "Evaluación de políticas públicas de inclusión educativa",
+    "keywords": [
+      "educación inclusiva",
+      "necesidades específicas de apoyo educativo",
+      "discapacidad",
+      "políticas públicas",
+      "centros educativos",
+      "prácticas pedagógicas",
+      "barreras",
+      "accesibilidad"
+    ],
+    "summary": "Evaluación del diseño, la implementación y los resultados de las políticas públicas de inclusión educativa en el sistema preuniversitario dominicano, orientada a producir evidencia y recomendaciones para mejorar su efectividad.",
+    "eligibility": "Podían participar universidades, centros de investigación y otras entidades con experiencia demostrada. Las organizaciones debían estar legalmente constituidas, tener capacidad para contratar con el Estado dominicano, RPE activo y cumplimiento tributario y de seguridad social. Solicitante: Universidad; centro de investigación; ONG; empresa; consorcio; persona física. Ubicación elegible: República Dominicana. Ciudadanía: Entidades y profesionales nacionales o extranjeros sujetos a los requisitos de contratación pública dominicana.",
+    "notes": "Presupuesto máximo de RD$2.5 millones, incluidos costos directos e indirectos, y ejecución prevista de ocho meses. La investigación se desarrollaría en regiones educativas seleccionadas.",
+    "internalObservation": "Muy compatible con la UNPHU, pero cerrada. Conviene monitorear futuras contrataciones y mantener actualizados el RPE, las certificaciones fiscales, las referencias contractuales y los expedientes del equipo investigador.",
+    "url": "https://ideice.gob.do/programas/fondos-concursables-de-investigaciones",
+    "pivotUrl": ""
+  },
+  {
+    "id": 84,
+    "code": "2026-085",
+    "title": "Research-Practice Partnerships: Collaborative Research for Educational Change",
+    "funder": "Spencer Foundation",
+    "funderType": "Fundación privada",
+    "country": "Estados Unidos",
+    "deadline": "2026-07-10",
+    "deadlineLabel": "10 de julio de 2026",
+    "deliveryType": "Prepropuesta",
+    "manualStatus": "Cerrada",
+    "calculatedStatus": "Cerrada",
+    "amount": "Hasta USD 400.000",
+    "duration": "Hasta 3 años",
+    "type": "Subvención para asociación investigación-práctica",
+    "career": [
+      "Investigadores educativos",
+      "docentes",
+      "gestores",
+      "responsables de políticas públicas",
+      "especialistas en discapacidad",
+      "organizaciones comunitarias y profesionales de servicios de apoyo"
+    ],
+    "applicantType": "Alianza entre una organización investigadora y una o más organizaciones de práctica o política educativa",
+    "area": "Investigación educativa colaborativa",
+    "keywords": [
+      "research-practice partnership",
+      "educación inclusiva",
+      "discapacidad",
+      "políticas educativas",
+      "colaboración",
+      "escuelas",
+      "universidades",
+      "investigación participativa"
+    ],
+    "summary": "Financia investigaciones desarrolladas mediante alianzas duraderas entre investigadores, profesionales y responsables de políticas para responder a problemas educativos relevantes. Puede aplicarse a una colaboración sobre inclusión de estudiantes con discapacidades auditivas y visuales.",
+    "eligibility": "La entidad administradora debe ser pública o sin fines de lucro. Se aceptan universidades extranjeras con condición equivalente. Debe existir una asociación auténtica entre investigación y práctica, representada en el liderazgo del proyecto. Solicitante: Alianza entre una organización investigadora y una o más organizaciones de práctica o política educativa. Ubicación elegible: Internacional. Ciudadanía: Sin restricción expresa; aplican las condiciones institucionales.",
+    "notes": "Financia hasta USD 400,000 durante un máximo de tres años y permite hasta 15 % de costos indirectos. Se favorecen alianzas sustantivas y duraderas, no asociaciones creadas únicamente para presentar la solicitud.",
+    "internalObservation": "Compatible para una futura edición. La UNPHU debería formalizar una alianza estable con IDEICE, MINERD, centros educativos, CONADIS u organizaciones representativas de personas sordas y ciegas.",
+    "url": "https://www.spencer.org/grant_types/research-practice-partnerships",
+    "pivotUrl": ""
   }
 ];
-const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);
+const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);
 const grid=document.getElementById('grid'),search=document.getElementById('search'),status=document.getElementById('status'),type=document.getElementById('type'),career=document.getElementById('career'),count=document.getElementById('count');
 const detail=document.getElementById('detail');
 const statusOf=o=>!o.deadline?'open':new Date(o.deadline+'T23:59:59')>=today?'future':'expired';
