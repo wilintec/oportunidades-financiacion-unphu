@@ -25,7 +25,7 @@ dialog{border:0;border-radius:8px;padding:0;max-width:760px;width:calc(100% - 30
 <div class="notice"><div><strong>Demostración no oficial:</strong> este portal fue actualizado a partir del Excel maestro suministrado. Las fechas y condiciones deben verificarse siempre en el sitio oficial del financiador.</div></div>
 <main class="main" id="oportunidades"><div class="section-title"><div><h2>Convocatorias disponibles</h2><p>Información publicada desde el Excel maestro de oportunidades de financiamiento.</p></div></div>
 <section class="filters" aria-label="Filtros"><div class="field"><label for="search">Buscar</label><input id="search" type="search" placeholder="Título, financiador, palabra clave..."></div><div class="field"><label for="status">Estado</label><select id="status"><option value="all">Todos</option><option value="future">Futuras</option><option value="open">Abiertas / continuas</option><option value="expired">Vencidas</option></select></div><div class="field"><label for="type">Tipo</label><select id="type"><option value="all">Todos</option></select></div><div class="field"><label for="career">Perfil</label><select id="career"><option value="all">Todos</option></select></div></section>
-<div class="summarybar"><span>Mostrando <strong id="count">0</strong> resultados</span><span>Actualizado desde el Excel maestro: 23 de julio de 2026</span></div><section class="grid" id="grid"></section>
+<div class="summarybar"><span>Mostrando <strong id="count">0</strong> resultados</span><span>Actualizado desde el Excel maestro: 24 de julio de 2026</span></div><section class="grid" id="grid"></section>
 <section id="metodologia" style="margin-top:55px;background:white;border-left:5px solid var(--gold);padding:28px;box-shadow:0 8px 25px rgba(0,55,42,.06)"><div class="section-title"><div><h2>Cómo funcionaría la versión definitiva</h2><p>Excel como fuente maestra → validación de datos → portal web actualizado.</p></div></div><p>La unidad responsable actualizaría una hoja estructurada con fechas, montos, elegibilidad y enlaces. Al publicar una nueva versión, la página se regeneraría conservando su diseño, buscador y filtros. Las oportunidades vencidas podrían ocultarse automáticamente o conservarse en un archivo histórico.</p></section>
 </main>
 <footer><div class="footer-inner"><div><h4>Investigación</h4><p>Prototipo conceptual de un portal institucional para difundir oportunidades de financiamiento científico y académico.</p></div><div><p>Los nombres y marcas pertenecen a sus respectivos titulares. Esta demostración no constituye una publicación oficial.</p></div></div><div class="copyright">Prueba de concepto · Portal de oportunidades de financiamiento · 2026</div></footer>
@@ -1558,7 +1558,7 @@ const opportunities=[
     "deadlineLabel": "23 de julio de 2026",
     "deliveryType": "Carta de intención",
     "manualStatus": "Abierta",
-    "calculatedStatus": "Próxima a vencer",
+    "calculatedStatus": "Vencida",
     "amount": "Hasta USD 3.600.000",
     "duration": "Máximo 4 años",
     "type": "Subvención de investigación",
@@ -1593,7 +1593,7 @@ const opportunities=[
     "deadlineLabel": "23 de julio de 2026",
     "deliveryType": "Carta de intención",
     "manualStatus": "Abierta",
-    "calculatedStatus": "Próxima a vencer",
+    "calculatedStatus": "Vencida",
     "amount": "Hasta USD 5.600.000",
     "duration": "48 meses",
     "type": "Subvención de investigación",
@@ -3087,9 +3087,224 @@ const opportunities=[
     "internalObservation": "Compatible para una futura edición. La UNPHU debería formalizar una alianza estable con IDEICE, MINERD, centros educativos, CONADIS u organizaciones representativas de personas sordas y ciegas.",
     "url": "https://www.spencer.org/grant_types/research-practice-partnerships",
     "pivotUrl": ""
+  },
+  {
+    "id": 85,
+    "code": "2026-086",
+    "title": "Sea Turtles 2027 Request for Proposals",
+    "funder": "National Fish and Wildlife Foundation — NFWF",
+    "funderType": "Fundación privada",
+    "country": "Estados Unidos",
+    "deadline": "2026-08-19",
+    "deadlineLabel": "19 de agosto de 2026",
+    "deliveryType": "Prepropuesta",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Próxima a vencer",
+    "amount": "USD 50.000 – 400.000",
+    "duration": "Según propuesta",
+    "type": "Subvención de investigación",
+    "career": [
+      "Investigador establecido",
+      "Profesor",
+      "Postdoctorado"
+    ],
+    "applicantType": "Institución académica; ONG; Gobierno; Empresa",
+    "area": "Medio ambiente y recursos naturales",
+    "keywords": [
+      "tortugas marinas",
+      "conservación costera",
+      "captura incidental",
+      "playas de anidación",
+      "monitoreo",
+      "cambio climático"
+    ],
+    "summary": "Financia proyectos para mejorar la recuperación de poblaciones de tortugas marinas mediante respuesta a varamientos y rehabilitación, reducción de captura incidental, protección de playas de anidación y fortalecimiento de redes regionales de conservación.",
+    "eligibility": "La UNPHU es elegible como institución educativa. Los proyectos desarrollados fuera de Estados Unidos pueden ser considerados si se ejecutan en el hemisferio occidental, aunque reciben menor prioridad. La propuesta debe demostrar resultados medibles de conservación y capacidad técnica. Solicitante: Institución académica; ONG; Gobierno; Empresa. Ubicación elegible: Hemisferio Occidental; prioridad en Estados Unidos y sus territorios. Ciudadanía: Sin restricción.",
+    "notes": "Prepropuesta: 19/08/2026; propuesta completa por invitación: 27/10/2026. La mayoría de las adjudicaciones se sitúan entre USD 50,000 y USD 400,000, sin límites formales. Se requiere contrapartida no federal 1:1 para trabajos de playas y captura incidental; es aceptada, pero no obligatoria, para varamientos y rehabilitación.",
+    "internalObservation": "Para una propuesta dominicana conviene vincular el proyecto con poblaciones migratorias compartidas, redes regionales, pesca artesanal, captura incidental o monitoreo coordinado. Verificar requisitos federales de cumplimiento y permisos aplicables.",
+    "url": "https://www.nfwf.org/programs/sea-turtles/sea-turtles-2027-request-proposals",
+    "pivotUrl": ""
+  },
+  {
+    "id": 86,
+    "code": "2026-087",
+    "title": "Premio Nacional Ambiental 2026",
+    "funder": "Ministerio de Medio Ambiente y Recursos Naturales",
+    "funderType": "Gobierno nacional",
+    "country": "República Dominicana",
+    "deadline": "2026-08-31",
+    "deadlineLabel": "31 de agosto de 2026",
+    "deliveryType": "Nominación",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Abierta",
+    "amount": "Otra No especificado",
+    "duration": "No aplica",
+    "type": "Premio",
+    "career": [
+      "Investigador emergente",
+      "Investigador establecido",
+      "Profesor"
+    ],
+    "applicantType": "Institución académica; Persona individual; Empresa; ONG; Gobierno",
+    "area": "Medio ambiente y recursos naturales",
+    "keywords": [
+      "investigación ambiental",
+      "innovación",
+      "sostenibilidad",
+      "conservación",
+      "recursos naturales",
+      "buenas prácticas"
+    ],
+    "summary": "Reconoce a personas, instituciones, investigaciones y proyectos innovadores que promueven la sostenibilidad, la protección ambiental y el uso responsable de los recursos naturales en la República Dominicana.",
+    "eligibility": "La UNPHU, sus centros, laboratorios, grupos de investigación e investigadores pueden ser postulados en las categorías aplicables, incluida Investigación, siempre que presenten resultados y evidencias verificables de su contribución ambiental. Solicitante: Institución académica; Persona individual; Empresa; ONG; Gobierno. Ubicación elegible: República Dominicana. Ciudadanía: Sin restricción; la iniciativa debe generar aportes ambientales en República Dominicana.",
+    "notes": "Convocatoria abierta hasta el 31/08/2026. Es un galardón y reconocimiento institucional, no una subvención ordinaria de investigación. La postulación debe incluir la documentación y evidencias exigidas por las bases de la categoría correspondiente.",
+    "internalObservation": "Compatibilidad alta como premio, no como grant. Priorizar proyectos ya ejecutados que cuenten con publicaciones, indicadores de impacto, resultados territoriales y evidencias documentales.",
+    "url": "https://ambiente.gob.do/premio-nacional-ambiental/",
+    "pivotUrl": ""
+  },
+  {
+    "id": 87,
+    "code": "2026-088",
+    "title": "Fondo IKI – IKI Large Grants",
+    "funder": "International Climate Initiative — IKI / Ministerio Federal de Medio Ambiente, Acción Climática, Conservación de la Naturaleza y Seguridad Nuclear — BMUKN",
+    "funderType": "Gobierno internacional",
+    "country": "Alemania",
+    "deadline": "2026-02-17",
+    "deadlineLabel": "17 de febrero de 2026",
+    "deliveryType": "Prepropuesta",
+    "manualStatus": "Cerrada",
+    "calculatedStatus": "Cerrada",
+    "amount": "EUR 5.000.000 – 20.000.000",
+    "duration": "Hasta 8 años",
+    "type": "Proyecto de investigación",
+    "career": [
+      "Investigador establecido"
+    ],
+    "applicantType": "Consorcio; Institución académica; ONG; Empresa",
+    "area": "Cambio climático",
+    "keywords": [
+      "mitigación",
+      "adaptación",
+      "biodiversidad",
+      "sumideros de carbono",
+      "transformación climática",
+      "consorcios"
+    ],
+    "summary": "Financia proyectos de gran escala que respondan a prioridades temáticas o geográficas en mitigación de gases de efecto invernadero, adaptación al cambio climático, conservación de biodiversidad y protección de sumideros naturales de carbono.",
+    "eligibility": "La UNPHU puede participar como líder o integrante de un consorcio de al menos dos organizaciones, siempre que la prioridad seleccionada permita proyectos en República Dominicana o en una región que la incluya. Las universidades y centros de investigación extranjeros son elegibles. Solicitante: Consorcio; Institución académica; ONG; Empresa. Ubicación elegible: Bilateral, regional o global; países ODA elegibles conforme a cada prioridad. Ciudadanía: Sin restricción.",
+    "notes": "La convocatoria 2025 cerró el 17/02/2026. La financiación general del instrumento oscila entre EUR 5 y 20 millones por proyecto, según la prioridad. La financiación anual promedio solicitada no debe superar la facturación anual promedio del líder durante los tres últimos ejercicios. Puede requerirse aporte propio o movilización de fondos adicionales.",
+    "internalObservation": "Compatibilidad condicionada y convocatoria cerrada. Mantener como antecedente recurrente. Antes de una futura postulación, comprobar que República Dominicana esté incluida en la prioridad y definir un consorcio con suficiente capacidad financiera y fiduciaria.",
+    "url": "https://www.international-climate-initiative.com/en/find-funding/large-grants/large-grants-2025/",
+    "pivotUrl": ""
+  },
+  {
+    "id": 88,
+    "code": "2026-089",
+    "title": "Fondo IKI – IKI Medium Grants",
+    "funder": "International Climate Initiative — IKI / Ministerio Federal de Medio Ambiente, Acción Climática, Conservación de la Naturaleza y Seguridad Nuclear — BMUKN",
+    "funderType": "Gobierno internacional",
+    "country": "Alemania",
+    "deadline": "2026-01-20",
+    "deadlineLabel": "20 de enero de 2026",
+    "deliveryType": "Prepropuesta",
+    "manualStatus": "Cerrada",
+    "calculatedStatus": "Cerrada",
+    "amount": "EUR 300.000 – 800.000",
+    "duration": "2-3 años",
+    "type": "Proyecto de investigación",
+    "career": [
+      "Investigador establecido"
+    ],
+    "applicantType": "Consorcio; Institución académica; ONG",
+    "area": "Cambio climático",
+    "keywords": [
+      "adaptación",
+      "economía circular",
+      "biodiversidad",
+      "fortalecimiento de capacidades",
+      "cooperación Norte-Sur"
+    ],
+    "summary": "Apoya proyectos innovadores de acción climática y biodiversidad ejecutados mediante cooperación entre una organización solicitante elegible establecida en Alemania o la Unión Europea y una o dos organizaciones socias locales en los países de implementación.",
+    "eligibility": "La UNPHU no es elegible como solicitante principal por estar establecida en República Dominicana, pero puede participar como organización socia local si demuestra personalidad jurídica independiente, finalidad no lucrativa y al menos dos años de experiencia institucional en la prioridad temática. Solicitante: Consorcio; Institución académica; ONG. Ubicación elegible: Proyectos bilaterales o regionales en uno o dos países elegibles. Ciudadanía: Sin restricción.",
+    "notes": "La convocatoria 2025 cerró el 20/01/2026. El solicitante principal debe estar establecido en Alemania o en otro Estado miembro de la Unión Europea y contar con establecimiento permanente en Alemania al primer desembolso. Debe asociarse con una o dos organizaciones locales. Se requiere aporte propio o fondos de terceros.",
+    "internalObservation": "Compatibilidad únicamente como socia local; convocatoria cerrada. Identificar anticipadamente universidades, ONG o instituciones sin fines de lucro elegibles en Alemania o la Unión Europea que puedan actuar como solicitantes principales.",
+    "url": "https://www.international-climate-initiative.com/en/find-funding/medium-grants/medium-grants-2025/",
+    "pivotUrl": ""
+  },
+  {
+    "id": 89,
+    "code": "2026-090",
+    "title": "Fondo Verde para el Clima — GCF",
+    "funder": "Green Climate Fund — GCF",
+    "funderType": "Organización internacional",
+    "country": "Internacional",
+    "deadline": null,
+    "deadlineLabel": "Sin fecha confirmada",
+    "deliveryType": "Propuesta completa",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Sin fecha",
+    "amount": "USD No especificado",
+    "duration": "Según propuesta",
+    "type": "Otro",
+    "career": [
+      "Investigador establecido"
+    ],
+    "applicantType": "Institución académica; Gobierno; ONG; Empresa; Organización internacional",
+    "area": "Cambio climático",
+    "keywords": [
+      "financiamiento climático",
+      "mitigación",
+      "adaptación",
+      "resiliencia",
+      "PSAA",
+      "entidad acreditada",
+      "preparación de proyectos"
+    ],
+    "summary": "Financia programas y proyectos climáticos mediante subvenciones, préstamos, capital, garantías y otros instrumentos. Las instituciones acceden normalmente a través de entidades acreditadas o, para un único proyecto, mediante el Project-specific Assessment Approach — PSAA.",
+    "eligibility": "La UNPHU puede participar como entidad ejecutora o socia técnica de una entidad acreditada. También podría solicitar acceso mediante PSAA para un proyecto específico si demuestra capacidad jurídica, financiera, fiduciaria, ambiental, social y de género, obtiene la nominación de la autoridad nacional designada y recibe una carta de no objeción. Solicitante: Institución académica; Gobierno; ONG; Empresa; Organización internacional. Ubicación elegible: Países en desarrollo; el proyecto debe alinearse con las prioridades climáticas nacionales. Ciudadanía: Sin restricción.",
+    "notes": "No existe una fecha límite general ni un monto único. Las propuestas deben contar con apropiación nacional y cumplir los criterios de inversión y salvaguardas del GCF. El PSAA admite proyectos de cualquier tamaño con riesgos ambientales y sociales bajos o medios y limita a cada entidad a un máximo de una propuesta aprobada bajo esta modalidad.",
+    "internalObservation": "Compatibilidad indirecta o condicionada. La vía más realista es participar como entidad ejecutora, investigadora o socia técnica de una entidad acreditada; una solicitud propia mediante PSAA exigiría una capacidad institucional y fiduciaria considerable.",
+    "url": "https://www.greenclimate.fund/access-funding",
+    "pivotUrl": ""
+  },
+  {
+    "id": 90,
+    "code": "2026-091",
+    "title": "Fondo para Respuesta a Pérdidas y Daños — FRLD",
+    "funder": "Fund for Responding to Loss and Damage — FRLD",
+    "funderType": "Organización internacional",
+    "country": "Internacional",
+    "deadline": "2026-06-15",
+    "deadlineLabel": "15 de junio de 2026",
+    "deliveryType": "Solicitud",
+    "manualStatus": "Cerrada",
+    "calculatedStatus": "Cerrada",
+    "amount": "USD 5.000.000 – 20.000.000",
+    "duration": "Según solicitud aprobada",
+    "type": "Otro",
+    "career": [
+      "Investigador establecido"
+    ],
+    "applicantType": "Gobierno; Consorcio; Otro",
+    "area": "Cambio climático",
+    "keywords": [
+      "pérdidas y daños",
+      "eventos extremos",
+      "aumento del nivel del mar",
+      "desplazamiento",
+      "recuperación",
+      "datos climáticos",
+      "SIDS"
+    ],
+    "summary": "Financia respuestas a pérdidas y daños económicos y no económicos asociados con eventos climáticos extremos y procesos de evolución lenta, incluyendo recuperación, reconstrucción, rehabilitación, movilidad humana, planes nacionales e información climática.",
+    "eligibility": "La UNPHU no puede presentar una solicitud institucional independiente en la primera convocatoria. Puede participar como entidad ejecutora, socia científica, proveedora de datos o apoyo técnico dentro de una solicitud liderada por República Dominicana y presentada mediante el punto focal o autoridad nacional, o en asociación con una entidad de acceso acreditada. Solicitante: Gobierno; Consorcio; Otro. Ubicación elegible: Países en desarrollo particularmente vulnerables a los efectos adversos del cambio climático. Ciudadanía: Sin restricción.",
+    "notes": "La primera convocatoria de las Barbados Implementation Modalities estuvo abierta del 15/12/2025 al 15/06/2026 y contempló solicitudes de USD 5 a 20 millones. Las solicitudes son originadas y lideradas por los países. El FRLD acepta acceso mediante gobiernos nacionales y entidades acreditadas ante el Fondo de Adaptación, GEF o GCF, conforme a la modalidad aplicable.",
+    "internalObservation": "Compatibilidad únicamente como participante técnico o ejecutor dentro de una propuesta nacional; convocatoria cerrada. Conviene posicionar a la UNPHU ante el punto focal nacional como socio para datos, evaluación de pérdidas no económicas, modelación, seguimiento y formación.",
+    "url": "https://www.frld.org/nodebim",
+    "pivotUrl": ""
   }
 ];
-const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);
+const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);
 const grid=document.getElementById('grid'),search=document.getElementById('search'),status=document.getElementById('status'),type=document.getElementById('type'),career=document.getElementById('career'),count=document.getElementById('count');
 const detail=document.getElementById('detail');
 const statusOf=o=>!o.deadline?'open':new Date(o.deadline+'T23:59:59')>=today?'future':'expired';
