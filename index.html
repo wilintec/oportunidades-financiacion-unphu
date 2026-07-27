@@ -25,7 +25,7 @@ dialog{border:0;border-radius:8px;padding:0;max-width:760px;width:calc(100% - 30
 <div class="notice"><div><strong>Demostración no oficial:</strong> este portal fue actualizado a partir del Excel maestro suministrado. Las fechas y condiciones deben verificarse siempre en el sitio oficial del financiador.</div></div>
 <main class="main" id="oportunidades"><div class="section-title"><div><h2>Convocatorias disponibles</h2><p>Información publicada desde el Excel maestro de oportunidades de financiamiento.</p></div></div>
 <section class="filters" aria-label="Filtros"><div class="field"><label for="search">Buscar</label><input id="search" type="search" placeholder="Título, financiador, palabra clave..."></div><div class="field"><label for="status">Estado</label><select id="status"><option value="all">Todos</option><option value="future">Futuras</option><option value="open">Abiertas / continuas</option><option value="expired">Vencidas</option></select></div><div class="field"><label for="type">Tipo</label><select id="type"><option value="all">Todos</option></select></div><div class="field"><label for="career">Perfil</label><select id="career"><option value="all">Todos</option></select></div></section>
-<div class="summarybar"><span>Mostrando <strong id="count">0</strong> resultados</span><span>Actualizado desde el Excel maestro: 25 de julio de 2026</span></div><section class="grid" id="grid"></section>
+<div class="summarybar"><span>Mostrando <strong id="count">0</strong> resultados</span><span>Actualizado desde el Excel maestro: 27 de julio de 2026</span></div><section class="grid" id="grid"></section>
 <section id="metodologia" style="margin-top:55px;background:white;border-left:5px solid var(--gold);padding:28px;box-shadow:0 8px 25px rgba(0,55,42,.06)"><div class="section-title"><div><h2>Cómo funcionaría la versión definitiva</h2><p>Excel como fuente maestra → validación de datos → portal web actualizado.</p></div></div><p>La unidad responsable actualizaría una hoja estructurada con fechas, montos, elegibilidad y enlaces. Al publicar una nueva versión, la página se regeneraría conservando su diseño, buscador y filtros. Las oportunidades vencidas podrían ocultarse automáticamente o conservarse en un archivo histórico.</p></section>
 </main>
 <footer><div class="footer-inner"><div><h4>Investigación</h4><p>Prototipo conceptual de un portal institucional para difundir oportunidades de financiamiento científico y académico.</p></div><div><p>Los nombres y marcas pertenecen a sus respectivos titulares. Esta demostración no constituye una publicación oficial.</p></div></div><div class="copyright">Prueba de concepto · Portal de oportunidades de financiamiento · 2026</div></footer>
@@ -334,7 +334,8 @@ const opportunities=[
     "duration": "24 meses",
     "type": "Subvención de investigación",
     "career": [
-      "Investigadores de carrera temprana o consolidada"
+      "Investigador emergente",
+      "Investigador establecido"
     ],
     "applicantType": "Universidad, ONG, empresa o nueva organización",
     "area": "Medio Ambiente; Ciencias de Salud; Computacion",
@@ -3302,9 +3303,161 @@ const opportunities=[
     "internalObservation": "Compatibilidad únicamente como participante técnico o ejecutor dentro de una propuesta nacional; convocatoria cerrada. Conviene posicionar a la UNPHU ante el punto focal nacional como socio para datos, evaluación de pérdidas no económicas, modelación, seguimiento y formación.",
     "url": "https://www.frld.org/nodebim",
     "pivotUrl": ""
+  },
+  {
+    "id": 91,
+    "code": "2026-092",
+    "title": "MSCA Doctoral Networks 2026 — Red doctoral internacional sobre patrimonio digital y sistemas constructivos",
+    "funder": "Comisión Europea — Marie Skłodowska-Curie Actions (MSCA)",
+    "funderType": "Organización internacional",
+    "country": "Union Europea",
+    "deadline": "2026-11-24",
+    "deadlineLabel": "24 de noviembre de 2026",
+    "deliveryType": "Propuesta completa",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Abierta",
+    "amount": "EUR No especificado",
+    "duration": "Según propuesta; contratación doctoral de 3 a 36 meses, hasta 48 meses en Joint Doctorates",
+    "type": "Proyecto de investigación",
+    "career": [
+      "Investigador establecido",
+      "Profesor",
+      "Estudiante de posgrado"
+    ],
+    "applicantType": "Consorcio; Institución académica; Empresa; Gobierno; ONG",
+    "area": "Patrimonio cultural; arquitectura; digitalización e inteligencia artificial",
+    "keywords": [
+      "MSCA",
+      "red doctoral",
+      "patrimonio digital",
+      "sistemas constructivos",
+      "HBIM",
+      "gemelos digitales",
+      "IA",
+      "conservación",
+      "formación doctoral"
+    ],
+    "summary": "Convocatoria internacional y abierta a todas las áreas científicas para crear programas doctorales conjuntos con formación, movilidad y cooperación académica y no académica. Puede estructurarse una red sobre documentación digital, diagnóstico inteligente, HBIM, gemelos digitales y conservación de sistemas constructivos históricos.",
+    "eligibility": "La UNPHU puede integrarse como beneficiaria financiada adicional dentro de un consorcio que cumpla el núcleo mínimo europeo. Las organizaciones de países de ingresos bajos y medios pueden solicitar y recibir financiación de la UE. Todo beneficiario debe contratar al menos un candidato doctoral y ofrecer supervisión e infraestructura. Solicitante: Consorcio; Institución académica; Empresa; Gobierno; ONG. Ubicación elegible: Internacional; el núcleo mínimo debe incluir tres entidades independientes de tres países UE o asociados, con al menos una entidad de la UE. Ciudadanía: Doctorandos de cualquier nacionalidad; aplica la regla de movilidad MSCA.",
+    "notes": "Convocatoria HORIZON-MSCA-2026-DN-01 abierta desde el 28/05/2026. Presupuesto global indicativo de EUR 593 millones. La financiación se calcula mediante costes unitarios, por lo que no existe un monto fijo único por proyecto. Requiere registro institucional y PIC, contratación abierta de doctorandos y cumplimiento de la regla de movilidad.",
+    "internalObservation": "Compatibilidad alta, pero requiere consorcio internacional y preparación institucional considerable. Priorizar una propuesta sobre patrimonio digital del Caribe, HBIM, IA para diagnóstico de lesiones y preservación de sistemas constructivos históricos.",
+    "url": "https://marie-sklodowska-curie-actions.ec.europa.eu/funding/msca-doctoral-networks-2026",
+    "pivotUrl": ""
+  },
+  {
+    "id": 92,
+    "code": "2026-093",
+    "title": "AIA Site Preservation Grant — Conservación de sitios arqueológicos amenazados",
+    "funder": "Archaeological Institute of America — AIA Site Preservation Program",
+    "funderType": "Asociación profesional",
+    "country": "Estados Unidos",
+    "deadline": "2026-11-01",
+    "deadlineLabel": "1 de noviembre de 2026",
+    "deliveryType": "Solicitud",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Abierta",
+    "amount": "USD No especificado – 15.000",
+    "duration": "Según proyecto aprobado",
+    "type": "Subvención de investigación",
+    "career": [
+      "Investigador establecido"
+    ],
+    "applicantType": "Persona individual; Institución académica; ONG",
+    "area": "Patrimonio cultural; arqueología; conservación",
+    "keywords": [
+      "sitios arqueológicos",
+      "conservación",
+      "documentación digital",
+      "fotogrametría",
+      "monitoreo",
+      "mantenimiento",
+      "capacitación",
+      "divulgación"
+    ],
+    "summary": "Financia proyectos que preserven y protejan sitios arqueológicos amenazados. Admite planificación para la conservación, documentación fotográfica y aplicaciones digitales, evaluación del estado, intervenciones físicas, medidas preventivas, monitoreo, mantenimiento, capacitación y educación pública.",
+    "eligibility": "Compatible para la UNPHU cuando el proyecto se refiera a un sitio arqueológico o arquitectura arqueológica amenazada y sea dirigido por un equipo con credenciales adecuadas. Se valoran la participación de autoridades y personal local, la conservación a largo plazo, el mantenimiento y la transferencia de metodologías. Solicitante: Persona individual; Institución académica; ONG. Ubicación elegible: Internacional. Ciudadanía: Sin restricción.",
+    "notes": "Monto máximo de USD 15,000. La solicitud debe incluir un componente de preservación y se fortalece con educación y divulgación comunitaria. Los fondos se destinan a costes directos; no cubren costes indirectos, salarios, excavaciones, prospecciones arqueológicas ni el desarrollo aislado de planes de gestión.",
+    "internalObservation": "Compatibilidad alta únicamente si el inmueble o conjunto tiene carácter arqueológico y existe una amenaza de conservación verificable. Adecuada para documentación digital, monitoreo y conservación preventiva, no para una investigación arquitectónica sin componente arqueológico.",
+    "url": "https://www.archaeological.org/grant/site-preservation/",
+    "pivotUrl": ""
+  },
+  {
+    "id": 93,
+    "code": "2026-094",
+    "title": "Kathleen and David Boochever Endowment — Subvención semilla para prospección y documentación tecnológica",
+    "funder": "Archaeological Institute of America",
+    "funderType": "Asociación profesional",
+    "country": "Estados Unidos",
+    "deadline": "2026-11-01",
+    "deadlineLabel": "1 de noviembre de 2026",
+    "deliveryType": "Solicitud",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Abierta",
+    "amount": "USD No especificado – 5.000",
+    "duration": "Según proyecto",
+    "type": "Subvención de investigación",
+    "career": [
+      "Investigador emergente",
+      "Investigador establecido"
+    ],
+    "applicantType": "Persona individual",
+    "area": "Arqueología; patrimonio cultural; tecnología aplicada",
+    "keywords": [
+      "prospección",
+      "documentación digital",
+      "fotogrametría",
+      "LiDAR",
+      "teledetección",
+      "geofísica",
+      "análisis de materiales",
+      "arqueología arquitectónica"
+    ],
+    "summary": "Subvención semilla para trabajo de campo o laboratorio informado por tecnologías nuevas o emergentes. Puede apoyar prospección regional o de sitio, geofísica, teledetección, excavaciones exploratorias y análisis científicos innovadores aplicados al estudio del pasado.",
+    "eligibility": "Debe solicitarla un investigador de la UNPHU como persona individual. El solicitante debe ser miembro de la AIA en categoría de posgrado o profesional, poseer un doctorado en arqueología o disciplina relacionada y tener afiliación académica. Cuando se requieran permisos, debe acreditarse su obtención. Solicitante: Persona individual. Ubicación elegible: Internacional. Ciudadanía: Sin restricción.",
+    "notes": "Monto máximo de USD 5,000. Se priorizan investigadores dentro de los ocho años posteriores al doctorado, aunque otros investigadores pueden aplicar. Los fondos no cubren costes indirectos ni salario del investigador principal. Se fomenta la publicación abierta de los datos digitales generados.",
+    "internalObservation": "Compatible como piloto para escaneo 3D, prospección geofísica, fotogrametría, caracterización de materiales o documentación tecnológica de arquitectura arqueológica. La UNPHU no sería la solicitante directa; aplicaría un investigador afiliado.",
+    "url": "https://www.archaeological.org/grant/boochever-endowment/",
+    "pivotUrl": ""
+  },
+  {
+    "id": 94,
+    "code": "2026-095",
+    "title": "Ellen and Charles Steinmetz Endowment — Tecnología innovadora aplicada a la investigación arqueológica",
+    "funder": "Archaeological Institute of America",
+    "funderType": "Asociación profesional",
+    "country": "Estados Unidos",
+    "deadline": "2026-11-01",
+    "deadlineLabel": "1 de noviembre de 2026",
+    "deliveryType": "Solicitud",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Abierta",
+    "amount": "USD No especificado – 8.500",
+    "duration": "Según proyecto",
+    "type": "Subvención de investigación",
+    "career": [
+      "Investigador emergente",
+      "Investigador establecido"
+    ],
+    "applicantType": "Persona individual",
+    "area": "Arqueología; patrimonio cultural; innovación tecnológica",
+    "keywords": [
+      "tecnología arqueológica",
+      "escáner 3D",
+      "fotogrametría",
+      "HBIM",
+      "visión computacional",
+      "sensores",
+      "GIS"
+    ],
+    "summary": "Financia proyectos arqueológicos que utilicen herramientas y métodos tecnológicos de forma innovadora. Normalmente incluye trabajo de campo, aunque también admite investigación de laboratorio. La tecnología puede abarcar métodos digitales, ingeniería, química, biología, física y otras disciplinas.",
+    "eligibility": "Debe solicitarla un investigador afiliado a la UNPHU como persona individual. Se exige membresía AIA de posgrado o profesional, doctorado en arqueología o disciplina relacionada y afiliación académica. Cuando el proyecto requiera permisos, deben estar disponibles antes del desembolso. Solicitante: Persona individual. Ubicación elegible: Internacional. Ciudadanía: Sin restricción.",
+    "notes": "Se conceden hasta dos ayudas de un máximo de USD 8,500 cada una. Se priorizan proyectos nuevos de investigadores dentro de los ocho años posteriores al doctorado. No cubre costes indirectos ni salario del investigador principal y fomenta la publicación abierta de datos digitales.",
+    "internalObservation": "Muy adecuada para un piloto de HBIM, modelos 3D, visión computacional, sensores o análisis inteligente de un edificio o sitio histórico, siempre que la pregunta sea arqueológica y el investigador principal cumpla doctorado y membresía AIA.",
+    "url": "https://www.archaeological.org/grant/the-ellen-and-charles-steinmetz-endowment-fund-for-archaeology/",
+    "pivotUrl": ""
   }
 ];
-const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);
+const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);
 const grid=document.getElementById('grid'),search=document.getElementById('search'),status=document.getElementById('status'),type=document.getElementById('type'),career=document.getElementById('career'),count=document.getElementById('count');
 const detail=document.getElementById('detail');
 const statusOf=o=>!o.deadline?'open':new Date(o.deadline+'T23:59:59')>=today?'future':'expired';
