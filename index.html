@@ -25,7 +25,7 @@ dialog{border:0;border-radius:8px;padding:0;max-width:760px;width:calc(100% - 30
 <div class="notice"><div><strong>Demostración no oficial:</strong> este portal fue actualizado a partir del Excel maestro suministrado. Las fechas y condiciones deben verificarse siempre en el sitio oficial del financiador.</div></div>
 <main class="main" id="oportunidades"><div class="section-title"><div><h2>Convocatorias disponibles</h2><p>Información publicada desde el Excel maestro de oportunidades de financiamiento.</p></div></div>
 <section class="filters" aria-label="Filtros"><div class="field"><label for="search">Buscar</label><input id="search" type="search" placeholder="Título, financiador, palabra clave..."></div><div class="field"><label for="status">Estado</label><select id="status"><option value="all">Todos</option><option value="future">Futuras</option><option value="open">Abiertas / continuas</option><option value="expired">Vencidas</option></select></div><div class="field"><label for="type">Tipo</label><select id="type"><option value="all">Todos</option></select></div><div class="field"><label for="career">Perfil</label><select id="career"><option value="all">Todos</option></select></div></section>
-<div class="summarybar"><span>Mostrando <strong id="count">0</strong> resultados</span><span>Actualizado desde el Excel maestro: 7 de septiembre de 2026</span></div><section class="grid" id="grid"></section>
+<div class="summarybar"><span>Mostrando <strong id="count">0</strong> resultados</span><span>Actualizado desde el Excel maestro: 8 de septiembre de 2026</span></div><section class="grid" id="grid"></section>
 <section id="metodologia" style="margin-top:55px;background:white;border-left:5px solid var(--gold);padding:28px;box-shadow:0 8px 25px rgba(0,55,42,.06)"><div class="section-title"><div><h2>Cómo funcionaría la versión definitiva</h2><p>Excel como fuente maestra → validación de datos → portal web actualizado.</p></div></div><p>La unidad responsable actualizaría una hoja estructurada con fechas, montos, elegibilidad y enlaces. Al publicar una nueva versión, la página se regeneraría conservando su diseño, buscador y filtros. Las oportunidades vencidas podrían ocultarse automáticamente o conservarse en un archivo histórico.</p></section>
 </main>
 <footer><div class="footer-inner"><div><h4>Investigación</h4><p>Prototipo conceptual de un portal institucional para difundir oportunidades de financiamiento científico y académico.</p></div><div><p>Los nombres y marcas pertenecen a sus respectivos titulares. Esta demostración no constituye una publicación oficial.</p></div></div><div class="copyright">Prueba de concepto · Portal de oportunidades de financiamiento · 2026</div></footer>
@@ -2757,7 +2757,7 @@ const opportunities=[
     "deadlineLabel": "5 de octubre de 2026",
     "deliveryType": "Nominación",
     "manualStatus": "Abierta",
-    "calculatedStatus": "Abierta",
+    "calculatedStatus": "Próxima a vencer",
     "amount": "USD 200.000",
     "duration": "No especificada",
     "type": "Premio",
@@ -3576,7 +3576,7 @@ const opportunities=[
     "deadlineLabel": "5 de octubre de 2026",
     "deliveryType": "Propuesta completa",
     "manualStatus": "Abierta",
-    "calculatedStatus": "Abierta",
+    "calculatedStatus": "Próxima a vencer",
     "amount": "USD No especificado",
     "duration": "Máximo 5 años",
     "type": "Proyecto de investigación",
@@ -4661,9 +4661,169 @@ const opportunities=[
     "internalObservation": "Alta pertinencia para UNPHU–Escuela de Agronomía. República Dominicana es un SIDS elegible para AOD y está dentro del foco geográfico prioritario. Conviene orientar la propuesta a investigación aplicada sobre resiliencia climática agrícola, conservación de suelos, agua, agroforestería o restauración de paisajes; identificar desde el inicio un socio local y estructurar el presupuesto considerando el mínimo del 25 % para socios locales. Confirmar con el Fondo cómo aplica ese 25 % cuando el Lead Applicant también es una entidad local dominicana.",
     "url": "https://globalebafund.org/small-size-grants/",
     "pivotUrl": ""
+  },
+  {
+    "id": 124,
+    "code": "OP-0129",
+    "title": "MSCA Doctoral Networks 2026",
+    "funder": "Comisión Europea — Horizon Europe / Marie Skłodowska-Curie Actions",
+    "funderType": "Organización internacional",
+    "country": "Union Europea",
+    "deadline": "2026-11-24",
+    "deadlineLabel": "24 de noviembre de 2026",
+    "deliveryType": "Propuesta completa",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Abierta",
+    "amount": "EUR No especificado",
+    "duration": "Hasta 48 meses; Joint Doctorates hasta 60 meses",
+    "type": "Proyecto de investigación",
+    "career": [
+      "Investigador establecido",
+      "Profesor"
+    ],
+    "applicantType": "Consorcio",
+    "area": "Multidisciplinar",
+    "keywords": [
+      "doctoral networks",
+      "Horizon Europe",
+      "investigación",
+      "doctorado",
+      "movilidad",
+      "formación investigadora",
+      "Internet",
+      "ciberseguridad",
+      "inteligencia artificial",
+      "conectividad",
+      "transformación digital"
+    ],
+    "summary": "Financia redes internacionales que implementan programas doctorales mediante consorcios de universidades, centros de investigación, empresas y otros actores, en todas las áreas científicas.",
+    "eligibility": "INTEC/PUCMM pueden participar y recibir financiación como entidades de República Dominicana. El consorcio debe cumplir las reglas mínimas de Horizon Europe, incluyendo al menos tres entidades independientes de tres Estados miembros o países asociados distintos y al menos una de un Estado miembro de la UE. Solicitante: Consorcio. Ubicación elegible: Unión Europea, países asociados y terceros países; República Dominicana es elegible para financiación Horizon Europe. Ciudadanía: Sin restricción general de ciudadanía para la entidad; los doctorandos pueden ser de cualquier nacionalidad sujetos a las reglas MSCA.",
+    "notes": "Convocatoria abierta desde el 28/05/2026. Deadline 24/11/2026. Presupuesto indicativo total de la convocatoria: EUR 593.034 millones. República Dominicana figura entre los terceros países de ingresos bajos y medios automáticamente elegibles para financiación de Horizon Europe.",
+    "internalObservation": "Oportunidad estratégica para INTEC/PUCMM si se identifica o construye un consorcio europeo. Puede articularse alrededor de desigualdad digital, Internet resiliente, ciberseguridad, IA e infraestructuras críticas.",
+    "url": "https://marie-sklodowska-curie-actions.ec.europa.eu/funding/msca-doctoral-networks-2026",
+    "pivotUrl": ""
+  },
+  {
+    "id": 125,
+    "code": "OP-0130",
+    "title": "SYNAPSE IDEATHON — Segunda Cohorte",
+    "funder": "AION Synapse Foundation",
+    "funderType": "Fundación privada",
+    "country": "Emiratos Árabes Unidos",
+    "deadline": null,
+    "deadlineLabel": "Sin fecha confirmada",
+    "deliveryType": "Solicitud",
+    "manualStatus": "",
+    "calculatedStatus": "Sin fecha",
+    "amount": "USD No especificado – 1.000",
+    "duration": "No especificado para la segunda cohorte",
+    "type": "Innovación",
+    "career": [
+      "Estudiante de posgrado",
+      "Investigador emergente",
+      "Investigador establecido",
+      "Profesor"
+    ],
+    "applicantType": "Persona individual",
+    "area": "Investigación aplicada, ciencia, tecnología e innovación social",
+    "keywords": [
+      "investigación aplicada",
+      "innovación",
+      "ciencia",
+      "tecnología",
+      "educación",
+      "impacto social",
+      "sostenibilidad",
+      "América Latina",
+      "Caribe"
+    ],
+    "summary": "Programa internacional de micro-subvenciones para proyectos de investigación e innovación con impacto social en América Latina y el Caribe. La segunda cohorte fue aprobada y se anunció su apertura antes de finalizar 2026.",
+    "eligibility": "Investigadores, docentes y estudiantes de posgrado de INTEC/PUCMM pueden ser elegibles como personas físicas si cuentan con afiliación o carta de aval institucional. La universidad no presenta la propuesta como persona jurídica. Solicitante: Persona individual. Ubicación elegible: América Latina y el Caribe. Ciudadanía: Sin restricción específica publicada; se exige afiliación o aval de una institución elegible de América Latina y el Caribe.",
+    "notes": "Segunda cohorte aprobada: fondo total anunciado de USD 10,000 para hasta diez micro-subvenciones, con apertura antes de finalizar 2026. La fecha límite y las condiciones finales de la segunda cohorte aún no están publicadas. Como referencia, la primera cohorte otorgaba hasta USD 1,000 por proyecto.",
+    "internalObservation": "Financiación pequeña, útil para piloto o prueba de concepto. Verificar de nuevo las bases cuando abra oficialmente la segunda cohorte antes de postular.",
+    "url": "https://www.aionsynapse.org/en/synapse-ideathon/",
+    "pivotUrl": ""
+  },
+  {
+    "id": 126,
+    "code": "OP-0131",
+    "title": "Fondo Sectorial de Educación: Inclusión Digital — Educación con Nuevos Horizontes",
+    "funder": "Agencia Nacional de Investigación e Innovación (ANII) / Fundación Ceibal",
+    "funderType": "Gobierno internacional",
+    "country": "Uruguay",
+    "deadline": "2026-09-16",
+    "deadlineLabel": "16 de septiembre de 2026",
+    "deliveryType": "Propuesta completa",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Próxima a vencer",
+    "amount": "Otra No especificado – 2.900.000",
+    "duration": "Hasta 18 meses",
+    "type": "Proyecto de investigación",
+    "career": [
+      "Investigador establecido",
+      "Profesor"
+    ],
+    "applicantType": "Institución académica; consorcio",
+    "area": "Educación y tecnología digital",
+    "keywords": [
+      "inclusión digital",
+      "educación",
+      "tecnología educativa",
+      "enseñanza digital",
+      "aprendizaje",
+      "brecha digital",
+      "evidencia",
+      "política educativa"
+    ],
+    "summary": "Financia proyectos de investigación sobre enseñanza y aprendizaje mediados por tecnologías digitales, orientados a generar evidencia para el sistema educativo uruguayo.",
+    "eligibility": "INTEC/PUCMM son elegibles como instituciones extranjeras públicas o privadas, pero si actúan como institución proponente deben contar con una contraparte nacional uruguaya y presentar conjuntamente las actividades de ambas instituciones. Solicitante: Institución académica; consorcio. Ubicación elegible: Uruguay e internacional; las instituciones extranjeras deben contar con contraparte nacional uruguaya. Ciudadanía: Sin restricción de ciudadanía; prevalece la afiliación institucional.",
+    "notes": "Apertura 06/08/2026; cierre 16/09/2026 a las 14:00 UYT. Subsidio de hasta UYU 2,900,000, equivalente a un máximo del 80% del costo total; se exige una contrapartida mínima institucional del 20%. Duración máxima: 18 meses.",
+    "internalObservation": "Requiere adaptación del proyecto a generación de evidencia relevante para el sistema educativo uruguayo y una contraparte uruguaya. Moneda real del subsidio: UYU; en la columna Moneda se usa 'Otra' para respetar el catálogo existente.",
+    "url": "https://anii.org.uy/apoyos/investigacion/672/fondo-sectorial-de-educacion-inclusion-digital-educacion-con-nuevos-horizontes/",
+    "pivotUrl": ""
+  },
+  {
+    "id": 127,
+    "code": "OP-0132",
+    "title": "Economic Opportunities for Women and Men: The Role of Regulation and Fiscal Policy",
+    "funder": "Banco Interamericano de Desarrollo (BID) — G&D Lab / Institutions for Development",
+    "funderType": "Organización internacional",
+    "country": "Internacional",
+    "deadline": "2026-09-24",
+    "deadlineLabel": "24 de septiembre de 2026",
+    "deliveryType": "Propuesta completa",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Próxima a vencer",
+    "amount": "USD No especificado – 100.000",
+    "duration": "No especificado en la página principal",
+    "type": "Proyecto de investigación",
+    "career": [
+      "Investigador establecido",
+      "Profesor"
+    ],
+    "applicantType": "Persona individual; institución académica; centro de investigación",
+    "area": "Regulación, políticas públicas y oportunidades económicas",
+    "keywords": [
+      "digital government",
+      "regulación",
+      "gobierno digital",
+      "género",
+      "oportunidades económicas",
+      "causal inference",
+      "Difference-in-Differences",
+      "experimentos",
+      "cuasi-experimentos",
+      "política pública"
+    ],
+    "summary": "Convocatoria para investigación causal rigurosa sobre cómo reformas regulatorias, financieras, fiscales y laborales afectan las oportunidades económicas de mujeres y hombres en América Latina y el Caribe.",
+    "eligibility": "INTEC/PUCMM pueden participar directamente mediante investigadores o equipos afiliados a universidades públicas o privadas. La propuesta debe analizar al menos un país prestatario del BID y utilizar métodos cuantitativos capaces de establecer relaciones causales. Solicitante: Persona individual; institución académica; centro de investigación. Ubicación elegible: Al menos uno de los 26 países prestatarios del BID; incluye República Dominicana. Ciudadanía: Investigadores ciudadanos de uno de los 48 países miembros del BID.",
+    "notes": "Deadline 24/09/2026 a las 12:00 p. m. ET. Categoría I: diagnósticos cuantitativos causales, hasta USD 20,000. Categoría II: intervenciones piloto, hasta USD 100,000. La postulación se realiza en inglés mediante Oxford Abstracts.",
+    "internalObservation": "Elegible y abierta. Para maximizar encaje con brecha digital, conviene reformular hacia una pregunta causal vinculada con gobierno digital, regulación o conectividad y sus efectos diferenciados sobre oportunidades económicas.",
+    "url": "https://gdlab.iadb.org/en/call",
+    "pivotUrl": ""
   }
 ];
-const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);
+const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);
 const grid=document.getElementById('grid'),search=document.getElementById('search'),status=document.getElementById('status'),type=document.getElementById('type'),career=document.getElementById('career'),count=document.getElementById('count');
 const detail=document.getElementById('detail');
 const statusOf=o=>!o.deadline?'open':new Date(o.deadline+'T23:59:59')>=today?'future':'expired';
