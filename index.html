@@ -25,7 +25,7 @@ dialog{border:0;border-radius:8px;padding:0;max-width:760px;width:calc(100% - 30
 <div class="notice"><div><strong>Demostración no oficial:</strong> este portal fue actualizado a partir del Excel maestro suministrado. Las fechas y condiciones deben verificarse siempre en el sitio oficial del financiador.</div></div>
 <main class="main" id="oportunidades"><div class="section-title"><div><h2>Convocatorias disponibles</h2><p>Información publicada desde el Excel maestro de oportunidades de financiamiento.</p></div></div>
 <section class="filters" aria-label="Filtros"><div class="field"><label for="search">Buscar</label><input id="search" type="search" placeholder="Título, financiador, palabra clave..."></div><div class="field"><label for="status">Estado</label><select id="status"><option value="all">Todos</option><option value="future">Futuras</option><option value="open">Abiertas / continuas</option><option value="expired">Vencidas</option></select></div><div class="field"><label for="type">Tipo</label><select id="type"><option value="all">Todos</option></select></div><div class="field"><label for="career">Perfil</label><select id="career"><option value="all">Todos</option></select></div></section>
-<div class="summarybar"><span>Mostrando <strong id="count">0</strong> resultados</span><span>Actualizado desde el Excel maestro: 16 de septiembre de 2026</span></div><section class="grid" id="grid"></section>
+<div class="summarybar"><span>Mostrando <strong id="count">0</strong> resultados</span><span>Actualizado desde el Excel maestro: 18 de septiembre de 2026</span></div><section class="grid" id="grid"></section>
 <section id="metodologia" style="margin-top:55px;background:white;border-left:5px solid var(--gold);padding:28px;box-shadow:0 8px 25px rgba(0,55,42,.06)"><div class="section-title"><div><h2>Cómo funcionaría la versión definitiva</h2><p>Excel como fuente maestra → validación de datos → portal web actualizado.</p></div></div><p>La unidad responsable actualizaría una hoja estructurada con fechas, montos, elegibilidad y enlaces. Al publicar una nueva versión, la página se regeneraría conservando su diseño, buscador y filtros. Las oportunidades vencidas podrían ocultarse automáticamente o conservarse en un archivo histórico.</p></section>
 </main>
 <footer><div class="footer-inner"><div><h4>Investigación</h4><p>Prototipo conceptual de un portal institucional para difundir oportunidades de financiamiento científico y académico.</p></div><div><p>Los nombres y marcas pertenecen a sus respectivos titulares. Esta demostración no constituye una publicación oficial.</p></div></div><div class="copyright">Prueba de concepto · Portal de oportunidades de financiamiento · 2026</div></footer>
@@ -4011,6 +4011,57 @@ const opportunities=[
   },
   {
     "id": 108,
+    "code": "2026-109",
+    "title": "Advancing Circular Economy — ACE Facility: Second Call for Proposals",
+    "funder": "Caribbean Biodiversity Fund — CBF",
+    "funderType": "Fundación privada",
+    "country": "Internacional",
+    "deadline": "2026-01-04",
+    "deadlineLabel": "4 de enero de 2026",
+    "deliveryType": "Prepropuesta",
+    "manualStatus": "Cerrada",
+    "calculatedStatus": "Cerrada",
+    "amount": "USD 400.000 – 2.000.000",
+    "duration": "30-36 meses",
+    "type": "Innovación",
+    "career": [
+      "Economía circular",
+      "gestión de residuos",
+      "contaminación marina",
+      "ingeniería ambiental",
+      "materiales biodegradables",
+      "envases",
+      "reciclaje",
+      "modelos de negocio sostenibles",
+      "políticas ambientales",
+      "generación de datos"
+    ],
+    "applicantType": "Institución académica",
+    "area": "Medioambiente, economía circular y contaminación marina",
+    "keywords": [
+      "economía circular",
+      "residuos sólidos",
+      "basura marina",
+      "plásticos",
+      "envases",
+      "reciclaje",
+      "reutilización",
+      "biomateriales",
+      "contaminación marina",
+      "residuos médicos",
+      "textiles sintéticos",
+      "neumáticos",
+      "artes de pesca"
+    ],
+    "summary": "Financia proyectos innovadores que reduzcan residuos sólidos y basura marina, extiendan la vida útil de productos, desarrollen prácticas empresariales sostenibles y generen conocimiento o datos sobre economía circular y contaminación marina en el Caribe.",
+    "eligibility": "Las universidades e instituciones de investigación están expresamente admitidas. La UNPHU puede participar como entidad caribeña radicada en uno de los países elegibles. Se exige personería jurídica, certificado de registro y estados financieros auditados de dos ejercicios fiscales recientes. Solicitante: Institución académica. Ubicación elegible: Cuba, Dominica, República Dominicana, Granada, Haití, Jamaica, Montserrat, Santa Lucía y San Vicente y las Granadinas. Ciudadanía: Sin restricción.",
+    "notes": "Proceso en dos etapas: nota conceptual y propuesta completa por invitación. Para instituciones académicas y organizaciones sin fines de lucro se exige cofinanciamiento del 25 %, combinando efectivo y aportes en especie. El proyecto debe demostrar reducción directa y medible de basura marina y sostenibilidad financiera posterior.",
+    "internalObservation": "Prioridad alta para el próximo ciclo. Muy compatible con envases biodegradables, recubrimientos biobasados, aditivos para reciclabilidad y valorización de residuos. La propuesta debe vincular esos desarrollos con la prevención o reducción de basura marina en el Caribe.",
+    "url": "https://caribbeanbiodiversityfund.org/advancing-circular-economy-ace-facilitys-second-call-for-proposals/",
+    "pivotUrl": ""
+  },
+  {
+    "id": 109,
     "code": "2026-110",
     "title": "Programa de Apoyo para Redes Iberoamericanas de Investigación — Convocatoria 2024-2025-2026, cuarto plazo",
     "funder": "Asociación Universitaria Iberoamericana de Postgrado — AUIP",
@@ -4050,7 +4101,7 @@ const opportunities=[
     "pivotUrl": ""
   },
   {
-    "id": 109,
+    "id": 110,
     "code": "2026-111",
     "title": "Iberarchivos — Convocatoria ordinaria 2026 de ayudas a proyectos archivísticos",
     "funder": "Programa Iberarchivos / Agencia Española de Cooperación Internacional para el Desarrollo — AECID",
@@ -4098,7 +4149,7 @@ const opportunities=[
     "pivotUrl": ""
   },
   {
-    "id": 110,
+    "id": 111,
     "code": "2026-112",
     "title": "Iberarchivos — Convocatoria supranacional 2026 de ayudas a proyectos archivísticos",
     "funder": "Programa Iberarchivos / Agencia Española de Cooperación Internacional para el Desarrollo — AECID",
@@ -4144,7 +4195,7 @@ const opportunities=[
     "pivotUrl": ""
   },
   {
-    "id": 111,
+    "id": 112,
     "code": "2026-113",
     "title": "IAI Science, Technology and Policy — STeP Fellows 2026",
     "funder": "Instituto Interamericano para la Investigación del Cambio Global — IAI",
@@ -4184,7 +4235,7 @@ const opportunities=[
     "pivotUrl": ""
   },
   {
-    "id": 112,
+    "id": 113,
     "code": "2026-114",
     "title": "Fondo de Ayuda Maleta Abierta 2026 — Proyectos Culturales Arte Migrante en Iberoamérica",
     "funder": "IberRutas / Secretaría General Iberoamericana — SEGIB",
@@ -4232,7 +4283,7 @@ const opportunities=[
     "pivotUrl": ""
   },
   {
-    "id": 113,
+    "id": 114,
     "code": "2026-115",
     "title": "Fonds Équipe France — FEF clásico",
     "funder": "Ministère de l’Europe et des Affaires étrangères — MEAE",
@@ -4274,7 +4325,7 @@ const opportunities=[
     "pivotUrl": ""
   },
   {
-    "id": 114,
+    "id": 115,
     "code": "2026-116",
     "title": "Fonds Équipe France Rapide — FEF-R",
     "funder": "Ministère de l’Europe et des Affaires étrangères — MEAE",
@@ -4317,7 +4368,7 @@ const opportunities=[
     "pivotUrl": ""
   },
   {
-    "id": 115,
+    "id": 116,
     "code": "2026-117",
     "title": "Fonds Équipe France Plus — FEF+",
     "funder": "Ministère de l’Europe et des Affaires étrangères — MEAE",
@@ -4360,7 +4411,7 @@ const opportunities=[
     "pivotUrl": ""
   },
   {
-    "id": 116,
+    "id": 117,
     "code": "2026-118",
     "title": "Fonds d’Innovation pour le Développement — FID",
     "funder": "Agence Française de Développement — AFD / Fonds d’Innovation pour le Développement",
@@ -4398,7 +4449,7 @@ const opportunities=[
     "pivotUrl": ""
   },
   {
-    "id": 117,
+    "id": 118,
     "code": "2026-119",
     "title": "Fondo Francés para el Medio Ambiente Mundial — FFEM",
     "funder": "Fonds Français pour l’Environnement Mondial — FFEM",
@@ -4435,7 +4486,7 @@ const opportunities=[
     "pivotUrl": ""
   },
   {
-    "id": 118,
+    "id": 119,
     "code": "2026-120",
     "title": "Programa INTERREG Caraïbes 2021–2027",
     "funder": "Unión Europea / Région Guadeloupe — Autoridad de gestión",
@@ -4481,7 +4532,7 @@ const opportunities=[
     "pivotUrl": ""
   },
   {
-    "id": 119,
+    "id": 120,
     "code": "2026-121",
     "title": "Programa Junior Fellowship 2026 — Direct-to-Device (D2D)",
     "funder": "Centro de Estudios de Telecomunicaciones de América Latina (cet.la) | ASIET",
@@ -4519,7 +4570,7 @@ const opportunities=[
     "pivotUrl": ""
   },
   {
-    "id": 120,
+    "id": 121,
     "code": "OP-0122",
     "title": "SATREPS FY2027 — Bioresources",
     "funder": "Japan Science and Technology Agency (JST) / Japan International Cooperation Agency (JICA)",
@@ -4557,7 +4608,7 @@ const opportunities=[
     "pivotUrl": ""
   },
   {
-    "id": 121,
+    "id": 122,
     "code": "OP-0123",
     "title": "SATREPS FY2027 — Disaster Prevention and Mitigation",
     "funder": "Japan Science and Technology Agency (JST) / Japan International Cooperation Agency (JICA)",
@@ -4597,7 +4648,7 @@ const opportunities=[
     "pivotUrl": ""
   },
   {
-    "id": 122,
+    "id": 123,
     "code": "OP-0124",
     "title": "SATREPS FY2027 — Environment and Energy",
     "funder": "Japan Science and Technology Agency (JST) / Japan International Cooperation Agency (JICA)",
@@ -4635,7 +4686,7 @@ const opportunities=[
     "pivotUrl": ""
   },
   {
-    "id": 123,
+    "id": 124,
     "code": "OP-0125",
     "title": "29.ª Convocatoria para proyectos de cooperación triangular — Fondo Regional para la Cooperación Triangular",
     "funder": "Ministerio Federal de Cooperación Económica y Desarrollo de Alemania (BMZ) / Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ)",
@@ -4675,7 +4726,7 @@ const opportunities=[
     "pivotUrl": ""
   },
   {
-    "id": 124,
+    "id": 125,
     "code": "OP-0126",
     "title": "Global EbA Fund — 8th Call for Proposals for Small-Size Grants",
     "funder": "Global EbA Fund / IUCN / UNEP / International Climate Initiative (IKI)",
@@ -4716,7 +4767,7 @@ const opportunities=[
     "pivotUrl": ""
   },
   {
-    "id": 125,
+    "id": 126,
     "code": "OP-0127",
     "title": "Community-Centered Connectivity Grant Program",
     "funder": "Internet Society Foundation",
@@ -4754,7 +4805,7 @@ const opportunities=[
     "pivotUrl": ""
   },
   {
-    "id": 126,
+    "id": 127,
     "code": "OP-0128",
     "title": "Research Grant Program",
     "funder": "Internet Society Foundation",
@@ -4793,7 +4844,7 @@ const opportunities=[
     "pivotUrl": ""
   },
   {
-    "id": 127,
+    "id": 128,
     "code": "OP-0129",
     "title": "MSCA Doctoral Networks 2026",
     "funder": "Comisión Europea — Horizon Europe / Marie Skłodowska-Curie Actions",
@@ -4834,7 +4885,7 @@ const opportunities=[
     "pivotUrl": ""
   },
   {
-    "id": 128,
+    "id": 129,
     "code": "OP-0130",
     "title": "SYNAPSE IDEATHON — Segunda Cohorte",
     "funder": "AION Synapse Foundation",
@@ -4875,7 +4926,7 @@ const opportunities=[
     "pivotUrl": ""
   },
   {
-    "id": 129,
+    "id": 130,
     "code": "OP-0131",
     "title": "Fondo Sectorial de Educación: Inclusión Digital — Educación con Nuevos Horizontes",
     "funder": "Agencia Nacional de Investigación e Innovación (ANII) / Fundación Ceibal",
@@ -4913,7 +4964,7 @@ const opportunities=[
     "pivotUrl": ""
   },
   {
-    "id": 130,
+    "id": 131,
     "code": "OP-0132",
     "title": "Economic Opportunities for Women and Men: The Role of Regulation and Fiscal Policy",
     "funder": "Banco Interamericano de Desarrollo (BID) — G&D Lab / Institutions for Development",
@@ -4951,9 +5002,164 @@ const opportunities=[
     "internalObservation": "Elegible y abierta. Para maximizar encaje con brecha digital, conviene reformular hacia una pregunta causal vinculada con gobierno digital, regulación o conectividad y sus efectos diferenciados sobre oportunidades económicas.",
     "url": "https://gdlab.iadb.org/en/call",
     "pivotUrl": ""
+  },
+  {
+    "id": 132,
+    "code": "OP-0133",
+    "title": "Research and Higher Education Technology Fund",
+    "funder": "NLnet Foundation / Vietsch Foundation",
+    "funderType": "Fundación privada",
+    "country": "Países Bajos",
+    "deadline": "2026-11-03",
+    "deadlineLabel": "3 de noviembre de 2026",
+    "deliveryType": "Solicitud",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Abierta",
+    "amount": "EUR 5.000 – 50.000",
+    "duration": "Hasta 12 meses",
+    "type": "Subvención de investigación",
+    "career": [
+      "Investigador",
+      "profesor",
+      "desarrollador de tecnología abierta"
+    ],
+    "applicantType": "Institución académica; institución de investigación; persona individual; ONG; empresa",
+    "area": "Tecnologías de Internet; investigación y educación superior",
+    "keywords": [
+      "Internet abierto",
+      "resiliencia",
+      "tecnología abierta",
+      "investigación",
+      "educación superior",
+      "redes",
+      "software libre",
+      "datos abiertos"
+    ],
+    "summary": "Fondo de NLnet y Vietsch Foundation para pequeñas iniciativas de investigación y educación superior que contribuyan al futuro de Internet y generen resultados tecnológicos o científicos abiertos.",
+    "eligibility": "INTEC/PUCMM y sus investigadores pueden ser elegibles. NLnet admite en principio individuos, organizaciones de investigación, organizaciones sin fines de lucro, instituciones públicas y empresas; deben cumplirse las condiciones específicas del fondo. Solicitante: Institución académica; institución de investigación; persona individual; ONG; empresa. Ubicación elegible: Internacional. Ciudadanía: Sin restricción.",
+    "notes": "Convocatoria abierta con cortes periódicos. Próximo deadline: 03/11/2026 a las 12:00 CET. Primer grant entre EUR 5,000 y 50,000. Los resultados científicos deben publicarse en acceso abierto y el software/hardware desarrollado bajo licencias libres y de código abierto.",
+    "internalObservation": "Prioridad alta para brecha digital si la propuesta produce una metodología, dataset, software o herramienta abierta para medir desigualdad, resiliencia o desarrollo territorial de Internet.",
+    "url": "https://nlnet.nl/nren/",
+    "pivotUrl": ""
+  },
+  {
+    "id": 133,
+    "code": "OP-0134",
+    "title": "ICANN Grant Program",
+    "funder": "Internet Corporation for Assigned Names and Numbers (ICANN)",
+    "funderType": "ONG",
+    "country": "Estados Unidos",
+    "deadline": null,
+    "deadlineLabel": "Sin fecha confirmada",
+    "deliveryType": "Propuesta completa",
+    "manualStatus": "Cerrada",
+    "calculatedStatus": "Cerrada",
+    "amount": "USD 50.000 – 500.000",
+    "duration": "Hasta 24 meses",
+    "type": "Subvención de investigación",
+    "career": [
+      "Investigadores",
+      "equipos técnicos",
+      "organizaciones sin fines de lucro"
+    ],
+    "applicantType": "Organización benéfica; ONG; institución académica sin fines de lucro elegible",
+    "area": "Infraestructura de Internet; DNS; identificadores únicos; seguridad y resiliencia",
+    "keywords": [
+      "DNS",
+      "DNSSEC",
+      "IPv6",
+      "seguridad",
+      "resiliencia",
+      "identificadores únicos",
+      "Internet",
+      "estándares abiertos"
+    ],
+    "summary": "Programa global de ICANN financiado con ingresos de subastas de nuevos gTLD para proyectos alineados con su misión de asegurar la operación estable y segura de los sistemas de identificadores únicos de Internet.",
+    "eligibility": "INTEC/PUCMM podrían ser elegibles institucionalmente si acreditan naturaleza benéfica equivalente a una organización estadounidense 501(c)(3), cumplen la debida diligencia y pueden recibir transferencias desde una institución financiera de Estados Unidos. Solicitante: Organización benéfica; ONG; institución académica sin fines de lucro elegible. Ubicación elegible: Internacional. Ciudadanía: Sin restricción.",
+    "notes": "El primer ciclo está cerrado y, al 08/09/2026, ICANN no ha publicado la fecha de apertura del siguiente ciclo. Los montos de USD 50,000-500,000 y duración máxima de 24 meses corresponden al primer ciclo y pueden ser revisados en ciclos futuros.",
+    "internalObservation": "Prioridad media-alta para líneas sobre DNS, DNSSEC, IPv6, resiliencia e infraestructura de Internet. Encaje menor para una propuesta centrada únicamente en penetración o brecha digital de acceso.",
+    "url": "https://www.icann.org/en/grant-program",
+    "pivotUrl": ""
+  },
+  {
+    "id": 134,
+    "code": "OP-0135",
+    "title": "Internet Freedom Fund",
+    "funder": "Open Technology Fund (OTF)",
+    "funderType": "ONG",
+    "country": "Estados Unidos",
+    "deadline": null,
+    "deadlineLabel": "Convocatoria continua",
+    "deliveryType": "Resumen",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Sin fecha",
+    "amount": "USD 10.000 – 900.000",
+    "duration": "Hasta 24 meses; rango ideal 6-12 meses",
+    "type": "Proyecto de investigación",
+    "career": [
+      "Investigadores",
+      "desarrolladores",
+      "organizaciones de sociedad civil",
+      "expertos en seguridad digital"
+    ],
+    "applicantType": "Persona individual; ONG; institución académica; empresa",
+    "area": "Libertad de Internet; ciberseguridad; censura y vigilancia",
+    "keywords": [
+      "Internet freedom",
+      "censura",
+      "vigilancia",
+      "seguridad digital",
+      "privacidad",
+      "medición de Internet",
+      "investigación aplicada",
+      "tecnologías abiertas"
+    ],
+    "summary": "Fondo principal de OTF para proyectos innovadores de libertad de Internet. Financia desarrollo tecnológico, investigación aplicada, seguridad digital y encuentros orientados a combatir censura, vigilancia y amenazas al acceso seguro y abierto a Internet.",
+    "eligibility": "Pueden aplicar individuos y organizaciones con o sin fines de lucro dentro o fuera de Estados Unidos. La propuesta debe encajar directamente con la misión de libertad de Internet y beneficiar a usuarios en entornos afectados por censura, vigilancia o restricciones. Solicitante: Persona individual; ONG; institución académica; empresa. Ubicación elegible: Internacional. Ciudadanía: Sin restricción.",
+    "notes": "Concept notes aceptadas de forma continua y revisadas mensualmente. Monto permitido: USD 10,000-900,000; rango ideal USD 50,000-200,000 por 6-12 meses. OTF opera mediante contratos, no grants tradicionales. No financia proyectos generales de conectividad o ICT4D.",
+    "internalObservation": "Encaje limitado con brecha digital de acceso. Puede ser relevante si la investigación se reorienta a seguridad digital, censura, vigilancia, medición de interferencias o resiliencia de comunidades expuestas a restricciones de Internet.",
+    "url": "https://www.opentech.fund/funds/internet-freedom-fund/",
+    "pivotUrl": ""
+  },
+  {
+    "id": 135,
+    "code": "OP-0136",
+    "title": "Heilbronn AI Fellowships",
+    "funder": "DAAD (German Academic Exchange Service) / Dieter Schwarz Stiftung",
+    "funderType": "Otro",
+    "country": "Alemania",
+    "deadline": null,
+    "deadlineLabel": "Convocatoria continua",
+    "deliveryType": "Solicitud",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Sin fecha",
+    "amount": "EUR 2.800 – 33.600",
+    "duration": "1–12 meses",
+    "type": "Fellowship / posdoctorado",
+    "career": [
+      "Investigador emergente",
+      "Postdoctorado"
+    ],
+    "applicantType": "Persona individual",
+    "area": "Inteligencia Artificial",
+    "keywords": [
+      "IA",
+      "inteligencia artificial",
+      "investigación",
+      "posdoctorado",
+      "movilidad internacional",
+      "Heilbronn",
+      "innovación"
+    ],
+    "summary": "Programa internacional de estancias de investigación para doctorandos en fase final y jóvenes investigadores posdoctorales que trabajen en inteligencia artificial, ya sea como campo principal o como herramienta aplicada a otras disciplinas. La estancia se realiza en una institución anfitriona participante en Heilbronn, Alemania.",
+    "eligibility": "Pueden aplicar doctorandos internacionales en la fase final del doctorado y jóvenes investigadores cuyo doctorado haya sido obtenido hace no más de 5 años. Se requiere afiliación a una universidad o institución de investigación, muy buen nivel de inglés, residencia fuera de Alemania durante los 15 meses previos a la solicitud y un proyecto preparado conjuntamente con un investigador anfitrión de una institución participante en Heilbronn. Solicitante: Persona individual. Ubicación elegible: Internacional; estancia de investigación en Heilbronn, Alemania. Ciudadanía: Sin restricción general; solicitantes internacionales.",
+    "notes": "Convocatoria continua. La solicitud debe presentarse al menos cuatro meses antes de la fecha prevista de inicio. La estancia puede durar de 1 a 12 meses. El estipendio es de EUR 2,800 mensuales, con apoyo adicional para seguro y viaje internacional según las condiciones del programa. El monto máximo registrado corresponde a 12 meses de estipendio (EUR 33,600), sin incluir beneficios adicionales.",
+    "internalObservation": "Aplicable a investigadores de UNPHU que cumplan el perfil individual. Requiere identificar un anfitrión en una institución participante de Heilbronn y preparar conjuntamente la propuesta. Especialmente relevante para investigadores jóvenes que utilicen IA como campo de investigación o como herramienta aplicada.",
+    "url": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/?origin=54&status=4&subjectGrps=&daad=&q=heilbronn&page=1&detail=57883183#voraussetzungen",
+    "pivotUrl": ""
   }
 ];
-const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);
+const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);
 const grid=document.getElementById('grid'),search=document.getElementById('search'),status=document.getElementById('status'),type=document.getElementById('type'),career=document.getElementById('career'),count=document.getElementById('count');
 const detail=document.getElementById('detail');
 const statusOf=o=>!o.deadline?'open':new Date(o.deadline+'T23:59:59')>=today?'future':'expired';
