@@ -25,7 +25,7 @@ dialog{border:0;border-radius:8px;padding:0;max-width:760px;width:calc(100% - 30
 <div class="notice"><div><strong>Demostración no oficial:</strong> este portal fue actualizado a partir del Excel maestro suministrado. Las fechas y condiciones deben verificarse siempre en el sitio oficial del financiador.</div></div>
 <main class="main" id="oportunidades"><div class="section-title"><div><h2>Convocatorias disponibles</h2><p>Información publicada desde el Excel maestro de oportunidades de financiamiento.</p></div></div>
 <section class="filters" aria-label="Filtros"><div class="field"><label for="search">Buscar</label><input id="search" type="search" placeholder="Título, financiador, palabra clave..."></div><div class="field"><label for="status">Estado</label><select id="status"><option value="all">Todos</option><option value="future">Futuras</option><option value="open">Abiertas / continuas</option><option value="expired">Vencidas</option></select></div><div class="field"><label for="type">Tipo</label><select id="type"><option value="all">Todos</option></select></div><div class="field"><label for="career">Perfil</label><select id="career"><option value="all">Todos</option></select></div></section>
-<div class="summarybar"><span>Mostrando <strong id="count">0</strong> resultados</span><span>Actualizado desde el Excel maestro: 19 de octubre de 2026</span></div><section class="grid" id="grid"></section>
+<div class="summarybar"><span>Mostrando <strong id="count">0</strong> resultados</span><span>Actualizado desde el Excel maestro: 20 de octubre de 2026</span></div><section class="grid" id="grid"></section>
 <section id="metodologia" style="margin-top:55px;background:white;border-left:5px solid var(--gold);padding:28px;box-shadow:0 8px 25px rgba(0,55,42,.06)"><div class="section-title"><div><h2>Cómo funcionaría la versión definitiva</h2><p>Excel como fuente maestra → validación de datos → portal web actualizado.</p></div></div><p>La unidad responsable actualizaría una hoja estructurada con fechas, montos, elegibilidad y enlaces. Al publicar una nueva versión, la página se regeneraría conservando su diseño, buscador y filtros. Las oportunidades vencidas podrían ocultarse automáticamente o conservarse en un archivo histórico.</p></section>
 </main>
 <footer><div class="footer-inner"><div><h4>Investigación</h4><p>Prototipo conceptual de un portal institucional para difundir oportunidades de financiamiento científico y académico.</p></div><div><p>Los nombres y marcas pertenecen a sus respectivos titulares. Esta demostración no constituye una publicación oficial.</p></div></div><div class="copyright">Prueba de concepto · Portal de oportunidades de financiamiento · 2026</div></footer>
@@ -5157,9 +5157,45 @@ const opportunities=[
     "internalObservation": "Aplicable a investigadores de UNPHU que cumplan el perfil individual. Requiere identificar un anfitrión en una institución participante de Heilbronn y preparar conjuntamente la propuesta. Especialmente relevante para investigadores jóvenes que utilicen IA como campo de investigación o como herramienta aplicada.",
     "url": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/?origin=54&status=4&subjectGrps=&daad=&q=heilbronn&page=1&detail=57883183#voraussetzungen",
     "pivotUrl": ""
+  },
+  {
+    "id": 136,
+    "code": "OP-0137",
+    "title": "NOSTER & Science Microbiome Prize 2027",
+    "funder": "NOSTER Inc. / Science–AAAS",
+    "funderType": "Empresa privada",
+    "country": "Internacional",
+    "deadline": "2027-02-14",
+    "deadlineLabel": "14 de febrero de 2027",
+    "deliveryType": "Solicitud",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Abierta",
+    "amount": "USD 25.000",
+    "duration": "No aplica (premio)",
+    "type": "Premio",
+    "career": [
+      "Investigador emergente"
+    ],
+    "applicantType": "Persona individual",
+    "area": "Microbioma; salud humana y veterinaria",
+    "keywords": [
+      "Microbiota",
+      "microbioma",
+      "funciones microbianas",
+      "salud",
+      "enfermedad",
+      "intervenciones terapéuticas",
+      "investigadores emergentes"
+    ],
+    "summary": "Premio internacional a investigaciones innovadoras sobre funciones de la microbiota de cualquier organismo, con potencial para comprender la salud y las enfermedades humanas o veterinarias o guiar terapias. El ganador recibe USD 25,000 y publica su ensayo en Science, en papel y en línea.",
+    "eligibility": "Científicos en etapas iniciales con M.D., Ph.D. o M.D./Ph.D. obtenido en los últimos 10 años. Postulación individual centrada en la contribución propia; el candidato debe haber realizado o dirigido el trabajo en los últimos 3 años. Se exige al menos una publicación de investigación revisada por pares en los 3 años calendario anteriores. La segunda publicación es opcional y puede ser un preprint enviado. No se admiten revisiones ni comentarios. Hay extensiones de elegibilidad por maternidad y licencias justificadas. Solicitante: Persona individual. Ubicación elegible: Internacional. Ciudadanía: Sin restricción.",
+    "notes": "Cierre: 14/02/2027, 23:59, hora del este indicada en las bases. Sin tasa de inscripción. Presentar formulario, ensayo propio en Word de hasta 1,000 palabras, CV, carta de recomendación de una página y 1–2 publicaciones. Se permite una figura o tabla y hasta 15 referencias, excluidas del límite de palabras. Se evalúan calidad y relevancia científica y claridad de escritura. No se permite generar el ensayo ni sus figuras con IA; la edición limitada con Grammarly debe declararse. Hasta dos finalistas publican en línea. El premio contempla viaje y alojamiento razonables para la ceremonia, si procede.",
+    "internalObservation": "Patrocinio: NOSTER Inc. (Japón); organización: Science/AAAS (Estados Unidos). Premio a resultados ya obtenidos. La sección III.1 de las reglas menciona IA, en discrepancia con el alcance y la página de elegibilidad sobre microbioma. Confirmar con NosterSciencePrize@aaas.org.",
+    "url": "https://www.science.org/content/prize-award/noster-and-science-microbiome-prize",
+    "pivotUrl": ""
   }
 ];
-const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);
+const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);
 const grid=document.getElementById('grid'),search=document.getElementById('search'),status=document.getElementById('status'),type=document.getElementById('type'),career=document.getElementById('career'),count=document.getElementById('count');
 const detail=document.getElementById('detail');
 const statusOf=o=>!o.deadline?'open':new Date(o.deadline+'T23:59:59')>=today?'future':'expired';
