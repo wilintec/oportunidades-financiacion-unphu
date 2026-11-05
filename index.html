@@ -25,7 +25,7 @@ dialog{border:0;border-radius:8px;padding:0;max-width:760px;width:calc(100% - 30
 <div class="notice"><div><strong>Demostración no oficial:</strong> este portal fue actualizado a partir del Excel maestro suministrado. Las fechas y condiciones deben verificarse siempre en el sitio oficial del financiador.</div></div>
 <main class="main" id="oportunidades"><div class="section-title"><div><h2>Convocatorias disponibles</h2><p>Información publicada desde el Excel maestro de oportunidades de financiamiento.</p></div></div>
 <section class="filters" aria-label="Filtros"><div class="field"><label for="search">Buscar</label><input id="search" type="search" placeholder="Título, financiador, palabra clave..."></div><div class="field"><label for="status">Estado</label><select id="status"><option value="all">Todos</option><option value="future">Futuras</option><option value="open">Abiertas / continuas</option><option value="expired">Vencidas</option></select></div><div class="field"><label for="type">Tipo</label><select id="type"><option value="all">Todos</option></select></div><div class="field"><label for="career">Perfil</label><select id="career"><option value="all">Todos</option></select></div></section>
-<div class="summarybar"><span>Mostrando <strong id="count">0</strong> resultados</span><span>Actualizado desde el Excel maestro: 4 de noviembre de 2026</span></div><section class="grid" id="grid"></section>
+<div class="summarybar"><span>Mostrando <strong id="count">0</strong> resultados</span><span>Actualizado desde el Excel maestro: 5 de noviembre de 2026</span></div><section class="grid" id="grid"></section>
 <section id="metodologia" style="margin-top:55px;background:white;border-left:5px solid var(--gold);padding:28px;box-shadow:0 8px 25px rgba(0,55,42,.06)"><div class="section-title"><div><h2>Cómo funcionaría la versión definitiva</h2><p>Excel como fuente maestra → validación de datos → portal web actualizado.</p></div></div><p>La unidad responsable actualizaría una hoja estructurada con fechas, montos, elegibilidad y enlaces. Al publicar una nueva versión, la página se regeneraría conservando su diseño, buscador y filtros. Las oportunidades vencidas podrían ocultarse automáticamente o conservarse en un archivo histórico.</p></section>
 </main>
 <footer><div class="footer-inner"><div><h4>Investigación</h4><p>Prototipo conceptual de un portal institucional para difundir oportunidades de financiamiento científico y académico.</p></div><div><p>Los nombres y marcas pertenecen a sus respectivos titulares. Esta demostración no constituye una publicación oficial.</p></div></div><div class="copyright">Prueba de concepto · Portal de oportunidades de financiamiento · 2026</div></footer>
@@ -5193,9 +5193,47 @@ const opportunities=[
     "internalObservation": "Patrocinio: NOSTER Inc. (Japón); organización: Science/AAAS (Estados Unidos). Premio a resultados ya obtenidos. La sección III.1 de las reglas menciona IA, en discrepancia con el alcance y la página de elegibilidad sobre microbioma. Confirmar con NosterSciencePrize@aaas.org.",
     "url": "https://www.science.org/content/prize-award/noster-and-science-microbiome-prize",
     "pivotUrl": ""
+  },
+  {
+    "id": 137,
+    "code": "OP-0138",
+    "title": "Fondos Concursables José Santiago Reinoso Lora para el Desarrollo Sostenible — X Convocatoria 2026-2027",
+    "funder": "Asociación Cibao de Ahorros y Préstamos",
+    "funderType": "Otro",
+    "country": "República Dominicana",
+    "deadline": "2027-01-29",
+    "deadlineLabel": "29 de enero de 2027",
+    "deliveryType": "Propuesta completa",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Abierta",
+    "amount": "Hasta DOP 2.000.000",
+    "duration": "No especificada en las bases; según cronograma aprobado.",
+    "type": "Otro",
+    "career": [
+      "No aplica"
+    ],
+    "applicantType": "Asociación sin fines de lucro (ASFL)",
+    "area": "Desarrollo sostenible: social, ambiental y económico",
+    "keywords": [
+      "ASFL",
+      "educación para la empleabilidad",
+      "vivienda",
+      "inclusión",
+      "tecnología para el desarrollo social",
+      "biodiversidad",
+      "agua",
+      "residuos",
+      "emprendimiento social de triple saldo"
+    ],
+    "summary": "Cofinanciamiento y acompañamiento de proyectos de ASFL para mejorar la calidad de vida en República Dominicana. Ejes social, ambiental y económico. Fondo total: RD$20,000,000; aporte máximo por proyecto: RD$2,000,000.",
+    "eligibility": "ASFL establecidas en RD, con al menos un año de incorporación conforme a la Ley 122-05 y capacidad demostrable de ejecutar el proyecto. Se excluyen entidades controladas por instituciones o cooperativas financieras y gremios empresariales o profesionales. No pueden participar ganadoras de la convocatoria anterior ni ASFL con proyectos pendientes de cierre de convocatorias anteriores. Solicitante: Asociación sin fines de lucro (ASFL). Ubicación elegible: República Dominicana. Ciudadanía: Sin requisito de ciudadanía especificado; la ASFL debe estar establecida en República Dominicana..",
+    "notes": "Postulación en plataforma del 01/11/2026 al 29/01/2027. Financia hasta el 90% del presupuesto y RD$2,000,000 por proyecto. No cubre deudas previas ni gastos administrativos u operativos habituales, incluidos sueldos y honorarios de colaboradores fijos; estos se consideran contrapartida. Anuncio de ganadores: abril-junio de 2027. Se exige debida diligencia, defensa virtual y rendición de cuentas.",
+    "internalObservation": "Postulación institucional mediante una ASFL elegible; no admite personas individuales. Contrapartida mínima: 10% del presupuesto. Confirmar la admisibilidad de honorarios por servicios técnicos especializados cuando el proveedor también imparte docencia en la ASFL postulante. Contacto: fondosconcursables@cibao.com.do.",
+    "url": "https://cibaosostenible.com.do/",
+    "pivotUrl": ""
   }
 ];
-const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);
+const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);
 const grid=document.getElementById('grid'),search=document.getElementById('search'),status=document.getElementById('status'),type=document.getElementById('type'),career=document.getElementById('career'),count=document.getElementById('count');
 const detail=document.getElementById('detail');
 const statusOf=o=>!o.deadline?'open':new Date(o.deadline+'T23:59:59')>=today?'future':'expired';
