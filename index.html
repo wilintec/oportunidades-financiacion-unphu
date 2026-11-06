@@ -25,7 +25,7 @@ dialog{border:0;border-radius:8px;padding:0;max-width:760px;width:calc(100% - 30
 <div class="notice"><div><strong>Demostración no oficial:</strong> este portal fue actualizado a partir del Excel maestro suministrado. Las fechas y condiciones deben verificarse siempre en el sitio oficial del financiador.</div></div>
 <main class="main" id="oportunidades"><div class="section-title"><div><h2>Convocatorias disponibles</h2><p>Información publicada desde el Excel maestro de oportunidades de financiamiento.</p></div></div>
 <section class="filters" aria-label="Filtros"><div class="field"><label for="search">Buscar</label><input id="search" type="search" placeholder="Título, financiador, palabra clave..."></div><div class="field"><label for="status">Estado</label><select id="status"><option value="all">Todos</option><option value="future">Futuras</option><option value="open">Abiertas / continuas</option><option value="expired">Vencidas</option></select></div><div class="field"><label for="type">Tipo</label><select id="type"><option value="all">Todos</option></select></div><div class="field"><label for="career">Perfil</label><select id="career"><option value="all">Todos</option></select></div></section>
-<div class="summarybar"><span>Mostrando <strong id="count">0</strong> resultados</span><span>Actualizado desde el Excel maestro: 5 de noviembre de 2026</span></div><section class="grid" id="grid"></section>
+<div class="summarybar"><span>Mostrando <strong id="count">0</strong> resultados</span><span>Actualizado desde el Excel maestro: 6 de noviembre de 2026</span></div><section class="grid" id="grid"></section>
 <section id="metodologia" style="margin-top:55px;background:white;border-left:5px solid var(--gold);padding:28px;box-shadow:0 8px 25px rgba(0,55,42,.06)"><div class="section-title"><div><h2>Cómo funcionaría la versión definitiva</h2><p>Excel como fuente maestra → validación de datos → portal web actualizado.</p></div></div><p>La unidad responsable actualizaría una hoja estructurada con fechas, montos, elegibilidad y enlaces. Al publicar una nueva versión, la página se regeneraría conservando su diseño, buscador y filtros. Las oportunidades vencidas podrían ocultarse automáticamente o conservarse en un archivo histórico.</p></section>
 </main>
 <footer><div class="footer-inner"><div><h4>Investigación</h4><p>Prototipo conceptual de un portal institucional para difundir oportunidades de financiamiento científico y académico.</p></div><div><p>Los nombres y marcas pertenecen a sus respectivos titulares. Esta demostración no constituye una publicación oficial.</p></div></div><div class="copyright">Prueba de concepto · Portal de oportunidades de financiamiento · 2026</div></footer>
@@ -5231,9 +5231,47 @@ const opportunities=[
     "internalObservation": "Postulación institucional mediante una ASFL elegible; no admite personas individuales. Contrapartida mínima: 10% del presupuesto. Confirmar la admisibilidad de honorarios por servicios técnicos especializados cuando el proveedor también imparte docencia en la ASFL postulante. Contacto: fondosconcursables@cibao.com.do.",
     "url": "https://cibaosostenible.com.do/",
     "pivotUrl": ""
+  },
+  {
+    "id": 138,
+    "code": "OP-0139",
+    "title": "SPIN Award 2027 — Scientific Progress Immunoglobulins in Neurology",
+    "funder": "Grifols, S.A.",
+    "funderType": "Empresa privada",
+    "country": "España",
+    "deadline": "2027-01-31",
+    "deadlineLabel": "31 de enero de 2027",
+    "deliveryType": "Carta de intención",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Abierta",
+    "amount": "EUR 50.000",
+    "duration": "Hasta 12 meses desde el primer pago",
+    "type": "Proyecto de investigación",
+    "career": [
+      "Científicos o clínicos",
+      "solicitante principal menor de 40 años al presentar la carta de intención"
+    ],
+    "applicantType": "Persona individual; equipo con respaldo de hospital, universidad o institución independiente",
+    "area": "Neurología; neuroinmunología",
+    "keywords": [
+      "Inmunoglobulinas",
+      "IVIg",
+      "enfermedades neurológicas",
+      "mecanismos de acción",
+      "eficacia",
+      "seguridad",
+      "calidad de vida",
+      "farmacoeconomía"
+    ],
+    "summary": "Un premio anual de EUR 50,000 para un proyecto innovador sobre inmunoglobulinas en neurología. Incluye eficacia, mecanismos de acción, seguridad y tolerabilidad, calidad de vida y farmacoeconomía. Los objetivos deben completarse en un máximo de 12 meses.",
+    "eligibility": "Científico o clínico empleado o respaldado por una universidad, hospital o institución independiente. El solicitante principal debe ser menor de 40 años al enviar la carta de intención; este límite no se exige a los demás integrantes. UNPHU puede respaldar la candidatura y recibir los fondos si cumple las condiciones institucionales. Se excluyen anteriores ganadores de SPIN y estudios patrocinados por la industria. Solicitante: Persona individual; equipo con respaldo de hospital, universidad o institución independiente. Ubicación elegible: Internacional; sin exclusión geográfica expresa para República Dominicana. Ciudadanía: Sin restricción de ciudadanía publicada.",
+    "notes": "Carta de intención y CV en inglés mediante plantillas oficiales: 01/08/2026–31/01/2027. Hasta 6 propuestas preseleccionadas. Propuesta completa: 15/03/2027; decisión: 05/05/2027; fondos disponibles: 31/07/2027. Dos pagos brutos de EUR 25,000 a la institución contra factura: inicial y tras informe final, cada uno en hasta 60 días. No admite costes indirectos ni administrativos. Informe intermedio y final. Bases: https://www.grifolsscientificawards.com/en/spin/terms-and-conditions",
+    "internalObservation": "Aplicabilidad a UNPHU condicionada a un investigador principal elegible y un proyecto directamente vinculado con inmunoglobulinas en neurología. El Banco Nacional de Cerebros ofrece un entorno afín; debe acreditarse el encaje específico. Contrato institucional, sin overhead y posible anticipo de gastos. UNPHU conserva la propiedad intelectual; Grifols obtiene licencia interna de I+D y exige consentimiento previo escrito para divulgar resultados. Confirmar gastos de personal y requisitos fiscales.",
+    "url": "https://www.grifolsscientificawards.com/en/spin",
+    "pivotUrl": ""
   }
 ];
-const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);
+const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);
 const grid=document.getElementById('grid'),search=document.getElementById('search'),status=document.getElementById('status'),type=document.getElementById('type'),career=document.getElementById('career'),count=document.getElementById('count');
 const detail=document.getElementById('detail');
 const statusOf=o=>!o.deadline?'open':new Date(o.deadline+'T23:59:59')>=today?'future':'expired';
