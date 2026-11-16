@@ -25,7 +25,7 @@ dialog{border:0;border-radius:8px;padding:0;max-width:760px;width:calc(100% - 30
 <div class="notice"><div><strong>Demostración no oficial:</strong> este portal fue actualizado a partir del Excel maestro suministrado. Las fechas y condiciones deben verificarse siempre en el sitio oficial del financiador.</div></div>
 <main class="main" id="oportunidades"><div class="section-title"><div><h2>Convocatorias disponibles</h2><p>Información publicada desde el Excel maestro de oportunidades de financiamiento.</p></div></div>
 <section class="filters" aria-label="Filtros"><div class="field"><label for="search">Buscar</label><input id="search" type="search" placeholder="Título, financiador, palabra clave..."></div><div class="field"><label for="status">Estado</label><select id="status"><option value="all">Todos</option><option value="future">Futuras</option><option value="open">Abiertas / continuas</option><option value="expired">Vencidas</option></select></div><div class="field"><label for="type">Tipo</label><select id="type"><option value="all">Todos</option></select></div><div class="field"><label for="career">Perfil</label><select id="career"><option value="all">Todos</option></select></div></section>
-<div class="summarybar"><span>Mostrando <strong id="count">0</strong> resultados</span><span>Actualizado desde el Excel maestro: 13 de noviembre de 2026</span></div><section class="grid" id="grid"></section>
+<div class="summarybar"><span>Mostrando <strong id="count">0</strong> resultados</span><span>Actualizado desde el Excel maestro: 16 de noviembre de 2026</span></div><section class="grid" id="grid"></section>
 <section id="metodologia" style="margin-top:55px;background:white;border-left:5px solid var(--gold);padding:28px;box-shadow:0 8px 25px rgba(0,55,42,.06)"><div class="section-title"><div><h2>Cómo funcionaría la versión definitiva</h2><p>Excel como fuente maestra → validación de datos → portal web actualizado.</p></div></div><p>La unidad responsable actualizaría una hoja estructurada con fechas, montos, elegibilidad y enlaces. Al publicar una nueva versión, la página se regeneraría conservando su diseño, buscador y filtros. Las oportunidades vencidas podrían ocultarse automáticamente o conservarse en un archivo histórico.</p></section>
 </main>
 <footer><div class="footer-inner"><div><h4>Investigación</h4><p>Prototipo conceptual de un portal institucional para difundir oportunidades de financiamiento científico y académico.</p></div><div><p>Los nombres y marcas pertenecen a sus respectivos titulares. Esta demostración no constituye una publicación oficial.</p></div></div><div class="copyright">Prueba de concepto · Portal de oportunidades de financiamiento · 2026</div></footer>
@@ -5308,9 +5308,45 @@ const opportunities=[
     "internalObservation": "Aplicabilidad a UNPHU condicionada a capacidad institucional y pertinencia del proyecto. Debe integrar igualdad de género, derechos humanos y sostenibilidad ambiental. Sin exigencia general de socio canadiense. La política de contrapartida contempla excepciones según el programa y la cuantía. La asistencia humanitaria y los programas de seguridad tienen vías específicas. Guía: https://www.international.gc.ca/world-monde/funding-financement/unsolicited_proposals_guidance-propositions_non_sollicitees_guide.aspx?lang=eng",
     "url": "https://www.international.gc.ca/world-monde/funding-financement/apply_funding-demande_financement.aspx?lang=eng",
     "pivotUrl": ""
+  },
+  {
+    "id": 140,
+    "code": "OP-0141",
+    "title": "ICGEB Research Grants — CRP (próxima convocatoria 2027)",
+    "funder": "International Centre for Genetic Engineering and Biotechnology (ICGEB)",
+    "funderType": "Organización internacional",
+    "country": "Internacional",
+    "deadline": "2027-04-30",
+    "deadlineLabel": "30 de abril de 2027",
+    "deliveryType": "Propuesta completa",
+    "manualStatus": "Cerrada",
+    "calculatedStatus": "Cerrada",
+    "amount": "Hasta EUR 75.000",
+    "duration": "Hasta 36 meses (referencia: bases 2026)",
+    "type": "Proyecto de investigación",
+    "career": [
+      "Investigador empleado por la institución",
+      "sin límite de edad en la modalidad estándar"
+    ],
+    "applicantType": "Institución académica; Centro de investigación",
+    "area": "Ciencias de la vida y biotecnología",
+    "keywords": [
+      "Biología básica",
+      "salud humana y animal",
+      "biotecnología agrícola e industrial",
+      "bioenergía",
+      "colaboración internacional",
+      "formación científica"
+    ],
+    "summary": "Subvenciones para investigación original con relevancia nacional o regional, colaboración internacional y formación de jóvenes científicos. Las bases 2026 permiten hasta EUR 25,000 anuales durante un máximo de 36 meses: EUR 75,000 como techo total derivado. Los fondos se entregan a la institución del investigador principal. La cuantía y duración de la edición 2027 están pendientes de confirmación.",
+    "eligibility": "UNPHU puede postular mediante un investigador empleado por la universidad. Exige colaboración internacional integrada, carta del colaborador, respaldo institucional y aval del enlace nacional. No pueden liderar estudiantes de doctorado o posdoctorado. Los proyectos ICGEB anteriores deben estar evaluados y cerrados satisfactoriamente. No exige colaborar con un laboratorio del ICGEB, aunque se valora. Solicitante: Institución académica; Centro de investigación. Ubicación elegible: Estados miembros del ICGEB, incluida República Dominicana; excluye Italia. Ciudadanía: Sin restricción general de ciudadanía publicada; se exige afiliación institucional en un Estado miembro.",
+    "notes": "La edición 2026 cerró el 30/04/2026. Apertura anunciada para principios de 2027 y cierre confirmado el 30/04/2027; hora aún no publicada. Solicitud completa en ICGEB Service Gateway. Presupuesto 2026: equipos hasta 30%, viajes hasta 10% y literatura/publicación hasta 5%. Servicios externos de secuenciación/proteómica hasta 20%. No cubre salario del investigador principal, overhead, obras ni equipos de más de EUR 10,000. Pagos anuales sujetos a informes y ejecución justificada de al menos 80% del desembolso anterior.",
+    "internalObservation": "Estado Cerrada: la edición 2027 aún no ha abierto. Monto máximo y duración son referencias de 2026, sujetas a las nuevas bases. Enlace nacional publicado: Dr. Edian Franklin Franco, MESCyT. Avales por país: hasta 3 proyectos estándar y 2 Early Career Return. Esta última modalidad exige hasta 40 años, al menos 2 años consecutivos en el extranjero y retorno en los 2 años previos. COMSTECH, BiotechNet y Biosecurity no admiten a UNPHU como solicitante principal. Bases: https://www.icgeb.org/wp-content/uploads/2026/01/CRP-Guidelines_2026.pdf",
+    "url": "https://www.icgeb.org/grants/",
+    "pivotUrl": ""
   }
 ];
-const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);
+const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);
 const grid=document.getElementById('grid'),search=document.getElementById('search'),status=document.getElementById('status'),type=document.getElementById('type'),career=document.getElementById('career'),count=document.getElementById('count');
 const detail=document.getElementById('detail');
 const statusOf=o=>!o.deadline?'open':new Date(o.deadline+'T23:59:59')>=today?'future':'expired';
