@@ -25,7 +25,7 @@ dialog{border:0;border-radius:8px;padding:0;max-width:760px;width:calc(100% - 30
 <div class="notice"><div><strong>Demostración no oficial:</strong> este portal fue actualizado a partir del Excel maestro suministrado. Las fechas y condiciones deben verificarse siempre en el sitio oficial del financiador.</div></div>
 <main class="main" id="oportunidades"><div class="section-title"><div><h2>Convocatorias disponibles</h2><p>Información publicada desde el Excel maestro de oportunidades de financiamiento.</p></div></div>
 <section class="filters" aria-label="Filtros"><div class="field"><label for="search">Buscar</label><input id="search" type="search" placeholder="Título, financiador, palabra clave..."></div><div class="field"><label for="status">Estado</label><select id="status"><option value="all">Todos</option><option value="future">Futuras</option><option value="open">Abiertas / continuas</option><option value="expired">Vencidas</option></select></div><div class="field"><label for="type">Tipo</label><select id="type"><option value="all">Todos</option></select></div><div class="field"><label for="career">Perfil</label><select id="career"><option value="all">Todos</option></select></div></section>
-<div class="summarybar"><span>Mostrando <strong id="count">0</strong> resultados</span><span>Actualizado desde el Excel maestro: 22 de noviembre de 2026</span></div><section class="grid" id="grid"></section>
+<div class="summarybar"><span>Mostrando <strong id="count">0</strong> resultados</span><span>Actualizado desde el Excel maestro: 23 de noviembre de 2026</span></div><section class="grid" id="grid"></section>
 <section id="metodologia" style="margin-top:55px;background:white;border-left:5px solid var(--gold);padding:28px;box-shadow:0 8px 25px rgba(0,55,42,.06)"><div class="section-title"><div><h2>Cómo funcionaría la versión definitiva</h2><p>Excel como fuente maestra → validación de datos → portal web actualizado.</p></div></div><p>La unidad responsable actualizaría una hoja estructurada con fechas, montos, elegibilidad y enlaces. Al publicar una nueva versión, la página se regeneraría conservando su diseño, buscador y filtros. Las oportunidades vencidas podrían ocultarse automáticamente o conservarse en un archivo histórico.</p></section>
 </main>
 <footer><div class="footer-inner"><div><h4>Investigación</h4><p>Prototipo conceptual de un portal institucional para difundir oportunidades de financiamiento científico y académico.</p></div><div><p>Los nombres y marcas pertenecen a sus respectivos titulares. Esta demostración no constituye una publicación oficial.</p></div></div><div class="copyright">Prueba de concepto · Portal de oportunidades de financiamiento · 2026</div></footer>
@@ -5344,9 +5344,45 @@ const opportunities=[
     "internalObservation": "Estado Cerrada: la edición 2027 aún no ha abierto. Monto máximo y duración son referencias de 2026, sujetas a las nuevas bases. Enlace nacional publicado: Dr. Edian Franklin Franco, MESCyT. Avales por país: hasta 3 proyectos estándar y 2 Early Career Return. Esta última modalidad exige hasta 40 años, al menos 2 años consecutivos en el extranjero y retorno en los 2 años previos. COMSTECH, BiotechNet y Biosecurity no admiten a UNPHU como solicitante principal. Bases: https://www.icgeb.org/wp-content/uploads/2026/01/CRP-Guidelines_2026.pdf",
     "url": "https://www.icgeb.org/grants/",
     "pivotUrl": ""
+  },
+  {
+    "id": 141,
+    "code": "OP-0142",
+    "title": "Chen Institute & Science Prize for AI Accelerated Research 2027",
+    "funder": "Tianqiao and Chrissy Chen Institute / Science–AAAS",
+    "funderType": "Fundación privada",
+    "country": "Estados Unidos",
+    "deadline": "2026-12-13",
+    "deadlineLabel": "13 de diciembre de 2026",
+    "deliveryType": "Solicitud",
+    "manualStatus": "Abierta",
+    "calculatedStatus": "Próxima a vencer",
+    "amount": "USD 10.000 – 30.000",
+    "duration": "No aplica (premio)",
+    "type": "Premio",
+    "career": [
+      "Investigador emergente"
+    ],
+    "applicantType": "Persona individual",
+    "area": "Inteligencia artificial aplicada a las ciencias físicas y de la vida",
+    "keywords": [
+      "IA",
+      "aprendizaje automático",
+      "procesamiento del lenguaje natural",
+      "visión por computador",
+      "aprendizaje profundo",
+      "ciencias empíricas",
+      "investigadores emergentes"
+    ],
+    "summary": "Premio internacional de Science/AAAS y el Chen Institute para investigadores en etapa temprana que hayan logrado un avance fundamental en ciencias físicas o de la vida gracias al uso de IA. El gran premio es de USD 30,000; hasta dos finalistas pueden recibir USD 10,000 cada uno. Los ensayos premiados se publican en Science.",
+    "eligibility": "Solicitud individual de un científico en un campo relacionado con la IA, con M.D., Ph.D. o M.D./Ph.D. obtenido en los últimos diez años. La investigación puede ser de un equipo, pero el ensayo debe centrarse en la contribución propia. Se exige una publicación de investigación revisada por pares de los tres años calendario anteriores, vinculada al ensayo; una segunda publicación es opcional. Se permiten ampliaciones justificadas por maternidad u otras licencias parentales o médicas. No se publican restricciones de país o ciudadanía. Solicitante: Persona individual. Ubicación elegible: Internacional; sin restricción geográfica publicada. Ciudadanía: Sin restricción de ciudadanía publicada.",
+    "notes": "Cierre: 13/12/2026. Se requiere formulario, ensayo original de 1,000 palabras en Word, carta de recomendación de una página, CV y hasta dos publicaciones pertinentes. Se admite una figura o tabla y hasta 15 referencias, excluidas del recuento. No se permite generar el ensayo ni sus figuras con IA; la edición limitada debe declararse. Los premios incluyen viaje y alojamiento razonables para la ceremonia y suscripción digital a Science por cinco años. Anuncio previsto: julio de 2027.",
+    "internalObservation": "Pueden postularse investigadores individuales de UNPHU que cumplan los requisitos; UNPHU no presenta la candidatura como institución. Es un premio por investigación ya realizada, no financiación para iniciar un proyecto. Debe demostrarse que el avance científico no habría sido viable sin la técnica de IA. El resultado relevante debe estar publicado en una revista revisada por pares dentro del periodo exigido.",
+    "url": "https://www.cheninstitute.org/aiprize",
+    "pivotUrl": ""
   }
 ];
-const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);
+const today=new Date();today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);today.setHours(0,0,0,0);
 const grid=document.getElementById('grid'),search=document.getElementById('search'),status=document.getElementById('status'),type=document.getElementById('type'),career=document.getElementById('career'),count=document.getElementById('count');
 const detail=document.getElementById('detail');
 const statusOf=o=>!o.deadline?'open':new Date(o.deadline+'T23:59:59')>=today?'future':'expired';
